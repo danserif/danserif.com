@@ -1,6 +1,4 @@
 # Permalinks
-#
-# Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           pretty
 # relative_permalinks: true
 
@@ -8,23 +6,19 @@ permalink:           pretty
 title:               danserif
 tagline:             Testing 1 2 3
 url:                 https://danserif.com
-paginate:            1
-baseurl:             ""
+paginate:            5
+baseurl:             "/"
 
-# Assets
-#
-# We specify the directory for Jekyll so we can use @imports.
-sass:
-  sass_dir:          _sass
-  style:            :compressed
-
-# About/contact
 author:
   name:              Dan Newman
   url:               https://twitter.com/danserif
   email:             dan@newman.is
 
+# Assets
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
 # Custom vars
 version:             2.0.0
-github:
-  repo:              https://github.com/poole/poole
