@@ -5,9 +5,9 @@ permalink:           pretty
 # relative_permalinks: true
 
 # Setup
-title:               Poole
-tagline:             The Jekyll Butler
-url:                 http://getpoole.com
+title:               @danserif
+tagline:             Testing 1 2 3
+url:                 https://danserif.com
 paginate:            1
 baseurl:             ""
 
@@ -20,9 +20,9 @@ sass:
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              Dan Newman
+  url:               https://twitter.com/danserif
+  email:             dan@newman.is
 
 # Custom vars
 version:             2.0.0
