@@ -1,0 +1,633 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ *
+ * ==|== normalize ==========================================================
+ */
+
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+	display: block;
+}
+audio,
+canvas,
+video {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+audio:not([controls]) {
+	display: none;
+}
+[hidden] {
+	display: none;
+}
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ * 2. Prevent iOS text size adjust on device orientation change, without disabling user zoom
+ */
+
+html {
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	scroll-behavior: smooth;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+	-webkit-font-smoothing: antialiased;
+	font-family: Berkeley Mono, monospace;
+	color: #dddddd;
+}
+
+body {
+	margin: 0;
+	font-size: 14px;
+	line-height: 1.6;
+	background-color: #000000;
+}
+
+/*
+ * Remove text-shadow in selection highlight
+ * These selection declarations have to be separate
+ */
+
+::-moz-selection {
+	background: #ffffff;
+	color: #000000;
+	text-shadow: none;
+}
+::selection {
+	background: #ffffff;
+	color: #000000;
+	text-shadow: none;
+}
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+
+a {
+	color: #dddddd;
+	outline: none;
+	text-decoration: underline;
+}
+a:visited {
+	color: #dddddd;
+}
+a:hover {
+	color: #dddddd;
+	opacity: 0.4;
+}
+a:focus {
+	outline: none;
+}
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+
+b,
+strong {
+	font-weight: 700;
+}
+
+blockquote {
+	margin: 1em 40px;
+	font-size: 14px;
+}
+
+dfn {
+	font-style: italic;
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px dashed #161616;
+	margin: 1em 0;
+}
+
+ins {
+	background: #ff9;
+	color: #000;
+	text-decoration: none;
+}
+
+mark {
+	background: #ff0;
+	color: #000;
+	font-style: italic;
+	font-weight: bold;
+}
+
+/* Redeclare monospace font family */
+pre,
+code,
+kbd,
+samp {
+	font-family: "Berkeley Mono", monospace, serif;
+	_font-family: "Berkeley Mono", "courier new", monospace;
+	font-size: 1em;
+}
+
+/* Improve readability of pre-formatted text in all browsers */
+pre {
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+q {
+	quotes: none;
+}
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+
+small {
+	font-size: 85%;
+}
+
+/* Position subscript and superscript content without affecting line-height */
+sub,
+sup {
+	font-size: 65%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+	opacity: 0.4;
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.25em;
+}
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+ul,
+ol {
+	margin: 1em 0;
+	padding: 0 0 0 40px;
+}
+dd {
+	margin: 0 0 0 40px;
+}
+nav ul,
+nav ol {
+	list-style: none;
+	list-style-image: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+
+table {
+	border-collapse: collapse;
+	display: block;
+	padding-bottom: 66px;
+	width: 100%;
+}
+tr {
+	padding: 0;
+	margin: 0;
+	border-top: 1px dashed #161616;
+	border-bottom: 1px dashed #161616;
+}
+td {
+	vertical-align: middle;
+	padding: 15px 0 15px 0;
+	line-height: 1.4;
+}
+td:first-of-type {
+	min-width: 240px;
+}
+td:last-child {
+	padding-right: 0;
+	text-align: right;
+	white-space: nowrap;
+	min-width: 100px;
+}
+
+/* =============================================================================
+   Chrome Frame Prompt
+   ========================================================================== */
+
+.chromeframe {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: black;
+	padding: 0.2em 0;
+}
+
+/* ==|== primary styles =====================================================
+   Author: Dan Newman
+   ========================================================================== */
+
+/* CUSTOM STYLES */
+
+.container {
+	padding: 40px 60px 40px 60px;
+}
+
+header {
+	padding: 20px 0 40px 0;
+}
+
+.intro {
+	max-width: 1000px;
+	padding: 60px 0 80px 0;
+}
+
+.intro p {
+	padding: 0 0 20px 0;
+}
+
+p {
+	color: #dddddd;
+	margin: 0 0 10px 0;
+}
+
+p.caption {
+	font-size: 12px;
+	opacity: 0.5;
+}
+
+h1 {
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 56px;
+	padding: 0;
+	margin: 0;
+}
+
+h2,
+h3 {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 16px;
+	padding: 0 0 16px 0;
+	margin: 0;
+	text-transform: uppercase;
+	opacity: 0.3;
+}
+
+table a {
+	text-decoration: none;
+	display: block;
+}
+
+td.arrow {
+	text-decoration: none;
+	font-size: 22px;
+	line-height: 0.6;
+}
+
+.row {
+	display: flex;
+}
+
+.column-50 {
+	display: flex;
+	flex: 50%;
+	margin-right: 60px;
+}
+
+.column-50:last-child {
+	margin-right: 0;
+}
+
+.column-25 {
+	margin-right: 60px;
+	flex: 25%;
+}
+
+.column-25:last-child {
+	margin-right: 0;
+}
+
+.opacity {
+	opacity: 0.5;
+}
+
+.opacity-dark {
+	opacity: 0.3;
+}
+
+.opacity-light {
+	opacity: 0.7;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.logo {
+	padding: 20px 0 20px 0;
+}
+
+.logo svg {
+	width: 100px;
+	padding-bottom: 10px;
+}
+
+.zero {
+	font-variant-numeric: slashed-zero;
+}
+
+.list {
+	padding: 20px 0 60px 0;
+}
+
+.desktop {
+	display: none;
+}
+
+footer {
+	max-width: 620px;
+	padding: 80px 0 0 0;
+}
+
+/* ==|== media queries ======================================================
+   EXAMPLE Media Query for Responsive Design.
+   This example overrides the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (max-width: 2660px) {
+	.column-50 {
+		display: block;
+		flex: 100%;
+	}
+	.column-25 {
+		margin: 0;
+	}
+	td:first-of-type {
+		min-width: 260px;
+	}
+}
+@media only screen and (max-width: 1400px) {
+	.row {
+		display: block;
+		width: 100%;
+	}
+	.column-50 {
+		display: block;
+		flex: 100%;
+		margin: 0;
+	}
+	.column-25 {
+		display: block;
+		flex: 100%;
+		margin: 0;
+	}
+	td:first-of-type {
+		min-width: 360px;
+	}
+}
+@media only screen and (max-width: 1200px) {
+	td:first-of-type {
+		min-width: 240px;
+	}
+}
+@media only screen and (max-width: 900px) {
+	body {
+		font-size: 12px;
+	}
+	.container {
+		padding: 20px 20px;
+	}
+	td:first-of-type {
+		min-width: 200px;
+	}
+	td {
+		min-width: 200px;
+	}
+	td:last-child {
+		min-width: 30px;
+	}
+	h1 {
+		font-size: 24px;
+		line-height: 32px;
+	}
+	h2,
+	h3 {
+		font-size: 10px;
+	}
+	header {
+		padding-bottom: 20px;
+	}
+	.intro {
+		padding-top: 20px;
+		padding-bottom: 40px;
+	}
+	p.caption {
+		font-size: 10px;
+	}
+	table {
+		font-size: 12px;
+	}
+	.logo svg {
+		width: 80px;
+	}
+	.desktop,
+	.tablet {
+		display: inline;
+	}
+	.logo {
+		padding-bottom: 10px;
+	}
+
+	.list {
+		padding: 10px 0 20px 0;
+	}
+	footer {
+		padding-top: 60px;
+		padding-bottom: 40px;
+	}
+}
+
+@media only screen and (max-width: 540px) {
+	td:first-of-type {
+		min-width: 120px;
+	}
+	.hide {
+		display: none;
+	}
+}
+
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+
+/* For image replacement */
+.ir {
+	display: block;
+	border: 0;
+	text-indent: -999em;
+	overflow: hidden;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	text-align: left;
+	direction: ltr;
+	*line-height: 0;
+}
+.ir br {
+	display: none;
+}
+
+/* Hide from both screenreaders and browsers */
+.hidden {
+	display: none !important;
+	visibility: hidden;
+}
+
+/* Hide only visually, but have it available for screenreaders */
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible {
+	visibility: hidden;
+}
+
+/* Contain floats: h5bp.com/q */
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	*zoom: 1;
+}
+
+/* ==|== print styles =======================================================
+   Print styles.
+   Inlined to avoid required HTTP connection
+   ========================================================================== */
+
+@media print {
+	* {
+		background: transparent !important;
+		color: black !important;
+		box-shadow: none !important;
+		text-shadow: none !important;
+		filter: none !important;
+		-ms-filter: none !important;
+	} /* Black prints faster: h5bp.com/s */
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
+	.ir a:after,
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after {
+		content: "";
+	} /* Don't show links for images, or javascript/internal links */
+	pre,
+	blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+	thead {
+		display: table-header-group;
+	}
+	tr,
+	img {
+		page-break-inside: avoid;
+	}
+	img {
+		max-width: 100% !important;
+	}
+	@page {
+		margin: 0.5cm;
+	}
+	p,
+	h2,
+	h3 {
+		orphans: 3;
+		widows: 3;
+	}
+	h2,
+	h3 {
+		page-break-after: avoid;
+	}
+}
+
+/* ==|== font styles =====================================================
+   Fonts: Berkley Mono by U.S. Graphics
+   ========================================================================== */
+
+/* Mono */
+@font-face {
+	font-family: "Berkeley Mono";
+	font-style: normal;
+	font-weight: 400;
+	font-display: block;
+	src: url("/fonts/berkeley-mono.woff2") format("woff2");
+}
