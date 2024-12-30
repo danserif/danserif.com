@@ -1,1 +1,3 @@
-Dan Newman. Dog Dad. Creative Director. Designer. Pākehā. Wellingtonian. Nerd. Font Fiend. Camera Collector. Book Buyer. Cricket Fan. List Maker.
+# Dan Newman aka @danserif
+
+Dog Dad. Creative Director. Designer. List Maker.
