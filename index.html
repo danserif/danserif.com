@@ -186,12 +186,12 @@
 									<tr>
 										<td>Phone</td>
 										<td class="opacity-dark">+64 ** **** ****</td>
-										<td class="opacity-dark"><s>Redacted</s></td>
+										<td class="opacity-dark hide"><s>Redacted</s></td>
 									</tr>
 									<tr>
 										<td>Location</td>
 										<td class="opacity-dark">41.****° S, 174.****° E</td>
-										<td class="opacity-dark"><s>Redacted</s></td>
+										<td class="opacity-dark hide"><s>Redacted</s></td>
 									</tr>
 								</table>
 							</div>
@@ -204,12 +204,14 @@
 									</colgroup>
 									<tr>
 										<td><a href="https://usgraphics.com/products/berkeley-mono" onclick="fathom.trackEvent('Fonts', 0);" title="🔠">Fonts</a></td>
-										<td><span class="opacity-dark">U.S. Graphics —</span> <span class="opacity">Berkeley Mono</span></td>
+										<td><span class="opacity-dark hide">U.S. Graphics —</span> <span class="opacity">Berkeley Mono</span></td>
 										<td class="arrow"><a href="https://usgraphics.com/products/berkeley-mono" onclick="fathom.trackEvent('Fonts', 0);" title="🔠">&nearr;</a></td>
 									</tr>
 									<tr>
 										<td><a href="https://github.com/danserif/danserif.com" onclick="fathom.trackEvent('Stack', 0);" title="🗄️">Stack</a></td>
-										<td><span class="opacity-dark">GitHub Pages — <</span><span class="opacity">HTML</span><span class="opacity-dark">/></span> <span class="opacity">CSS</span><span class="opacity-dark">{}</span></td>
+										<td>
+											<span class="opacity-dark hide">GitHub Pages — <</span><span class="opacity">HTML</span><span class="opacity-dark">/></span> <span class="opacity">CSS</span><span class="opacity-dark">{}</span>
+										</td>
 										<td class="arrow"><a href="https://github.com/danserif/danserif.com" onclick="fathom.trackEvent('Stack', 0);" title="🗄️">&nearr;</a></td>
 									</tr>
 									<tr>
@@ -240,7 +242,7 @@
 													const gmtOffset = `<span class="opacity-dark">(GMT${timezoneOffset >= 0 ? "+" : ""}${timezoneOffset})</span>`;
 
 													// Add span with NZ time zone
-													const nzTimeZoneSpan = `<span class="opacity-dark">${nzTimeZone} —</span>`;
+													const nzTimeZoneSpan = `<span class="opacity-dark hide">${nzTimeZone} —</span>`;
 
 													// Wrap the time output in a span
 													const timeOutput = `<span class="opacity">${hours}:${minutes}:${seconds} ${amPm}</span>`;
@@ -261,7 +263,7 @@
 									<tr>
 										<td>Version</td>
 										<td>
-											<span class="opacity-dark">Launched — </span> <span class="opacity">30<span class="opacity-light">/</span>12<span class="opacity-light">/</span>2024</span>
+											<span class="opacity-dark hide">Launched — </span><span class="opacity">30<span class="opacity-light">/</span>12<span class="opacity-light">/</span>2024</span>
 											<span class="opacity-dark">[DN-01]</span>
 										</td>
 										<td></td>
