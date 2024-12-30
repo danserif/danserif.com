@@ -264,7 +264,7 @@ td:last-child {
 
 /* CUSTOM STYLES */
 
-.container {
+body {
 	padding: 40px 60px 40px 60px;
 }
 
@@ -430,8 +430,6 @@ footer {
 @media only screen and (max-width: 900px) {
 	body {
 		font-size: 12px;
-	}
-	.container {
 		padding: 20px 20px;
 	}
 	td:first-of-type {
