@@ -111,6 +111,7 @@
 									<td>Office</td>
 									<td>Coming Soon</td>
 								</tr>
+								-->
 							</table>
 						</div>
 						<div class="column-25">
@@ -221,7 +222,7 @@
 									<td><a href="https://github.com/danserif/danserif.com" onclick="fathom.trackEvent('Stack', 0);" title="🗄️">Stack</a></td>
 									<td>
 										<span class="opacity-dark hide">GitHub Pages — </span><span class="opacity-dark"><</span><span class="opacity">HTML</span><span class="opacity-dark">/></span> <span class="opacity">CSS</span
-										><span class="opacity-dark">{}</span>
+										><span class="opacity-dark">{}</span> <span class="opacity">JS</span><span class="opacity-dark">();</span>
 									</td>
 									<td class="arrow"><a href="https://github.com/danserif/danserif.com" onclick="fathom.trackEvent('Stack', 0);" title="🗄️">&nearr;</a></td>
 								</tr>
@@ -252,14 +253,14 @@
 												const timezoneOffset = -now.getTimezoneOffset() / 60; // Offset in hours
 												const gmtOffset = `<span class="opacity-dark">(GMT${timezoneOffset >= 0 ? "+" : ""}${timezoneOffset})</span>`;
 
-												// Add span with NZ time zone
-												const nzTimeZoneSpan = `<span class="opacity-dark hide">${nzTimeZone} —</span>`;
+												// NZ time zone output
+												const nzTimeZoneOutput = `<span class="opacity-dark hide">${nzTimeZone} —</span>`;
 
-												// Wrap the time output in a span
+												// Time output
 												const timeOutput = `<span class="opacity">${hours}:${minutes}:${seconds} ${amPm}</span>`;
 
 												// Update the clock
-												clockElement.innerHTML = `${nzTimeZoneSpan} ${timeOutput} ${gmtOffset}`;
+												clockElement.innerHTML = `${nzTimeZoneOutput} ${timeOutput} ${gmtOffset}`;
 											}
 
 											// Update the clock every second
