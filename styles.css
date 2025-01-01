@@ -319,6 +319,7 @@ td.arrow {
 	text-decoration: none;
 	font-size: 22px;
 	line-height: 0.6;
+	min-width: 40px;
 }
 
 .row {
@@ -484,7 +485,7 @@ footer {
 
 @media only screen and (max-width: 560px) {
 	td:first-of-type {
-		min-width: 120px;
+		min-width: 130px;
 	}
 	.hide {
 		display: none;
