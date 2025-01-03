@@ -91,12 +91,8 @@
 									<td class="opacity">Portfolio</td>
 									<td class="arrow"><a href="https://dan.newman.is" onclick="fathom.trackEvent('Portfolio', 0);" title="💼">&nearr;</a></td>
 								</tr>
-								<!--<tr>
-									<td><a href="https://knolling.studio" onclick="fathom.trackEvent('Office', 0);" title="📐">knolling.studio</a></td>
-									<td class="opacity hide">Office</td>
-									<td class="arrow"><a href="https://knolling.studio" onclick="fathom.trackEvent('Office', 0);" title="📐">&nearr;</a></td>
-								</tr>-->
-								<!--<tr>
+								<!--
+								<tr>
 									<td><a href="https://unlimitededitions.shop" onclick="fathom.trackEvent('Store', 0);" title="🛒">unlimitededitions.shop</a></td>
 									<td class="opacity hide">Store</td>
 									<td class="arrow"><a href="https://unlimitededitions.shop" onclick="fathom.trackEvent('Store', 0);" title="🛒">&nearr;</a></td>
@@ -235,28 +231,31 @@
 												const clockElement = document.getElementById("clock");
 												const now = new Date();
 
-												// Get local time components
-												let hours = now.getHours();
-												const minutes = now.getMinutes().toString().padStart(2, "0");
-												const seconds = now.getSeconds().toString().padStart(2, "0");
-												const amPm = hours >= 12 ? "PM" : "AM";
+												// New Zealand time zone
+												const nzTimeZone = "Pacific/Auckland";
 
-												// Convert to 12-hour format
-												hours = hours % 12 || 12; // 0 becomes 12
+												// Get NZ time components
+												const nzTime = now.toLocaleString("en-NZ", {
+													timeZone: nzTimeZone,
+													hour: "2-digit",
+													minute: "2-digit",
+													second: "2-digit",
+													hour12: true,
+												});
 
-												// Determine if it's daylight saving time
-												const isDST = now.getTimezoneOffset() < new Date(now.getFullYear(), 0, 1).getTimezoneOffset();
-												const nzTimeZone = isDST ? "NZST" : "NZDT";
+												// Determine if it's daylight saving time in NZ
+												const isDST = new Date().toLocaleTimeString("en-NZ", { timeZone: nzTimeZone, timeZoneName: "short" }).includes("DT");
+												const nzTimeZoneName = isDST ? "NZDT" : "NZST";
 
-												// Calculate GMT offset
-												const timezoneOffset = -now.getTimezoneOffset() / 60; // Offset in hours
+												// Calculate GMT offset for NZ
+												const nzDate = new Date().toLocaleString("en-US", { timeZone: nzTimeZone });
+												const nzOffsetInMinutes = new Date(nzDate).getTimezoneOffset();
+												const timezoneOffset = -nzOffsetInMinutes / 60; // Offset in hours
 												const gmtOffset = `<span class="opacity-dark">(GMT${timezoneOffset >= 0 ? "+" : ""}${timezoneOffset})</span>`;
 
-												// NZ time zone output
-												const nzTimeZoneOutput = `<span class="opacity-dark hide">${nzTimeZone} —</span>`;
-
-												// Time output
-												const timeOutput = `<span class="opacity">${hours}:${minutes}:${seconds} ${amPm}</span>`;
+												// Format the output
+												const nzTimeZoneOutput = `<span class="opacity-dark hide">${nzTimeZoneName} —</span>`;
+												const timeOutput = `<span class="opacity">${nzTime}</span>`;
 
 												// Update the clock
 												clockElement.innerHTML = `${nzTimeZoneOutput} ${timeOutput} ${gmtOffset}`;
