@@ -273,7 +273,7 @@ header {
 }
 
 .intro {
-	max-width: 1000px;
+	max-width: 960px;
 	padding: 60px 0 80px 0;
 }
 
@@ -380,6 +380,10 @@ td.arrow {
 
 .desktop {
 	display: none;
+}
+
+.no-wrap {
+	white-space: nowrap;
 }
 
 footer {
