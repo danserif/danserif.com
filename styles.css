@@ -568,7 +568,7 @@ footer .top {
 		margin: 0;
 	}
 	td:first-of-type {
-		min-width: 260px;
+		min-width: 240px;
 	}
 	nav ul li {
 		padding-left: 100px;
@@ -586,9 +586,6 @@ footer .top {
 	}
 }
 @media only screen and (max-width: 1530px) {
-	td:first-of-type {
-		min-width: 220px;
-	}
 	.tdu {
 		font-size: 26px;
 	}
@@ -609,18 +606,18 @@ footer .top {
 		margin: 0;
 	}
 	td:first-of-type {
-		min-width: 360px;
+		min-width: 280px;
 	}
 	.form {
 		max-width: 80%;
 	}
 }
 @media only screen and (max-width: 1200px) {
-	td:first-of-type {
-		min-width: 240px;
+	nav ul {
+		padding-top: 18px;
 	}
 	nav ul li {
-		padding-left: 20px;
+		padding-left: 40px;
 	}
 	body {
 		font-size: 12px;
@@ -639,12 +636,6 @@ footer .top {
 	p.large {
 		font-size: 16px;
 	}
-	td:first-of-type {
-		min-width: 200px;
-	}
-	td {
-		min-width: 200px;
-	}
 	td:last-child {
 		min-width: 30px;
 	}
@@ -658,6 +649,46 @@ footer .top {
 	}
 	header {
 		padding-bottom: 10px;
+	}
+	.intro {
+		padding-top: 20px;
+	}
+	p.caption,
+	.caption {
+		font-size: 10px;
+	}
+	table {
+		font-size: 12px;
+	}
+	.subscribe {
+		padding: 12px 16px 12px 16px;
+	}
+	.tdu {
+		font-size: 14px;
+	}
+	.logo svg {
+		width: 80px;
+	}
+	.tablet {
+		display: inline;
+	}
+	.logo {
+		padding-bottom: 10px;
+	}
+	.list {
+		padding: 10px 0 20px 0;
+	}
+	footer {
+		padding-top: 60px;
+		padding-bottom: 40px;
+	}
+}
+@media only screen and (max-width: 800px) {
+	td:first-of-type {
+		min-width: 200px;
+	}
+	.form {
+		max-width: 80%;
 	}
 	/* Mobile Menu */
 	header,
@@ -715,43 +746,6 @@ footer .top {
 		display: inline;
 	}
 	/* ---- */
-	.intro {
-		padding-top: 20px;
-	}
-	p.caption,
-	.caption {
-		font-size: 10px;
-	}
-	table {
-		font-size: 12px;
-	}
-	.subscribe {
-		padding: 12px 16px 12px 16px;
-	}
-	.tdu {
-		font-size: 14px;
-	}
-	.logo svg {
-		width: 80px;
-	}
-	.tablet {
-		display: inline;
-	}
-	.logo {
-		padding-bottom: 10px;
-	}
-	.list {
-		padding: 10px 0 20px 0;
-	}
-	footer {
-		padding-top: 60px;
-		padding-bottom: 40px;
-	}
-}
-@media only screen and (max-width: 800px) {
-	.form {
-		max-width: 80%;
-	}
 }
 @media only screen and (max-width: 560px) {
 	td:first-of-type {
