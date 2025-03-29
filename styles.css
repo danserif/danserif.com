@@ -408,6 +408,10 @@ h3 {
 	font-size: 16px;
 }
 
+.mono {
+	font-family: Berkeley Mono;
+}
+
 .row {
 	display: flex;
 }
