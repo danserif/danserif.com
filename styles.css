@@ -659,7 +659,7 @@ footer .top {
 	}
 	.intro {
 		max-width: 770px;
-		padding-top: 25px;
+		padding-top: 30px;
 	}
 	p.caption,
 	.caption {
@@ -731,7 +731,7 @@ footer .top {
 		font-size: 10px;
 		opacity: 0.3;
 		text-transform: uppercase;
-		padding: 38px 0 15px 0;
+		padding: 43px 0 15px 0;
 	}
 	.mobile a {
 		display: block;
