@@ -335,7 +335,7 @@ nav li.label {
 }
 
 .intro {
-	max-width: 900px;
+	max-width: 880px;
 	padding: 60px 0 0 0;
 }
 
@@ -397,7 +397,7 @@ h3 {
 }
 
 .intro h3 {
-	font-size: 24px;
+	font-size: 26px;
 	line-height: 1.6;
 	text-transform: none;
 	opacity: 1;
@@ -636,7 +636,7 @@ footer .top {
 	}
 	.intro h3,
 	p.large {
-		font-size: 18px;
+		font-size: 20px;
 		line-height: 1.5;
 	}
 	td:last-child {
