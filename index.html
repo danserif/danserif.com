@@ -4,7 +4,7 @@
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-		<title>@danserif</title>
+		<title>@danserif (aka Dan Newman)</title>
 
 		<meta name="description" content="Dan Newman. Dog Dad. Creative Director. Designer. Pākehā. Wellingtonian. Nerd. Font Fiend. Camera Collector. Book Buyer. Cricket Fan. List Maker." />
 		<meta name="author" content="Dan Newman" />
@@ -56,11 +56,73 @@
 		<script src="https://cdn.usefathom.com/script.js" data-site="YGLQBNIN" defer></script>
 	</head>
 
-	<body>
+	<body id="top">
 		<header>
 			<h1>@danserif</h1>
 			<p class="caption">&#8985; danserif.com <span class="opacity-light">(URL)</span></p>
 		</header>
+
+		<nav>
+			<ul>
+				<li class="label">[Menu]</li>
+				<li><a href="/newsletter/" onclick="fathom.trackGoal('Newsletter', 0);" title="📬">Newsletter</a></li>
+				<li><a href="/about/" onclick="fathom.trackGoal('About', 0);" title="🧔‍♂️">About</a></li>
+			</ul>
+			<!-- MOBILE -->
+			<div class="mobile menu">
+				<ul id="menu">
+					<li class="title">[Menu]</li>
+					<li class="link"><a href="/newsletter/" onclick="fathom.trackGoal('Newsletter', 0);" title="📬">Newsletter</a></li>
+					<li class="link"><a href="/about/" onclick="fathom.trackGoal('About', 0);" title="🧔‍♂️">About</a></li>
+					<li class="title">[Contact]</li>
+					<li class="inline">
+						<span class="opacity">Email:</span>
+						<a href="mailto:dan@newman.is" onclick="fathom.trackEvent('Email', 0);" title="📧">dan <span class="opacity-light">[at]</span> newman <span class="opacity-light">[dot]</span> is</a>
+					</li>
+					<li class="inline">
+						<span class="opacity">Follow:</span> <a href="https://linkedin.com/in/danserif" onclick="fathom.trackEvent('LinkedIn', 0);" title="🔗">LinkedIn</a> <span class="opacity-light">/</span>
+						<a href="https://bsky.app/profile/danserif.com" onclick="fathom.trackEvent('Bluesky', 0);" title="🦋">Bluesky</a>
+						<span class="opacity-light">/</span>
+						<a href="https://mastodon.social/@danserif" onclick="fathom.trackEvent('Mastodon', 0);" title="🐘">Mastodon</a>
+					</li>
+					<li class="logo">
+						<a href="/">
+							<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="Layer_1" x="0" y="0" style="enable-background: new 0 0 109 82" version="1.1" viewBox="0 0 109 82">
+								<style>
+									.st0 {
+										fill: #ffffff;
+									}
+								</style>
+								<path
+									d="M80 31.7v49.9h9V34.1c0-4.3 4.1-4.7 5.5-4.7s5.5.3 5.5 4.7v47.5h9V31.7c0-10.4-11.4-11.3-14.5-11.3S80 21.3 80 31.7zM71.7 81.7v-69c0-10.4-13.1-12-16.3-12s-16.3 1.6-16.3 12v69h9.7V56.1H62v25.6h9.7zm-22.9-36V15.1c0-4.3 5.1-4.7 6.6-4.7s6.6.3 6.6 4.7v30.6H48.8z"
+									class="st0"
+								/>
+								<path
+									d="M.4 52.7v-31h16.2c4.7 0 14.3 1.2 14.3 14.4v31.2c0 13.2-9.6 14.4-14.3 14.4H.4v-29zm9.7-.1v-23h4.7c3 0 6.4.2 6.4 8.9v25.9c0 8.7-3.4 8.9-6.4 8.9h-4.7V52.6z"
+									style="fill-rule: evenodd; clip-rule: evenodd; fill: #ffffff"
+								/>
+							</svg>
+						</a>
+						<span class="caption opacity">&#8985; logo.svg <span class="opacity-light">(Braun & Dieter Rams Homage)</span></span>
+					</li>
+				</ul>
+				<a href="javascript:void(0);" onclick="mobileMenu()">
+					<i class="icon">
+						<svg width="15" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.75.75h14M.75 10.75h14M.75 5.75h14" stroke="#fff" stroke-linejoin="round" /></svg
+					></i>
+				</a>
+				<script>
+					function mobileMenu() {
+						var x = document.getElementById("menu");
+						if (x.style.display === "block") {
+							x.style.display = "none";
+						} else {
+							x.style.display = "block";
+						}
+					}
+				</script>
+			</div>
+		</nav>
 
 		<hr />
 
@@ -68,18 +130,35 @@
 			<section class="intro">
 				<!-- ABOUT -->
 				<h2>[About]</h2>
+				<h3>Kia ora. Hello.</h3>
 				<p>
-					Kia ora. Hello. I’m <a href="https://dan.newman.is" onclick="fathom.trackEvent('Portfolio', 0);" title="💼">Dan Newman</a> <span class="opacity">(aka @danserif)</span> and I live in Te Whanganui-a-Tara
+					I’m <a href="/about/" onclick="fathom.trackEvent('Portfolio', 0);" title="🧔‍♂️">Dan Newman</a> <span class="opacity">(aka @danserif)</span> and I live in Te Whanganui-a-Tara
 					<span class="opacity">(Wellington),</span> Aotearoa <span class="opacity no-wrap">(New Zealand)</span> with my partner
 					<a href="https://anoushkaisaac.com" onclick="fathom.trackEvent('Noush', 0);" title="🖤">Noush</a> and our dog Ada. Together we run
-					<!--<a href="https://knolling.studio" onclick="fathom.trackEvent('Office', 0);" title="📐">Knolling</a>-->Knolling, a design studio and family office.
+					<!--<a href="https://knolling.studio" onclick="fathom.trackEvent('Office', 0);" title="📐">Knolling</a>-->Knolling, a family office and design studio focused on making our own products. If youʻd like to get in
+					touch, you can send me an <a href="mailto:dan@newman.is" onclick="fathom.trackEvent('Email', 0);" title="📧">email</a>.
 				</p>
-				<p>This site is a list of links to where you can find me on the Internet.</p>
+				<p>This site is home to my <a href="/newsletter/" onclick="fathom.trackGoal('Newsletter', 0);" title="📬">newsletter</a>, and a list of all the places where you can find me on the Internet.</p>
 			</section>
 			<section class="tables">
 				<div class="row">
 					<div class="column-50">
 						<div class="column-25">
+							<!-- NEWSLETTER -->
+							<h3>[Newsletter]</h3>
+							<table>
+								<colgroup>
+									<col style="width: 20%" />
+									<col style="width: 80%" />
+								</colgroup>
+								<tr>
+									<td>
+										<a href="/newsletter/" class="highlight" onclick="fathom.trackEvent('Subsribe', 0);" title="📬">Subscribe</a>
+									</td>
+									<td><span class="opacity-dark desktop">~/</span><span class="opacity-dark hide">danserif.com/</span><span class="opacity">newsletter</span></td>
+									<td class="arrow"><a href="/newsletter/" class="highlight" onclick="fathom.trackEvent('Post', 0);" title="📬">&rarr;</a></td>
+								</tr>
+							</table>
 							<!-- URLS -->
 							<h3>[URLs]</h3>
 							<table>
@@ -100,6 +179,11 @@
 								<tr class="opacity-dark hide">
 									<td>knolling.studio</td>
 									<td>Office</td>
+									<td>Coming Soon</td>
+								</tr>
+								<tr class="opacity-dark hide">
+									<td>****.********</td>
+									<td>TBC</td>
 									<td>Coming Soon</td>
 								</tr>
 							</table>
@@ -144,12 +228,12 @@
 								</tr>
 								<tr>
 									<td><a href="https://bsky.app/profile/danserif.com" onclick="fathom.trackEvent('Bluesky', 0);" title="🦋">Bluesky</a></td>
-									<td><span class="opacity-dark hide">bsky.app/profile/ </span><span class="opacity">@danserif.com</span></td>
+									<td><span class="opacity-dark hide">bsky.app/profile/</span><span class="opacity">@danserif.com</span></td>
 									<td class="arrow"><a href="https://bsky.app/profile/danserif.com" onclick="fathom.trackEvent('Bluesky', 0);" title="🦋">&nearr;</a></td>
 								</tr>
 								<tr>
 									<td><a href="https://mastodon.social/@danserif" onclick="fathom.trackEvent('Mastodon', 0);" title="🐘">Mastodon</a></td>
-									<td><span class="opacity">@danserif</span> <span class="opacity-dark">@mastodon.social</span></td>
+									<td><span class="opacity">@danserif</span><span class="opacity-dark">@mastodon.social</span></td>
 									<td class="arrow"><a href="https://mastodon.social/@danserif" onclick="fathom.trackEvent('Mastodon', 0);" title="🐘">&nearr;</a></td>
 								</tr>
 								<tr>
@@ -172,9 +256,9 @@
 									<col style="width: 80%" />
 								</colgroup>
 								<tr>
-									<td><a href="https://linkedin.com/in/danserif" onclick="fathom.trackEvent('LinkedIn', 0);" title="📄">LinkedIn</a></td>
+									<td><a href="https://linkedin.com/in/danserif" onclick="fathom.trackEvent('LinkedIn', 0);" title="🔗">LinkedIn</a></td>
 									<td><span class="opacity-dark">linkedin.com/in/</span><span class="opacity">danserif</span></td>
-									<td class="arrow"><a href="https://linkedin.com/in/danserif" onclick="fathom.trackEvent('LinkedIn', 0);" title="📄">&nearr;</a></td>
+									<td class="arrow"><a href="https://linkedin.com/in/danserif" onclick="fathom.trackEvent('LinkedIn', 0);" title="🔗">&nearr;</a></td>
 								</tr>
 								<tr>
 									<td>
@@ -211,26 +295,38 @@
 						<div class="column-25">
 							<!-- COLOPHON -->
 							<h3>[Colophon]</h3>
-							<table>
+							<table class="colophon">
 								<colgroup>
 									<col style="width: 20%" />
 									<col style="width: 80%" />
 								</colgroup>
 								<tr>
-									<td><a href="https://usgraphics.com/products/berkeley-mono" onclick="fathom.trackEvent('Fonts', 0);" title="🔠">Fonts</a></td>
-									<td><span class="opacity-dark hide">U.S. Graphics —</span> <span class="opacity">Berkeley Mono</span></td>
-									<td class="arrow"><a href="https://usgraphics.com/products/berkeley-mono" onclick="fathom.trackEvent('Fonts', 0);" title="🔠">&nearr;</a></td>
-								</tr>
-								<tr>
-									<td><a href="https://github.com/danserif/danserif.com" onclick="fathom.trackEvent('Stack', 0);" title="🗄️">Stack</a></td>
+									<td class="opacity">Fonts</td>
 									<td>
-										<span class="opacity-dark hide">GitHub Pages — </span><span class="opacity-dark"><</span><span class="opacity">HTML</span><span class="opacity-dark">/></span> <span class="opacity">CSS</span
-										><span class="opacity-dark">{}</span> <span class="opacity">JS</span><span class="opacity-dark">();</span>
+										<a href="https://usgraphics.com/products/berkeley-mono" onclick="fathom.trackEvent('Berkeley Mono', 0);" title="🔠"
+											><span class="opacity-dark hide">U.S. Graphics — </span><span class="opacity-light">Berkeley Mono</span></a
+										>
 									</td>
-									<td class="arrow"><a href="https://github.com/danserif/danserif.com" onclick="fathom.trackEvent('Stack', 0);" title="🗄️">&nearr;</a></td>
 								</tr>
 								<tr>
-									<td>Time<span class="hide">zone</span></td>
+									<td></td>
+									<td>
+										<a href="https://klim.co.nz/collections/untitled/" onclick="fathom.trackEvent('Untitled', 0);" title="🔠"
+											><span class="opacity-dark hide">Klim Type Foundry — </span><span class="opacity-light">Untitled Collection</span></a
+										>
+									</td>
+								</tr>
+								<tr>
+									<td class="opacity">Stack</td>
+									<td>
+										<a href="https://github.com/danserif/danserif.com" onclick="fathom.trackEvent('Stack', 0);" title="🗄️"
+											><span class="opacity-dark hide">GitHub Pages — </span><span class="opacity-dark"><</span><span class="opacity-light">HTML</span><span class="opacity-dark">/></span>
+											<span class="opacity-light">CSS</span><span class="opacity-dark">{}</span> <span class="opacity-light">JS</span><span class="opacity-dark">();</span></a
+										>
+									</td>
+								</tr>
+								<tr>
+									<td class="opacity">Time<span class="hide">zone</span></td>
 									<td>
 										<span id="clock"></span>
 										<script>
@@ -276,15 +372,13 @@
 											updateClock();
 										</script>
 									</td>
-									<td class="arrow"></td>
 								</tr>
 								<tr>
-									<td>Version</td>
+									<td class="opacity">Version</td>
 									<td>
-										<span class="opacity-dark hide">Updated — </span><span class="opacity">08<span class="opacity-light">/</span>02<span class="opacity-light">/</span>2025</span>
+										<span class="opacity-dark hide">Updated — </span><span class="opacity">29<span class="opacity-light">/</span>03<span class="opacity-light">/</span>2025</span>
 										<span class="opacity-dark">[DN-01]</span>
 									</td>
-									<td class="arrow"></td>
 								</tr>
 							</table>
 						</div>
@@ -319,7 +413,15 @@
 				</p>
 				<p class="caption">&#8985; list.txt <span class="opacity-light">(Bio)</span></p>
 			</div>
-			<p class="caption"><span class="opacity-light">Copyright &copy; 1982—2025.</span></p>
+			<div class="back desktop">
+				<p class="top"><a href="/#top" class="hover">&uarr;</a></p>
+				<p class="caption">&#8985; #top <span class="opacity-light">(Link)</span></p>
+			</div>
+			<hr class="desktop" />
+			<p class="caption">
+				Brought to you by the letter D <span class="opacity-light">[U+0044].</span><br />
+				<span class="opacity-light">Copyright &copy; 1982—2025.</span>
+			</p>
 		</footer>
 	</body>
 </html>

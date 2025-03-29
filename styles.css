@@ -95,6 +95,7 @@ a {
 	color: #dddddd;
 	outline: none;
 	text-decoration: underline;
+	text-underline-offset: 3px;
 }
 a:visited {
 	color: #dddddd;
@@ -135,6 +136,7 @@ hr {
 	border: 0;
 	border-top: 1px dashed #161616;
 	margin: 1em 0;
+	clear: both;
 }
 
 ins {
@@ -223,7 +225,7 @@ nav ol {
 table {
 	border-collapse: collapse;
 	display: block;
-	padding-bottom: 66px;
+	padding-bottom: 70px;
 	width: 100%;
 }
 tr {
@@ -235,7 +237,7 @@ tr {
 td {
 	vertical-align: middle;
 	padding: 15px 0 15px 0;
-	line-height: 1.4;
+	line-height: 1.5;
 }
 td:first-of-type {
 	min-width: 240px;
@@ -244,6 +246,30 @@ td:last-child {
 	padding-right: 0;
 	text-align: right;
 	white-space: nowrap;
+	min-width: 100px;
+}
+
+table a {
+	text-decoration: none;
+	display: block;
+}
+
+td.arrow {
+	text-decoration: none;
+	font-size: 22px;
+	line-height: 0.6;
+	min-width: 40px;
+}
+
+td:first-child {
+	vertical-align: top;
+}
+
+.colophon td:last-child,
+.awards td:last-child {
+	padding-right: 0;
+	text-align: left;
+	white-space: wrap;
 	min-width: 100px;
 }
 
@@ -266,24 +292,84 @@ td:last-child {
 
 body {
 	padding: 40px 60px 40px 60px;
+	max-width: 2880px;
 }
 
 header {
-	padding: 20px 0 40px 0;
+	float: left;
+	padding: 10px 0 40px 0;
+}
+
+nav {
+	float: right;
+}
+
+nav ul {
+	padding: 30px 0 0 0;
+}
+
+nav ul li {
+	display: inline;
+	font-size: 14px;
+	padding-left: 120px;
+}
+
+nav a {
+	color: #ffffff;
+	text-decoration: none;
+	opacity: 0.8;
+}
+
+nav a:hover {
+	opacity: 0.4;
+	text-decoration: none;
+}
+
+nav li.label {
+	text-transform: uppercase;
+	opacity: 0.3;
+}
+
+.menu {
+	display: none;
 }
 
 .intro {
-	max-width: 1000px;
-	padding: 60px 0 80px 0;
+	max-width: 900px;
+	padding: 60px 0 0 0;
 }
 
-.intro p {
-	padding: 0 0 20px 0;
+.copy {
+	max-width: 600px;
+}
+
+.tables {
+	padding-top: 80px;
+}
+
+.image {
+	padding: 0 0px 70px 0;
+}
+
+.block {
+	padding-bottom: 70px;
+}
+
+.tdu {
+	/* ASCII */
+	font-size: 28px;
+	line-height: 1.1;
+	margin: 0;
+	padding: 0 0 15px 0;
+}
+
+img {
+	padding: 0 0 10px 0;
 }
 
 p {
 	color: #dddddd;
-	margin: 0 0 10px 0;
+	margin: 0 0 12px 0;
 }
 
 p.caption {
@@ -310,16 +396,16 @@ h3 {
 	opacity: 0.3;
 }
 
-table a {
-	text-decoration: none;
-	display: block;
+.intro h3 {
+	font-size: 24px;
+	line-height: 1.6;
+	text-transform: none;
+	opacity: 1;
 }
 
-td.arrow {
-	text-decoration: none;
-	font-size: 22px;
-	line-height: 0.6;
-	min-width: 40px;
+.untitled {
+	font-family: Untitled Sans;
+	font-size: 16px;
 }
 
 .row {
@@ -357,8 +443,14 @@ td.arrow {
 	opacity: 0.7;
 }
 
+h3.uppercase,
 .uppercase {
 	text-transform: uppercase;
+}
+
+p.large {
+	font-size: 24px;
+	padding-bottom: 5px;
 }
 
 .logo {
@@ -375,7 +467,7 @@ td.arrow {
 }
 
 .list {
-	padding: 20px 0 60px 0;
+	padding: 10px 0 40px 0;
 }
 
 .desktop {
@@ -386,9 +478,78 @@ td.arrow {
 	white-space: nowrap;
 }
 
+.hover {
+	text-decoration: none;
+}
+
+a.highlight,
+.highlight {
+	color: #aaff00;
+}
+
+.form {
+	max-width: 100%;
+	padding: 0 0 46px 0;
+}
+
+form {
+	display: flex;
+	width: 100%;
+	padding: 0 0 10px 0;
+}
+
+.form input {
+	font-size: 14px;
+}
+
+.email {
+	flex: 1;
+	padding: 12px 16px 12px 16px;
+	margin-right: 10px;
+	color: #000;
+	background-color: #fff;
+	border: 1px solid #fff;
+}
+
+::placeholder {
+	color: #666;
+}
+
+input:focus {
+	outline: none;
+	background-color: #f9f9f9;
+	border: 1px solid #ccc;
+}
+
+.subscribe {
+	color: #000;
+	background-color: #aaff00;
+	border: 1px solid #aaff00;
+	padding: 12px 32px 12px 32px;
+}
+
+.subscribe:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.disclaimer {
+	max-width: 600px;
+	padding: 20px 0 10px 0;
+}
+
 footer {
 	max-width: 620px;
-	padding: 80px 0 0 0;
+	padding: 40px 0 0 0;
+}
+
+footer .top {
+	font-size: 40px;
+	margin: 0;
+}
+
+.back {
+	padding: 0 0 20px 0;
 }
 
 /* ==|== media queries ======================================================
@@ -406,6 +567,28 @@ footer {
 	}
 	td:first-of-type {
 		min-width: 260px;
+	}
+	nav ul li {
+		padding-left: 100px;
+	}
+	.tdu {
+		font-size: 22px;
+	}
+	.form {
+		max-width: 90%;
+	}
+}
+@media only screen and (max-width: 1680px) {
+	.tdu {
+		font-size: 32px;
+	}
+}
+@media only screen and (max-width: 1530px) {
+	td:first-of-type {
+		min-width: 220px;
+	}
+	.tdu {
+		font-size: 26px;
 	}
 }
 @media only screen and (max-width: 1400px) {
@@ -426,16 +609,33 @@ footer {
 	td:first-of-type {
 		min-width: 360px;
 	}
+	.form {
+		max-width: 80%;
+	}
 }
 @media only screen and (max-width: 1200px) {
 	td:first-of-type {
 		min-width: 240px;
 	}
-}
-@media only screen and (max-width: 900px) {
+	nav ul li {
+		padding-left: 20px;
+	}
 	body {
 		font-size: 12px;
 		padding: 20px 20px;
+	}
+	.untitled {
+		font-size: 14px;
+	}
+	.form input {
+		font-size: 12px;
+	}
+	.form {
+		max-width: 60%;
+	}
+	.intro h3,
+	p.large {
+		font-size: 16px;
 	}
 	td:first-of-type {
 		min-width: 200px;
@@ -455,29 +655,89 @@ footer {
 		font-size: 10px;
 	}
 	header {
-		padding-bottom: 20px;
+		padding-bottom: 10px;
 	}
+	/* Mobile Menu */
+	header,
+	nav {
+		float: none;
+	}
+	nav ul {
+		display: none;
+		padding-top: 0px;
+	}
+	nav ul li {
+		padding-left: 0px;
+	}
+	.menu {
+		display: inline;
+	}
+	.mobile ul {
+		overflow: hidden;
+		position: relative;
+		margin-top: 12px;
+		margin-bottom: 40px;
+		border-top: 1px dashed #161616;
+	}
+	.mobile ul li {
+		display: block;
+		font-size: 12px;
+	}
+	.mobile ul li.link {
+		font-size: 16px;
+	}
+	.mobile li.title {
+		font-size: 10px;
+		opacity: 0.3;
+		text-transform: uppercase;
+		padding: 33px 0 15px 0;
+	}
+	.mobile a {
+		display: block;
+		line-height: 1.8em;
+	}
+	.mobile a i.icon {
+		display: block;
+		position: absolute;
+		right: 20px;
+		top: 40px;
+	}
+	.mobile li.logo {
+		padding-top: 60px;
+		display: block;
+	}
+	.mobile li.inline {
+		padding: 0 0 4px 0;
+	}
+	.mobile li.inline a {
+		display: inline;
+	}
+	/* ---- */
 	.intro {
 		padding-top: 20px;
-		padding-bottom: 40px;
 	}
-	p.caption {
+	p.caption,
+	.caption {
 		font-size: 10px;
 	}
 	table {
 		font-size: 12px;
 	}
+	.subscribe {
+		padding: 12px 16px 12px 16px;
+	}
+	.tdu {
+		font-size: 14px;
+	}
 	.logo svg {
 		width: 80px;
 	}
-	.desktop,
 	.tablet {
 		display: inline;
 	}
 	.logo {
 		padding-bottom: 10px;
 	}
-
 	.list {
 		padding: 10px 0 20px 0;
 	}
@@ -486,13 +746,33 @@ footer {
 		padding-bottom: 40px;
 	}
 }
-
+@media only screen and (max-width: 800px) {
+	.form {
+		max-width: 80%;
+	}
+}
 @media only screen and (max-width: 560px) {
 	td:first-of-type {
 		min-width: 130px;
 	}
 	.hide {
 		display: none;
+	}
+	.desktop {
+		display: inline;
+	}
+	.form {
+		max-width: 100%;
+	}
+	footer .desktop {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 420px) {
+	h1 {
+		font-size: 20px;
+		line-height: 28px;
 	}
 }
 
@@ -633,4 +913,25 @@ footer {
 	font-weight: 400;
 	font-display: block;
 	src: url("/fonts/berkeley-mono.woff2") format("woff2");
+}
+
+/* ==|== font styles =====================================================
+   Fonts: Untitled Collection by Klim Type Foundry
+   ========================================================================== */
+
+/* Sans */
+@font-face {
+	font-family: "Untitled Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-display: block;
+	src: url("/fonts/untitled-sans-regular.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Untitled Sans";
+	font-style: normal;
+	font-weight: 700;
+	font-display: block;
+	src: url("/fonts/untitled-sans-bold.woff2") format("woff2");
 }
