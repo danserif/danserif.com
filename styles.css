@@ -541,7 +541,6 @@ input:focus {
 }
 
 footer {
-	max-width: 620px;
 	padding: 40px 0 0 0;
 }
 
@@ -578,6 +577,9 @@ footer .top {
 	}
 	.form {
 		max-width: 90%;
+	}
+	footer .desktop {
+		display: block;
 	}
 }
 @media only screen and (max-width: 1680px) {
@@ -760,9 +762,6 @@ footer .top {
 	}
 	.form {
 		max-width: 100%;
-	}
-	footer .desktop {
-		display: block;
 	}
 }
 
