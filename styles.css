@@ -211,7 +211,8 @@ dd {
 	margin: 0 0 0 40px;
 }
 nav ul,
-nav ol {
+nav ol,
+.image ul {
 	list-style: none;
 	list-style-image: none;
 	margin: 0;
@@ -410,6 +411,10 @@ h3 {
 
 .mono {
 	font-family: Berkeley Mono;
+}
+
+.tiny {
+	font-size: 12px;
 }
 
 .row {
@@ -772,7 +777,6 @@ footer .top {
 		max-width: 100%;
 	}
 }
-
 @media only screen and (max-width: 420px) {
 	h1 {
 		font-size: 20px;
