@@ -760,7 +760,7 @@ footer .top {
 }
 @media only screen and (max-width: 560px) {
 	td:first-of-type {
-		min-width: 130px;
+		min-width: 120px;
 	}
 	.hide {
 		display: none;
