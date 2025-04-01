@@ -643,7 +643,6 @@ footer .top {
 	td:first-of-type {
 		min-width: 200px;
 	}
-
 	nav ul {
 		padding-top: 18px;
 	}
@@ -697,7 +696,10 @@ footer .top {
 		padding: 12px 16px 12px 16px;
 	}
 	.tdu {
-		font-size: 14px;
+		font-size: 16px;
+	}
+	.disclaimer {
+		max-width: 480px;
 	}
 	.logo svg {
 		width: 80px;
