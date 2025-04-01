@@ -624,6 +624,26 @@ footer .top {
 	}
 }
 @media only screen and (max-width: 1200px) {
+	.row {
+		display: flex;
+	}
+	.column-50 {
+		display: block;
+		flex: 50%;
+		margin-right: 30px;
+	}
+	.column-50:last-child {
+		margin-right: 0;
+	}
+	.column-25 {
+		display: block;
+		flex: 100%;
+		margin: 0;
+	}
+	td:first-of-type {
+		min-width: 200px;
+	}
+
 	nav ul {
 		padding-top: 18px;
 	}
@@ -641,7 +661,7 @@ footer .top {
 		font-size: 12px;
 	}
 	.form {
-		max-width: 60%;
+		max-width: 90%;
 	}
 	.intro h3,
 	p.large {
@@ -694,6 +714,25 @@ footer .top {
 	footer {
 		padding-top: 60px;
 		padding-bottom: 20px;
+	}
+}
+@media only screen and (max-width: 1040px) {
+	.row {
+		display: block;
+		width: 100%;
+	}
+	.column-50 {
+		display: block;
+		flex: 100%;
+		margin: 0;
+	}
+	.column-25 {
+		display: block;
+		flex: 100%;
+		margin: 0;
+	}
+	td:first-of-type {
+		min-width: 280px;
 	}
 }
 @media only screen and (max-width: 800px) {
