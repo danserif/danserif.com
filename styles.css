@@ -581,9 +581,6 @@ footer .top {
 	nav ul li {
 		padding-left: 100px;
 	}
-	.tdu {
-		font-size: 22px;
-	}
 	.form {
 		max-width: 90%;
 	}
@@ -596,34 +593,12 @@ footer .top {
 		font-size: 32px;
 	}
 }
-@media only screen and (max-width: 1530px) {
+@media only screen and (max-width: 1500px) {
 	.tdu {
-		font-size: 26px;
+		font-size: 24px;
 	}
 }
 @media only screen and (max-width: 1400px) {
-	.row {
-		display: block;
-		width: 100%;
-	}
-	.column-50 {
-		display: block;
-		flex: 100%;
-		margin: 0;
-	}
-	.column-25 {
-		display: block;
-		flex: 100%;
-		margin: 0;
-	}
-	td:first-of-type {
-		min-width: 280px;
-	}
-	.form {
-		max-width: 80%;
-	}
-}
-@media only screen and (max-width: 1200px) {
 	.row {
 		display: flex;
 	}
