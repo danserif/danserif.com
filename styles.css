@@ -627,7 +627,8 @@ footer .top {
 	.untitled {
 		font-size: 14px;
 	}
-	.form input {
+	.form input,
+	.form button {
 		font-size: 12px;
 	}
 	.form {
