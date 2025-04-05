@@ -144,22 +144,24 @@
 									</div>
 								</div>
 								<script>
-									const params = new URLSearchParams(window.location.search);
+									window.addEventListener("DOMContentLoaded", function () {
+										const params = new URLSearchParams(window.location.search);
 
-									if (params.has("confirmed")) {
-										document.getElementById("thank-you").innerHTML = `
-      <p class="highlight">Thanks for confirming your subscription! You’re officially on the list.</p>
-      <div class="disclaimer">
-        <p>
-											When the newsletter is sent you’ll also be able to read it here. While you wait, follow me on
-											<a href="https://linkedin.com/in/danserif" onclick="fathom.trackEvent('LinkedIn', 0);" title="🔗">LinkedIn</a>,
-											<a href="https://bsky.app/profile/danserif.com" onclick="fathom.trackEvent('Bluesky', 0);" title="🦋">Bluesky</a>,
-											<a href="https://mastodon.social/@danserif" onclick="fathom.trackEvent('Mastodon', 0);" title="🐘">Mastodon</a>, or
-											<a href="https://twitter.com/danserif" onclick="fathom.trackEvent('Twitter', 0);" title="💀"><s>Twitter</s></a> <span class="opacity-dark">(RIP).</span>
-										</p>
-      </div>
-    `;
-									}
+										if (params.has("confirmed")) {
+											document.getElementById("thank-you").innerHTML = `
+        <p class="highlight">Thanks for confirming your subscription! You’re officially on the list.</p>
+        <div class="disclaimer">
+          <p>
+            When the newsletter is sent you’ll also be able to read it here. While you wait, follow me on
+            <a href="https://linkedin.com/in/danserif" onclick="fathom.trackEvent('LinkedIn', 0);" title="🔗">LinkedIn</a>,
+            <a href="https://bsky.app/profile/danserif.com" onclick="fathom.trackEvent('Bluesky', 0);" title="🦋">Bluesky</a>,
+            <a href="https://mastodon.social/@danserif" onclick="fathom.trackEvent('Mastodon', 0);" title="🐘">Mastodon</a>, or
+            <a href="https://twitter.com/danserif" onclick="fathom.trackEvent('Twitter', 0);" title="💀"><s>Twitter</s></a> <span class="opacity-dark">(RIP).</span>
+          </p>
+        </div>
+      `;
+										}
+									});
 								</script>
 							</div>
 							<!-- COMING SOON -->
