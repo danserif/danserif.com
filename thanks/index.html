@@ -131,17 +131,36 @@
 							<!-- THANKS -->
 							<h3>[Thanks]</h3>
 							<div class="form">
-								<div class="disclaimer">
-									<p class="highlight">Thanks for subscribing!</p>
-									<p>
-										Add
-										<a href="mailto:newsletter@danserif.com" title="📧" class="hover"
-											><span class="opacity">newsletter</span> <span class="opacity-dark">[at]</span> <span class="opacity">danserif</span> <span class="opacity-dark">[dot]</span> <span class="opacity">com</span></a
-										>
-										to your contacts so my emails dont’t end up in spam, and check your email to opt in! <span class="opacity-dark">\m/</span>
-									</p>
-									<p>When the newsletter is sent you’ll also be able to read it here.</p>
+								<div id="thank-you">
+									<p class="highlight">Thanks for signing up! Check your email to confirm your subscription...</p>
+									<div class="disclaimer">
+										<p>
+											If it’s not in your inbox, try your junk<span class="opacity">/</span>spam folder and then add
+											<a href="mailto:newsletter@danserif.com" title="📧" class="hover"
+												><span class="opacity">newsletter</span> <span class="opacity-dark">[at]</span> <span class="opacity">danserif</span> <span class="opacity-dark">[dot]</span> <span class="opacity">com</span></a
+											>
+											to your contacts. <span class="opacity-dark">\m/</span>
+										</p>
+									</div>
 								</div>
+								<script>
+									const params = new URLSearchParams(window.location.search);
+
+									if (params.has("confirmed")) {
+										document.getElementById("thank-you").innerHTML = `
+      <p class="highlight">Thanks for confirming your subscription! You’re officially on the list.</p>
+      <div class="disclaimer">
+        <p>
+											When the newsletter is sent you’ll also be able to read it here. While you wait, follow me on
+											<a href="https://linkedin.com/in/danserif" onclick="fathom.trackEvent('LinkedIn', 0);" title="🔗">LinkedIn</a>,
+											<a href="https://bsky.app/profile/danserif.com" onclick="fathom.trackEvent('Bluesky', 0);" title="🦋">Bluesky</a>,
+											<a href="https://mastodon.social/@danserif" onclick="fathom.trackEvent('Mastodon', 0);" title="🐘">Mastodon</a>, or
+											<a href="https://twitter.com/danserif" onclick="fathom.trackEvent('Twitter', 0);" title="💀"><s>Twitter</s></a> <span class="opacity-dark">(RIP).</span>
+										</p>
+      </div>
+    `;
+									}
+								</script>
 							</div>
 							<!-- COMING SOON -->
 							<h3>[Coming Soon]</h3>
@@ -166,8 +185,8 @@
 							<!-- GIF -->
 							<h3>[GIF]</h3>
 							<div class="image">
-								<img srcset="/images/email-montage.gif" style="width: 100%; max-width: 1400px; aspect-ratio: 1200 / 675" alt="[TDU]" />
-								<p class="caption">&#8985; <span class="opacity-light">/images/</span>email-montage.gif <span class="opacity-light">(1.6mb)</span></p>
+								<img srcset="/images/email-subscription.gif" style="width: 100%; max-width: 1400px; aspect-ratio: 1200 / 675" alt="[TDU]" />
+								<p class="caption">&#8985; <span class="opacity-light">/images/</span>email-subscription.gif <span class="opacity-light">(112kb)</span></p>
 							</div>
 						</div>
 					</div>
