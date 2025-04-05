@@ -147,7 +147,7 @@
 									window.addEventListener("DOMContentLoaded", function () {
 										const params = new URLSearchParams(window.location.search);
 
-										if (params.has("confirmed")) {
+										if (params.get("status") === "confirmed") {
 											document.getElementById("thank-you").innerHTML = `
         <p class="highlight">Thanks for confirming your subscription! You’re officially on the list.</p>
         <div class="disclaimer">
