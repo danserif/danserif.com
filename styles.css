@@ -352,6 +352,11 @@ nav li.label {
 	padding: 0 0px 70px 0;
 }
 
+.image ul {
+	padding-top: 25px;
+	padding-bottom: 35px;
+}
+
 .block {
 	padding-bottom: 70px;
 }
@@ -626,6 +631,9 @@ footer .top {
 	}
 	.untitled {
 		font-size: 14px;
+	}
+	.tiny {
+		font-size: 10px;
 	}
 	.form input,
 	.form button {
