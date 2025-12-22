@@ -66,16 +66,21 @@
 		<nav>
 			<ul>
 				<li class="label">[Menu]</li>
-				<li><a href="/newsletter/" onclick="fathom.trackGoal('Newsletter', 0);" title="📬">Newsletter</a></li>
-				<li><a href="/about/" onclick="fathom.trackGoal('About', 0);" title="🧔‍♂️">About</a></li>
+				<li><a href="/newsletter/" onclick="fathom.trackEvent('Newsletter', 0);" title="📬">Newsletter</a></li>
+				<li><a href="/about/" onclick="fathom.trackEvent('About', 0);" title="🧔‍♂️">About</a></li>
 			</ul>
 			<!-- MOBILE -->
 			<div class="mobile menu">
 				<ul id="menu">
 					<li class="title">[Menu]</li>
-					<li class="link"><a href="/" onclick="fathom.trackGoal('Home', 0);" title="⏪">Home</a></li>
-					<li class="link"><a href="/newsletter/" onclick="fathom.trackGoal('Newsletter', 0);" title="📬">Newsletter</a></li>
-					<li class="link"><a href="/about/" onclick="fathom.trackGoal('About', 0);" title="🧔‍♂️">About</a></li>
+					<li class="link"><a href="/" onclick="fathom.trackEvent('Home', 0);" title="⏪">Home</a></li>
+					<li class="link"><a href="/newsletter/" onclick="fathom.trackEvent('Newsletter', 0);" title="📬">Newsletter</a></li>
+					<li class="link"><a href="/about/" onclick="fathom.trackEvent('About', 0);" title="🧔‍♂️">About</a></li>
+					<!--<li class="title">[URLS]</li>
+					<li class="inline"><span class="opacity">Work:</span> <a href="https://daas.graphics" onclick="fathom.trackEvent('DaaS', 0);" title="💳">daas.graphics &rarr;</a></li>
+					<li class="inline"><span class="opacity">Store:</span> <a href="https://dart.shop" onclick="fathom.trackEvent('Store', 0);" title="🛒">dart.shop &rarr;</a></li>
+					<li class="inline"><span class="opacity">Office:</span> <a href="https://knolling.studio" onclick="fathom.trackEvent('Office', 0);" title="📐">knolling.studio &rarr;</a></li>
+					<li class="inline"><span class="opacity">Portfolio:</span> <a href="https://dan.newman.is" onclick="fathom.trackEvent('Portfolio', 0);" title="💼">dan.newman.is &rarr;</a></li>-->
 					<li class="title">[Contact]</li>
 					<li class="inline">
 						<span class="opacity">Email:</span>
@@ -139,7 +144,7 @@
 					<!--<a href="https://knolling.studio" onclick="fathom.trackEvent('Office', 0);" title="📐">Knolling</a>-->Knolling, a family office and design studio focused on making our own products. If youʻd like to get in
 					touch, you can send me an <a href="mailto:dan@newman.is" onclick="fathom.trackEvent('Email', 0);" title="📧">email</a>.
 				</p>
-				<p>This site is home to my <a href="/newsletter/" onclick="fathom.trackGoal('Newsletter', 0);" title="📬">newsletter</a>, and a list of places where you can find me on the Internet.</p>
+				<p>This site is home to my <a href="/newsletter/" onclick="fathom.trackEvent('Newsletter', 0);" title="📬">newsletter</a>, and a list of places where you can find me on the Internet.</p>
 			</section>
 			<section class="tables">
 				<div class="row">
@@ -154,17 +159,17 @@
 								</colgroup>
 								<!--<tr>
 									<td>
-										<a href="/newsletter/" class="highlight" onclick="fathom.trackEvent('Subscribe', 0);" title="📬">Latest</a>
+										<a href="/newsletter/" class="highlight" onclick="fathom.trackEvent('Issue', 0);" title="📬">Latest</a>
 									</td>
 									<td><span class="opacity-dark desktop">~/</span><span class="opacity-dark hide">TDU-01:</span> <span class="opacity">Fractured</span></td>
-									<td class="arrow"><a href="/newsletter/" class="highlight" onclick="fathom.trackEvent('Post', 0);" title="📬">&rarr;</a></td>
+									<td class="arrow"><a href="/newsletter/" class="highlight" onclick="fathom.trackEvent('Issue', 0);" title="📬">&rarr;</a></td>
 								</tr>-->
 								<tr>
 									<td>
 										<a href="/newsletter/" class="highlight" onclick="fathom.trackEvent('Subscribe', 0);" title="📬">Subscribe</a>
 									</td>
 									<td><span class="opacity-dark desktop">~/</span><span class="opacity-dark hide">danserif.com/</span><span class="opacity">newsletter</span></td>
-									<td class="arrow"><a href="/newsletter/" class="highlight" onclick="fathom.trackEvent('Post', 0);" title="📬">&rarr;</a></td>
+									<td class="arrow"><a href="/newsletter/" class="highlight" onclick="fathom.trackEvent('Subscribe', 0);" title="📬">&rarr;</a></td>
 								</tr>
 							</table>
 							<!-- URLS -->
