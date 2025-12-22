@@ -134,7 +134,7 @@ hr {
 	display: block;
 	height: 1px;
 	border: 0;
-	border-top: 1px dashed #161616;
+	border-top: 1px dashed #1a1a1a;
 	margin: 1em 0;
 	clear: both;
 }
@@ -232,8 +232,8 @@ table {
 tr {
 	padding: 0;
 	margin: 0;
-	border-top: 1px dashed #161616;
-	border-bottom: 1px dashed #161616;
+	border-top: 1px dashed #1a1a1a;
+	border-bottom: 1px dashed #1a1a1a;
 }
 td {
 	vertical-align: middle;
@@ -254,7 +254,9 @@ table a {
 	text-decoration: none;
 	display: block;
 }
-
+.arrow {
+	font-size: 22px;
+}
 td.arrow {
 	text-decoration: none;
 	font-size: 22px;
@@ -357,7 +359,8 @@ nav li.label {
 	padding-bottom: 35px;
 }
 
-.block {
+.block,
+.markdown {
 	padding-bottom: 70px;
 }
 
@@ -385,8 +388,8 @@ p.caption {
 
 h1 {
 	font-weight: 400;
-	font-size: 40px;
-	line-height: 56px;
+	font-size: 32px;
+	line-height: 40px;
 	padding: 0;
 	margin: 0;
 }
@@ -568,12 +571,56 @@ footer .top {
 	padding: 0 0 20px 0;
 }
 
+/* PROSE MARKDOWN STYLES */
+
+.markdown {
+	max-width: 640px;
+	/*font-family: untitled sans, sans-serif;
+	font-size: 16px;*/
+}
+.markdown h2 {
+	font-size: 26px;
+	line-height: 1.6;
+	opacity: 1;
+	padding: 20px 0 0 0;
+}
+.markdown img {
+	max-width: 640px;
+}
+.markdown hr {
+	margin: 2em 0;
+}
+.markdown p {
+	color: #d2d2d2;
+}
+figure {
+	margin: 0;
+	padding: 10px 0 30px 0;
+}
+figcaption {
+	opacity: 0.3;
+}
+.markdown a {
+	color: #aaff00;
+}
+.markdown a:hover {
+	opacity: 0.9;
+}
+
+.markdown p.links a {
+	color: #dddddd;
+}
+
 /* ==|== media queries ======================================================
    EXAMPLE Media Query for Responsive Design.
    This example overrides the primary ('mobile first') styles
    Modify as content requires.
    ========================================================================== */
 @media only screen and (max-width: 2660px) {
+	body {
+		max-width: 1640px;
+		margin: auto;
+	}
 	.column-50 {
 		display: block;
 		flex: 100%;
@@ -584,8 +631,12 @@ footer .top {
 	td:first-of-type {
 		min-width: 240px;
 	}
+	h1 {
+		font-size: 28px;
+		line-height: 36px;
+	}
 	nav ul li {
-		padding-left: 100px;
+		padding-left: 20px;
 	}
 	.form {
 		max-width: 90%;
@@ -643,7 +694,8 @@ footer .top {
 		max-width: 90%;
 	}
 	.intro h3,
-	p.large {
+	p.large,
+	.markdown h2 {
 		font-size: 20px;
 		line-height: 1.4;
 	}
@@ -651,8 +703,8 @@ footer .top {
 		min-width: 30px;
 	}
 	h1 {
-		font-size: 24px;
-		line-height: 32px;
+		font-size: 22px;
+		line-height: 28px;
 	}
 	h2,
 	h3 {
@@ -747,7 +799,7 @@ footer .top {
 		position: relative;
 		margin-top: 12px;
 		margin-bottom: 40px;
-		border-top: 1px dashed #161616;
+		border-top: 1px dashed #1a1a1a;
 	}
 	.mobile ul li {
 		display: block;
@@ -770,7 +822,7 @@ footer .top {
 		display: block;
 		position: absolute;
 		right: 20px;
-		top: 40px;
+		top: 38px;
 	}
 	.mobile li.logo {
 		padding-top: 150px;
@@ -797,11 +849,14 @@ footer .top {
 	.form {
 		max-width: 100%;
 	}
+	.mobile a i.icon {
+		top: 36px;
+	}
 }
 @media only screen and (max-width: 420px) {
 	h1 {
-		font-size: 20px;
-		line-height: 28px;
+		font-size: 18px;
+		line-height: 26px;
 	}
 }
 
