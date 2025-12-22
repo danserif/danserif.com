@@ -54,7 +54,7 @@
 		<nav>
 			<ul>
 				<li class="label">[Menu]</li>
-				<li><a class="highlight" href="/newsletter/" onclick="fathom.trackEvent('Newsletter', 0);" title="📬">Newsletter</a></li>
+				<li><a class="highlight" href="/newsletter/" onclick="fathom.trackEvent('Newsletter', 0);" title="📬">Newsletter</a> <span class="opacity-dark">(1)</span></li>
 				<li><a href="/about/" onclick="fathom.trackEvent('About', 0);" title="🧔‍♂️">About</a></li>
 			</ul>
 			<!-- MOBILE -->
@@ -184,8 +184,8 @@
 								});
 							</script>
 
-							<!-- COMING SOON -->
-							<h3>[Coming Soon]</h3>
+							<!-- WIP -->
+							<h3>[WIP]</h3>
 							<div class="block">
 								<p>0% [ <span class="highlight">█ █ █ ▄</span> _ _ _ _ _ _ ] 100%</p>
 							</div>
@@ -197,9 +197,11 @@
 									<col style="width: 80%" />
 								</colgroup>
 								<tr>
-									<td><span class="opacity">TDU-01</span></td>
-									<td><span class="opacity-dark">Fractured</span></td>
-									<td><span class="opacity-dark hide">Sent</span></td>
+									<td>
+										<a href="/newsletter/01-fractured/" onclick="fathom.trackEvent('Issue', 0);" title="📬">TDU-01 <span class="highlight uppercase">(New)</span></a>
+									</td>
+									<td><span class="opacity uppercase">Fractured</span></td>
+									<td class="arrow"><a href="/newsletter/01-fractured/" onclick="fathom.trackEvent('Issue', 0);" title="📬">&rarr;</a></td>
 								</tr>
 								<tr>
 									<td><span class="opacity">TDU-02</span></td>
