@@ -574,9 +574,7 @@ footer .top {
 /* PROSE MARKDOWN STYLES */
 
 .markdown {
-	max-width: 640px;
-	/*font-family: untitled sans, sans-serif;
-	font-size: 16px;*/
+	max-width: 760px;
 }
 .markdown h2 {
 	font-size: 26px;
@@ -585,7 +583,7 @@ footer .top {
 	padding: 20px 0 0 0;
 }
 .markdown img {
-	max-width: 640px;
+	max-width: 100%;
 }
 .markdown hr {
 	margin: 2em 0;
@@ -751,6 +749,9 @@ figcaption {
 	}
 }
 @media only screen and (max-width: 1040px) {
+	body {
+		max-width: 800px;
+	}
 	.row {
 		display: block;
 		width: 100%;
