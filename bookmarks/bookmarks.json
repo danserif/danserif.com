@@ -1,0 +1,452 @@
+{
+	"columns": [
+		{
+			"categories": [
+				{
+					"name": "Latest",
+					"note": "(WIP) Recent links of interest.",
+					"links": [
+						{
+							"title": "The (Real) New Aesthetic",
+							"url": "https://jamesbridle.com/works/the-new-aesthetic",
+							"urlDisplay": "jamesbridle.com/the-new-aesthetic",
+							"urlMobile": "jamesbridle.com"
+						},
+						{
+							"title": "A Call for New Aesthetics",
+							"titleMobile": "New Aesthetics",
+							"url": "https://newaesthetics.art"
+						},
+						{
+							"title": "Optik Studios",
+							"url": "https://www.optikstudies.com/?id=0079",
+							"urlDisplay": "optikstudies.com",
+							"note": "Interactive experiments with Three.js, Blender, etc."
+						},
+						{
+							"title": "Paper Mono",
+							"url": "https://github.com/paper-design/paper-mono",
+							"urlMobile": "github.com"
+						},
+						{
+							"title": "Mitos (Oxide)",
+							"url": "https://github.com/oxidecomputer/mitos",
+							"urlMobile": "github.com/oxidecomputer/",
+							"note": "ASCII generator built by Oxide Computer Company."
+						},
+						{
+							"title": "Making Software",
+							"url": "https://www.makingsoftware.com",
+							"note": "A reference manual for people who design and build software."
+						},
+						{
+							"title": "INTDEV",
+							"url": "https://internet.dev",
+							"note": "Internet Development Studio Company."
+						},
+						{
+							"title": "CSS Gridlines",
+							"url": "https://webkit.org/blog/17660/introducing-css-grid-lanes/",
+							"urlDisplay": "webkit.org/css-grid-lanes",
+							"urlMobile": "webkit.org"
+						}
+					]
+				},
+				{
+					"name": "Inspiration",
+					"note": "Daily dose of design.",
+					"links": [
+						{
+							"title": "Brand New (UC)",
+							"url": "https://www.underconsideration.com/brandnew",
+							"urlMobile": "underconsideration.com"
+						},
+						{
+							"title": "The Brand Identity",
+							"titleMobile": "T—BI",
+							"url": "https://the-brandidentity.com"
+						},
+						{
+							"title": "BP&O",
+							"url": "https://bpando.org"
+						},
+
+						{
+							"title": "Siteinspire",
+							"url": "https://www.siteinspire.com"
+						},
+						{
+							"title": "Visual Journal",
+							"url": "https://visualjournal.it"
+						},
+						{
+							"title": "Klim (FIU)",
+							"url": "https://klim.co.nz/in-use"
+						},
+						{
+							"title": "Cosmos",
+							"url": "https://cosmos.so/discover"
+						}
+					]
+				}
+			]
+		},
+		{
+			"categories": [
+				{
+					"name": "Foundries",
+					"note": "Favourite foundries and type studios.",
+					"links": [
+						{
+							"title": "Klim Type Foundry",
+							"titleMobile": "Klim",
+							"url": "https://www.klim.co.nz"
+						},
+						{
+							"title": "U.S. Graphics",
+							"url": "https://www.usgraphics.com"
+						},
+						{
+							"title": "Displaay Type Foundry",
+							"titleMobile": "Displaay",
+							"url": "https://displaay.net"
+						},
+						{
+							"title": "Frost Type",
+							"url": "https://www.frostype.xyz"
+						},
+						{
+							"title": "Lineto",
+							"url": "https://lineto.com"
+						},
+						{
+							"title": "Dinamo Typefaces",
+							"titleMobile": "Dinamo",
+							"url": "https://abcdinamo.com"
+						},
+						{
+							"title": "Mass-Driver",
+							"url": "https://mass-driver.com"
+						},
+						{
+							"title": "Extraset",
+							"url": "https://extraset.ch"
+						},
+						{
+							"title": "FAC3Type",
+							"url": "https://fac3type.xyz"
+						},
+						{
+							"title": "Family Type",
+							"url": "https://www.familytype.co"
+						},
+						{
+							"title": "Order Type Foundry",
+							"titleMobile": "OTF",
+							"url": "https://order.design/otf"
+						},
+						{
+							"title": "Monolith",
+							"url": "https://monolith.nz"
+						},
+						{
+							"title": "Florian Karsten Typefaces",
+							"titleMobile": "FKT",
+							"url": "https://fonts.floriankarsten.com"
+						},
+						{
+							"title": "GD Foundry",
+							"url": "https://foundry.gardedesign.se"
+						},
+						{
+							"title": "CoType Foundry",
+							"titleMobile": "CoType",
+							"url": "https://cotypefoundry.com"
+						},
+
+						{
+							"title": "Grilli Type",
+							"url": "https://www.grillitype.com"
+						}
+					]
+				},
+				{
+					"name": "Fonts",
+					"note": "In use, on my wishlist, or just good looking glyphs.",
+					"links": [
+						{
+							"title": "Berkeley Mono",
+							"url": "https://usgraphics.com/products/berkeley-mono",
+							"urlDisplay": "usgraphics.com/berkeley-mono",
+							"urlMobile": "usgraphics.com"
+						},
+						{
+							"title": "Die Grotesk",
+							"url": "https://klim.co.nz/fonts/die-grotesk",
+							"urlMobile": "klim.co.nz"
+						},
+						{
+							"title": "Söhne",
+							"url": "https://klim.co.nz/fonts/soehne",
+							"urlMobile": "klim.co.nz"
+						},
+						{
+							"title": "Untitled",
+							"url": "https://klim.co.nz/fonts/untitled",
+							"urlMobile": "klim.co.nz"
+						},
+						{
+							"title": "Pitch Sans",
+							"url": "https://klim.co.nz/fonts/pitch-sans",
+							"urlMobile": "klim.co.nz"
+						},
+
+						{
+							"title": "Departure Mono",
+							"url": "https://www.departuremono.com"
+						},
+						{
+							"title": "Commit Mono",
+							"url": "https://www.commitmono.com"
+						},
+						{
+							"title": "Universal Sans",
+							"url": "https://universalsans.com"
+						},
+						{
+							"title": "Adhesion",
+							"url": "https://foundry.basement.studio",
+							"urlMobile": "foundry.basement.studio"
+						},
+						{
+							"title": "OCR-X",
+							"url": "https://maxitype.com/typeface/ocr-x",
+							"urlMobile": "maxitype.com"
+						},
+						{
+							"title": "Gridlite (PE)",
+							"url": "https://rosettatype.com/GridlitePE",
+							"urlDisplay": "rosettatype.com/gridlite",
+							"urlMobile": "rosettatype.com"
+						},
+						{
+							"title": "LL Thermo",
+							"url": "https://lineto.com/typefaces/thermo",
+							"urlMobile": "lineto.com"
+						},
+						{
+							"title": "LL DMT",
+							"url": "https://lineto.com/typefaces/dmt-var-3-axis",
+							"urlDisplay": "lineto.com/typefaces/dmt",
+							"urlMobile": "lineto.com"
+						}
+					]
+				}
+			]
+		},
+		{
+			"categories": [
+				{
+					"name": "Studios / Designers",
+					"note": "(WIP) Favourite studios and portfolios.",
+					"links": [
+						{
+							"title": "Grafik",
+							"url": "https://grafik.co.nz"
+						},
+						{
+							"title": "Inhouse",
+							"url": "https://inhousedesign.co.nz"
+						},
+						{
+							"title": "Extended Whānau",
+							"url": "https://extendedwhanau.com"
+						},
+						{
+							"title": "DayMonthYear (DDMMYY)",
+							"url": "https://www.daymonthyear.com"
+						},
+						{
+							"title": "Sons & Co.",
+							"url": "https://sons.co.nz"
+						},
+						{
+							"title": "Experimental Jetset",
+							"url": "https://jetset.nl"
+						},
+						{
+							"title": "Smith & Diction",
+							"url": "https://smith-diction.com"
+						},
+
+						{
+							"title": "Stockholm Design Lab",
+							"titleMobile": "SDL",
+							"url": "https://www.stockholmdesignlab.se"
+						},
+						{
+							"title": "Order",
+							"url": "https://order.design"
+						},
+						{
+							"title": "Pentagram",
+							"url": "https://www.pentagram.com"
+						}
+					]
+				},
+				{
+					"name": "Resources",
+					"note": "Links I’ll forget about if they aren’t listed here.",
+					"links": [
+						{
+							"title": "Atlas of Type",
+							"url": "hhttps://type-atlas.xyz/news"
+						},
+						{
+							"title": "Type Foundry Directory",
+							"titleMobile": "Type Directory",
+							"url": "https://typefoundry.directory"
+						},
+						{
+							"title": "Future Fonts",
+							"url": "https://www.futurefonts.com"
+						},
+						{
+							"title": "text.makeup",
+							"url": "https://text.makeup",
+							"note": "Tool for debugging unicode, HTML entities, and glyph nerdery."
+						},
+						{
+							"title": "GridType",
+							"url": "https://grid-type.com"
+						},
+						{
+							"title": "DIA (Tools)",
+							"url": "https://tools.dia.tv"
+						},
+						{
+							"title": "Box Characters",
+							"url": "https://en.wikipedia.org/wiki/Box-drawing_characters",
+							"urlDisplay": "wikipedia.org/box-drawing-characters",
+							"urlMobile": "wikipedia.org"
+						},
+						{
+							"title": "Block Elements",
+							"url": "https://en.wikipedia.org/wiki/Block_Elements",
+							"urlDisplay": "wikipedia.org/block-elements",
+							"urlMobile": "wikipedia.org"
+						},
+						{
+							"title": "PaperSizes",
+							"url": "https://papersize.io"
+						}
+					]
+				}
+			]
+		},
+		{
+			"categories": [
+				{
+					"name": "Tools",
+					"note": "Apps to run DaaS (Graphics) & Co.",
+					"links": [
+						{
+							"title": "Figma",
+							"url": "https://figma.com"
+						},
+						{
+							"title": "Notion",
+							"url": "https://notion.so"
+						},
+						{
+							"title": "ChatGPT",
+							"url": "https://chatgpt.com"
+						},
+						{
+							"title": "Cursor",
+							"url": "https://cursor.com"
+						},
+						{
+							"title": "GitHub",
+							"url": "https://github.com"
+						},
+						{
+							"title": "Cal.com",
+							"url": "https://cal.com"
+						},
+						{
+							"title": "Slack",
+							"url": "https://slack.com"
+						},
+						{
+							"title": "Xero",
+							"url": "https://xero.com"
+						},
+						{
+							"title": "Harvest",
+							"url": "https://harvest.com"
+						}
+					]
+				},
+				{
+					"name": "Tech",
+					"note": "Checking in to see when AI will replace me.",
+					"links": [
+						{
+							"title": "Hacker News (HN)",
+							"titleMobile": "Hacker News",
+							"url": "https://news.ycombinator.com"
+						},
+						{
+							"title": "Daring Fireball",
+							"url": "https://daringfireball.net"
+						},
+						{
+							"title": "Simon Willison (Weblog)",
+							"titleMobile": "Simon Willison",
+							"url": "https://simonwillison.net"
+						}
+					]
+				},
+				{
+					"name": "News",
+					"note": "Local news about sheep and property prices.",
+					"links": [
+						{
+							"title": "Radio New Zealand",
+							"titleMobile": "RNZ",
+							"url": "https://www.rnz.co.nz"
+						},
+						{
+							"title": "National Business Review",
+							"titleMobile": "NBR",
+							"url": "https://www.nbr.co.nz"
+						}
+					]
+				},
+				{
+					"name": "Cricket",
+					"note": "Howzat!",
+					"links": [
+						{
+							"title": "ESPN Cricinfo",
+							"url": "https://www.espncricinfo.com"
+						},
+						{
+							"title": "TVNZ (Blackcaps)",
+							"titleMobile": "TVNZ",
+							"url": "https://www.tvnz.co.nz/sport/cricket/blackcaps",
+							"urlMobile": "tvnz.co.nz"
+						},
+						{
+							"title": "Blackcaps (NZC)",
+							"titleMobile": "NZC",
+							"url": "https://www.nzc.nz/international/blackcaps",
+							"urlMobile": "nzc.co.nz"
+						}
+					]
+				}
+			]
+		}
+	]
+}

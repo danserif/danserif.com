@@ -263,11 +263,9 @@ td.arrow {
 	line-height: 0.6;
 	min-width: 40px;
 }
-
 td:first-child {
 	vertical-align: top;
 }
-
 .colophon td:last-child,
 .awards td:last-child {
 	padding-right: 0;
@@ -381,9 +379,14 @@ p {
 	margin: 0 0 12px 0;
 }
 
-p.caption {
+p.caption,
+p.mode {
 	font-size: 12px;
 	opacity: 0.5;
+}
+
+p.mode {
+	padding-top: 20px;
 }
 
 h1 {
@@ -485,6 +488,11 @@ p.large {
 
 .list {
 	padding: 10px 0 40px 0;
+}
+
+.note {
+	text-align: left;
+	padding-left: 5px;
 }
 
 .desktop {
