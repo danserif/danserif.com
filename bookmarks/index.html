@@ -130,7 +130,7 @@
 				<p>
 					For years I’ve been collecting bookmarks <span class="opacity">(in Safari)</span> that have gradually died of <a href="https://en.wikipedia.org/wiki/Link_rot">link rot</a>. So with a little help from AI, I made
 					a new list that’s organized into the following categories:
-					<span class="opacity">Latest <span class="opacity-light hide">(to sort)</span>, Inspiration, Foundries, Fonts, Studios / Designers, Resources, Tools, Tech, News, and Cricket.</span>
+					<span class="opacity">Latest, Inspiration, Foundries, Fonts, Studios <span class="opacity">/</span> Designers, Resources, Tools, Tech, News, and Cricket.</span>
 				</p>
 			</section>
 			<section class="tables" id="links-container">
@@ -278,6 +278,18 @@
 							const categories = column.categories || [];
 
 							html += '<div class="column-25">';
+
+							// Add image at the top of column 2 (3rd column, 2nd when stacked)
+							if (i === 2) {
+								html += `
+							<h3>[PNG]</h3>
+							<div class="image">
+								<img srcset="/images/bookmarks.png 1x, /images/bookmarks-2x.png 2x" style="width: 100%; aspect-ratio: 1200 / 675" alt="ASCII Bookmarks" />
+								<p class="caption">&#8985; <span class="opacity-light">/images/</span>bookmarks.png <span class="opacity-light">(ASCII)</span></p>
+							</div>
+						`;
+							}
+
 							// Render each category in this column
 							categories.forEach((category) => {
 								html += renderCategory(category);

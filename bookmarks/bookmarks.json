@@ -4,18 +4,18 @@
 			"categories": [
 				{
 					"name": "Latest",
-					"note": "(WIP) Recent links of interest.",
+					"note": "Recent links of interest.",
 					"links": [
+						{
+							"title": "A Call for New Aesthetics",
+							"titleMobile": "New Aesthetics",
+							"url": "https://newaesthetics.art"
+						},
 						{
 							"title": "The (Real) New Aesthetic",
 							"url": "https://jamesbridle.com/works/the-new-aesthetic",
 							"urlDisplay": "jamesbridle.com/the-new-aesthetic",
 							"urlMobile": "jamesbridle.com"
-						},
-						{
-							"title": "A Call for New Aesthetics",
-							"titleMobile": "New Aesthetics",
-							"url": "https://newaesthetics.art"
 						},
 						{
 							"title": "Optik Studios",
@@ -297,7 +297,7 @@
 				},
 				{
 					"name": "Resources",
-					"note": "Links I’ll forget about if they aren’t listed here.",
+					"note": "Useful links I’m often trying to remember.",
 					"links": [
 						{
 							"title": "Atlas of Type",
