@@ -238,7 +238,7 @@ tr {
 td {
 	vertical-align: middle;
 	padding: 15px 0 15px 0;
-	line-height: 1.5;
+	line-height: 1.4;
 }
 #links-container td {
 	vertical-align: top;
@@ -341,7 +341,7 @@ nav li.label {
 }
 
 .intro {
-	max-width: 880px;
+	max-width: 900px;
 	padding: 60px 0 0 0;
 }
 
