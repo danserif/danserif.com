@@ -32,7 +32,7 @@
 							"title": "Mitos (Oxide)",
 							"url": "https://github.com/oxidecomputer/mitos",
 							"urlMobile": "github.com/oxidecomputer/",
-							"note": "ASCII generator built by Oxide Computer Company."
+							"note": "ASCII generator built by Oxide."
 						},
 						{
 							"title": "Making Software",
@@ -172,7 +172,7 @@
 				},
 				{
 					"name": "Fonts",
-					"note": "In use, on my wishlist, or just good looking glyphs.",
+					"note": "In use, or just good looking glyphs.",
 					"links": [
 						{
 							"title": "Berkeley Mono",
@@ -264,6 +264,7 @@
 						},
 						{
 							"title": "DayMonthYear (DDMMYY)",
+							"titleMobile": "DDMMYY",
 							"url": "https://www.daymonthyear.com"
 						},
 						{

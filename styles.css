@@ -240,6 +240,10 @@ td {
 	padding: 15px 0 15px 0;
 	line-height: 1.5;
 }
+#links-container td {
+	vertical-align: top;
+}
+
 td:first-of-type {
 	min-width: 240px;
 }
@@ -263,6 +267,7 @@ td.arrow {
 	line-height: 0.6;
 	min-width: 40px;
 }
+
 td:first-child {
 	vertical-align: top;
 }
