@@ -4,7 +4,7 @@
 			"categories": [
 				{
 					"name": "Latest",
-					"note": "Recent links of interest.",
+					"note": "(WIP) Recent links of interest.",
 					"links": [
 						{
 							"title": "A Call for New Aesthetics",
@@ -385,7 +385,7 @@
 						},
 						{
 							"title": "Harvest",
-							"url": "https://harvest.com"
+							"url": "https://getharvest.com"
 						}
 					]
 				},
