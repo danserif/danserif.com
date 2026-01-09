@@ -61,14 +61,14 @@ select,
 textarea {
 	-webkit-font-smoothing: antialiased;
 	font-family: Berkeley Mono, monospace;
-	color: #dddddd;
+	color: var(--text-color);
 }
 
 body {
 	margin: 0;
 	font-size: 14px;
 	line-height: 1.6;
-	background-color: #000000;
+	background-color: var(--bg-color);
 }
 
 /*
@@ -77,13 +77,13 @@ body {
  */
 
 ::-moz-selection {
-	background: #ffffff;
-	color: #000000;
+	background: var(--text-color);
+	color: var(--bg-color);
 	text-shadow: none;
 }
 ::selection {
-	background: #ffffff;
-	color: #000000;
+	background: var(--text-color);
+	color: var(--bg-color);
 	text-shadow: none;
 }
 
@@ -92,16 +92,16 @@ body {
    ========================================================================== */
 
 a {
-	color: #dddddd;
+	color: var(--text-color);
 	outline: none;
 	text-decoration: underline;
 	text-underline-offset: 2px;
 }
 a:visited {
-	color: #dddddd;
+	color: var(--text-color);
 }
 a:hover {
-	color: #dddddd;
+	color: var(--text-color);
 	opacity: 0.4;
 }
 a:focus {
@@ -134,7 +134,7 @@ hr {
 	display: block;
 	height: 1px;
 	border: 0;
-	border-top: 1px dashed #1a1a1a;
+	border-top: 1px dashed var(--border-color);
 	margin: 1em 0;
 	clear: both;
 }
@@ -232,8 +232,8 @@ table {
 tr {
 	padding: 0;
 	margin: 0;
-	border-top: 1px dashed #1a1a1a;
-	border-bottom: 1px dashed #1a1a1a;
+	border-top: 1px dashed var(--border-color);
+	border-bottom: 1px dashed var(--border-color);
 }
 td {
 	vertical-align: middle;
@@ -296,9 +296,27 @@ td:first-child {
 
 /* CUSTOM STYLES */
 
+/* Color Variables - Dark Mode (default) */
+:root {
+	--bg-color: #000000;
+	--text-color: #dddddd;
+	--highlight-color: #aaff00;
+	--border-color: #1a1a1a;
+}
+
+/* Light Mode */
+:root.light-mode {
+	--bg-color: #ffffff;
+	--text-color: #000000;
+	--highlight-color: #7fc000;
+	--border-color: #e5e5e5;
+}
+
 body {
 	padding: 40px 60px 40px 60px;
 	max-width: 2880px;
+	background-color: var(--bg-color);
+	color: var(--text-color);
 }
 
 header {
@@ -321,7 +339,7 @@ nav ul li {
 }
 
 nav a {
-	color: #ffffff;
+	color: var(--text-color);
 	text-decoration: none;
 	opacity: 0.8;
 }
@@ -380,7 +398,7 @@ img {
 }
 
 p {
-	color: #dddddd;
+	color: var(--text-color);
 	margin: 0 0 12px 0;
 }
 
@@ -392,6 +410,19 @@ p.mode {
 
 p.mode {
 	padding-top: 20px;
+}
+
+p.mode a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* SVG logo colors - override inline styles */
+svg .st0 {
+	fill: var(--text-color) !important;
+}
+svg path[style*="fill: #ffffff"] {
+	fill: var(--text-color) !important;
 }
 
 h1 {
@@ -514,7 +545,7 @@ p.large {
 
 a.highlight,
 .highlight {
-	color: #aaff00;
+	color: var(--highlight-color);
 }
 
 .form {
@@ -539,25 +570,25 @@ form {
 	flex: 1;
 	padding: 12px 16px 12px 16px;
 	margin-right: 10px;
-	color: #000;
-	background-color: #fff;
-	border: 1px solid #fff;
+	color: var(--text-color);
+	background-color: var(--bg-color);
+	border: 1px solid var(--text-color);
 }
 
 ::placeholder {
-	color: #666;
+	opacity: 0.5;
 }
 
 input:focus {
 	outline: none;
-	background-color: #f9f9f9;
-	border: 1px solid #ccc;
+	opacity: 0.9;
+	border-color: var(--text-color);
 }
 
 .subscribe {
-	color: #000;
-	background-color: #aaff00;
-	border: 1px solid #aaff00;
+	color: var(--bg-color);
+	background-color: var(--highlight-color);
+	border: 1px solid var(--highlight-color);
 	padding: 12px 32px 12px 32px;
 }
 
@@ -602,7 +633,7 @@ footer .top {
 	margin: 2em 0;
 }
 .markdown p {
-	color: #d2d2d2;
+	color: var(--text-color);
 }
 figure {
 	margin: 0;
@@ -613,14 +644,18 @@ figcaption {
 	opacity: 0.3;
 }
 .markdown a {
-	color: #aaff00;
+	color: var(--highlight-color);
 }
 .markdown a:hover {
-	opacity: 0.9;
+	opacity: 0.8;
 }
 
 .markdown p.links a {
-	color: #dddddd;
+	color: var(--text-color);
+}
+
+.markdown p.links a:hover {
+	opacity: 0.6;
 }
 
 /* ==|== media queries ======================================================
@@ -814,7 +849,7 @@ figcaption {
 		position: relative;
 		margin-top: 12px;
 		margin-bottom: 40px;
-		border-top: 1px dashed #1a1a1a;
+		border-top: 1px dashed var(--border-color);
 	}
 	.mobile ul li {
 		display: block;

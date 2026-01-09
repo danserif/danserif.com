@@ -312,10 +312,46 @@
 				<p class="caption">&#8985; #top <span class="opacity-light">(Link)</span></p>
 			</div>
 			<hr class="desktop" />
+			<p class="mode"><a href="#" id="dark-mode">Dark</a> <span class="opacity-light">/</span> <a href="#" id="light-mode">Light</a> <span class="opacity-light">(Mode)</span></p>
 			<p class="caption">
 				Brought to you by the letter D <span class="opacity-light">[U+0044].</span><br />
 				<span class="opacity-light">Copyright &copy; 1982—2026.</span>
 			</p>
 		</footer>
+		<script>
+			// Light/Dark Mode Toggle - Apply immediately to prevent flash
+			(function () {
+				const root = document.documentElement;
+				const savedMode = localStorage.getItem("colorMode") || "dark";
+				if (savedMode === "light") {
+					root.classList.add("light-mode");
+				}
+			})();
+		</script>
+		<script>
+			// Light/Dark Mode Toggle - Event handlers
+			document.addEventListener("DOMContentLoaded", function () {
+				const root = document.documentElement;
+				const darkModeBtn = document.getElementById("dark-mode");
+				const lightModeBtn = document.getElementById("light-mode");
+
+				// Toggle handlers
+				if (darkModeBtn) {
+					darkModeBtn.addEventListener("click", function (e) {
+						e.preventDefault();
+						root.classList.remove("light-mode");
+						localStorage.setItem("colorMode", "dark");
+					});
+				}
+
+				if (lightModeBtn) {
+					lightModeBtn.addEventListener("click", function (e) {
+						e.preventDefault();
+						root.classList.add("light-mode");
+						localStorage.setItem("colorMode", "light");
+					});
+				}
+			});
+		</script>
 	</body>
 </html>
