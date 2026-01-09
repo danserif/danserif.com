@@ -344,7 +344,7 @@
 				<p class="caption">&#8985; #top <span class="opacity-light">(Link)</span></p>
 			</div>
 			<hr class="desktop" />
-			<p class="mode"><a href="#" id="dark-mode">Dark</a> <span class="opacity-light">/</span> <a href="#" id="light-mode">Light</a> <span class="opacity-light">(Mode)</span></p>
+			<p class="mode"><a href="#" class="dark-mode-toggle">Dark</a> <span class="opacity-dark">/</span> <a href="#" class="light-mode-toggle">Light</a></p>
 			<p class="caption">
 				Brought to you by the letter D <span class="opacity-light">[U+0044].</span><br />
 				<span class="opacity-light">Copyright &copy; 1982—2026.</span>
@@ -364,25 +364,26 @@
 			// Light/Dark Mode Toggle - Event handlers
 			document.addEventListener("DOMContentLoaded", function () {
 				const root = document.documentElement;
-				const darkModeBtn = document.getElementById("dark-mode");
-				const lightModeBtn = document.getElementById("light-mode");
+				const darkModeBtns = document.querySelectorAll(".dark-mode-toggle");
+				const lightModeBtns = document.querySelectorAll(".light-mode-toggle");
 
-				// Toggle handlers
-				if (darkModeBtn) {
-					darkModeBtn.addEventListener("click", function (e) {
+				// Toggle handlers for all dark mode buttons
+				darkModeBtns.forEach(function (btn) {
+					btn.addEventListener("click", function (e) {
 						e.preventDefault();
 						root.classList.remove("light-mode");
 						localStorage.setItem("colorMode", "dark");
 					});
-				}
+				});
 
-				if (lightModeBtn) {
-					lightModeBtn.addEventListener("click", function (e) {
+				// Toggle handlers for all light mode buttons
+				lightModeBtns.forEach(function (btn) {
+					btn.addEventListener("click", function (e) {
 						e.preventDefault();
 						root.classList.add("light-mode");
 						localStorage.setItem("colorMode", "light");
 					});
-				}
+				});
 			});
 		</script>
 	</body>
