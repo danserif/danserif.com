@@ -308,7 +308,7 @@ td:first-child {
 :root.light-mode {
 	--bg-color: #ffffff;
 	--text-color: #000000;
-	--highlight-color: #7fc000;
+	--highlight-color: #000000;
 	--border-color: #e5e5e5;
 }
 
@@ -649,6 +649,10 @@ figcaption {
 }
 .markdown a:hover {
 	opacity: 0.8;
+}
+
+:root.light-mode .markdown a:hover {
+	opacity: 0.5;
 }
 
 .markdown p.links a {
