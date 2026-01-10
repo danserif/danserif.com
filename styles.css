@@ -402,14 +402,15 @@ p {
 	margin: 0 0 12px 0;
 }
 
-p.caption,
-p.mode {
+p.caption {
 	font-size: 12px;
 	opacity: 0.5;
 }
 
 p.mode {
+	font-size: 12px;
 	padding-top: 20px;
+	opacity: 0.5;
 }
 
 p.mode a {
@@ -731,6 +732,9 @@ figcaption {
 		font-size: 14px;
 	}
 	.tiny {
+		font-size: 10px;
+	}
+	p.mode {
 		font-size: 10px;
 	}
 	.form input,
