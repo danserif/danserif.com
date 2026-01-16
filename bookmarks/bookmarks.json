@@ -7,6 +7,11 @@
 					"note": "(WIP) Recent links of interest.",
 					"links": [
 						{
+							"title": "GT Canon (Fonts)",
+							"url": "https://gt-canon.com",
+							"note": "New release from Grilli Type."
+						},
+						{
 							"title": "A Call for New Aesthetics",
 							"titleMobile": "New Aesthetics",
 							"url": "https://newaesthetics.art"
@@ -155,6 +160,10 @@
 							"url": "https://fonts.floriankarsten.com"
 						},
 						{
+							"title": "Grilli Type",
+							"url": "https://www.grillitype.com"
+						},
+						{
 							"title": "GD Foundry",
 							"url": "https://foundry.gardedesign.se"
 						},
@@ -162,11 +171,6 @@
 							"title": "CoType Foundry",
 							"titleMobile": "CoType",
 							"url": "https://cotypefoundry.com"
-						},
-
-						{
-							"title": "Grilli Type",
-							"url": "https://www.grillitype.com"
 						}
 					]
 				},
