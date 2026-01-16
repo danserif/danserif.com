@@ -75,7 +75,6 @@
 							"title": "BP&O",
 							"url": "https://bpando.org"
 						},
-
 						{
 							"title": "Siteinspire",
 							"url": "https://www.siteinspire.com"
@@ -204,7 +203,6 @@
 							"url": "https://klim.co.nz/fonts/pitch-sans",
 							"urlMobile": "klim.co.nz"
 						},
-
 						{
 							"title": "Departure Mono",
 							"url": "https://www.departuremono.com"
@@ -243,6 +241,14 @@
 							"url": "https://lineto.com/typefaces/dmt-var-3-axis",
 							"urlDisplay": "lineto.com/typefaces/dmt",
 							"urlMobile": "lineto.com"
+						},
+						{
+							"title": "GT Standard",
+							"url": "https://gt-standard.com"
+						},
+						{
+							"title": "GT America",
+							"url": "https://gt-america.com"
 						}
 					]
 				}
@@ -283,7 +289,6 @@
 							"title": "Smith & Diction",
 							"url": "https://smith-diction.com"
 						},
-
 						{
 							"title": "Stockholm Design Lab",
 							"titleMobile": "SDL",
