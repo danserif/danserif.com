@@ -28,22 +28,36 @@ def create_session():
     """Create a requests session with retry strategy and timeout."""
     session = requests.Session()
     
-    # Retry strategy for transient errors
+    # Retry strategy for transient errors (exclude 429 to avoid retry loops)
     retry_strategy = Retry(
         total=2,
-        backoff_factor=0.3,
-        status_forcelist=[429, 500, 502, 503, 504],
+        backoff_factor=0.5,
+        status_forcelist=[500, 502, 503, 504],
         allowed_methods=["HEAD", "GET"]
     )
     
-    adapter = HTTPAdapter(max_retries=retry_strategy)
+    # Configure connection pool settings to avoid pool exhaustion
+    adapter = HTTPAdapter(
+        max_retries=retry_strategy,
+        pool_connections=10,
+        pool_maxsize=20,
+        pool_block=False
+    )
     session.mount("http://", adapter)
     session.mount("https://", adapter)
     
-    # Set a user agent to avoid being blocked
+    # Set browser-like headers to avoid being blocked
     session.headers.update({
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+        'Accept-Language': 'en-US,en;q=0.9',
+        'Accept-Encoding': 'gzip, deflate, br',
+        'Connection': 'keep-alive',
+        'Upgrade-Insecure-Requests': '1'
     })
+    
+    # Verify SSL certificates
+    session.verify = True
     
     return session
 
@@ -58,8 +72,9 @@ def check_url(session, url, timeout=10):
         response = session.head(url, timeout=timeout, allow_redirects=True)
         status_code = response.status_code
         
-        # If HEAD is not allowed, try GET
-        if status_code == 405:  # Method Not Allowed
+        # If HEAD is not allowed or returns 403, try GET
+        # Some servers block HEAD requests but allow GET
+        if status_code == 405 or status_code == 403:
             response = session.get(url, timeout=timeout, allow_redirects=True, stream=True)
             status_code = response.status_code
         
@@ -72,6 +87,9 @@ def check_url(session, url, timeout=10):
             status_text = "✗ Forbidden"
         elif status_code == 404:
             status_text = "✗ Not Found"
+        elif status_code == 429:
+            status_text = "✗ Rate Limited"
+            return status_code, status_text, "Too many requests - server rate limiting"
         elif 400 <= status_code < 500:
             status_text = f"✗ Client Error ({status_code})"
         elif 500 <= status_code < 600:
@@ -81,14 +99,24 @@ def check_url(session, url, timeout=10):
         
         return status_code, status_text, None
         
+    except requests.exceptions.SSLError as e:
+        return None, "✗ SSL Error", str(e)
     except requests.exceptions.Timeout:
         return None, "✗ Timeout", "Request timed out"
     except requests.exceptions.ConnectionError as e:
-        return None, "✗ Connection Error", str(e)
+        # Handle connection pool errors more gracefully
+        error_msg = str(e)
+        if "HTTPSConnectionPool" in error_msg or "Connection pool" in error_msg:
+            error_msg = "Connection pool exhausted or connection error"
+        return None, "✗ Connection Error", error_msg
     except requests.exceptions.TooManyRedirects:
         return None, "✗ Too Many Redirects", "Redirect loop detected"
     except requests.exceptions.RequestException as e:
-        return None, "✗ Request Error", str(e)
+        error_msg = str(e)
+        # Check if it's a 429 error in the exception message
+        if "429" in error_msg or "too many" in error_msg.lower():
+            return 429, "✗ Rate Limited", "Too many requests - server rate limiting"
+        return None, "✗ Request Error", error_msg
     except Exception as e:
         return None, "✗ Error", str(e)
 
@@ -181,8 +209,13 @@ def main():
             print(f"         {url}")
             print(f"         Error: {error}")
         
-        # Small delay to be respectful
-        time.sleep(0.2)
+        # Delay between requests to avoid rate limiting
+        # Longer delay if we hit a rate limit
+        if status_code == 429:
+            print(f"         Waiting 5 seconds due to rate limiting...")
+            time.sleep(5)
+        else:
+            time.sleep(0.5)  # Increased from 0.2 to 0.5 seconds
     
     # Summary
     print("\n" + "="*70)

@@ -1,49 +1,20 @@
-# Bookmarks Link Rot Checker
+# Link Rot Checker
 
-A simple script to check for broken links (link rot) in the bookmarks collection.
+Check for broken links in `bookmarks.json`.
 
-## Summary
-
-The `check_links.py` script extracts all URLs from `bookmarks.json`, checks each one to verify it's still accessible, and reports any broken links. It handles timeouts, redirects, connection errors, and provides a detailed summary at the end.
-
-## Requirements
-
-Install the `requests` library:
+## Install
 
 ```bash
 pip install requests
 ```
 
-## Usage
-
-From the `/bookmarks` directory, run:
+## Run
 
 ```bash
 python3 check_links.py
 ```
 
-Or if the script is executable:
-
-```bash
-./check_links.py
-```
-
-## Features
-
-- **Extracts all URLs** from the nested JSON structure
-- **Checks each URL** using HTTP HEAD requests (faster) with GET fallback
-- **Handles timeouts, redirects, and errors** gracefully
-- **Shows progress** as it checks each link
-- **Provides a summary** with broken links listed at the end
-- **Respectful rate limiting** with small delays between requests
-
-## Output
-
-The script will:
-- Show progress for each URL as it checks
-- Display a summary at the end with total URLs, working links, and broken links
-- List all broken links with their status codes and error messages
-- Exit with code 1 if any broken links are found (useful for automation)
+The script checks all URLs and reports any broken links at the end. \m/
 
 ## Example Output
 
