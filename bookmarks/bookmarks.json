@@ -7,6 +7,17 @@
 					"note": "(WIP) Recent links of interest.",
 					"links": [
 						{
+							"title": "Phosphor Icons",
+							"url": "https://phosphoricons.com"
+						},
+						{
+							"title": "ASCII Rendering",
+							"url": "https://alexharri.com/blog/ascii-rendering",
+							"urlDisplay": "alexharri.com/ascii-rendering",
+							"urlMobile": "alexharri.com",
+							"note": "Excellent guide to rendering ASCII."
+						},
+						{
 							"title": "GT Canon",
 							"url": "https://gt-canon.com",
 							"note": "New release from Grilli Type."
