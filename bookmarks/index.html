@@ -15,7 +15,6 @@
 		<link rel="stylesheet" href="/styles.css" />
 
 		<link rel="preload" href="/fonts/berkeley-mono.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-		<link rel="preload" href="/bookmarks/bookmarks.json" as="fetch" crossorigin="anonymous" />
 
 		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 		<link rel="icon" type="image/png" href="https://danserif.com/icons/favicon-16x16.png" sizes="16x16" />
@@ -235,15 +234,41 @@
 				}
 
 				// Load and render all links
+				let abortController = null;
 				async function loadLinks() {
+					// Cancel any pending request
+					if (abortController) {
+						abortController.abort();
+					}
+					
+					// Create new AbortController for this request
+					abortController = new AbortController();
+					
 					try {
-						const response = await fetch("./bookmarks.json");
+						const response = await fetch("./bookmarks.json", {
+							signal: abortController.signal
+						});
+						
+						// Check if page is still active before processing
+						if (document.hidden) {
+							return;
+						}
+						
 						if (!response.ok) {
 							throw new Error(`HTTP error! status: ${response.status}`);
 						}
 						const data = await response.json();
 
+						// Check again if page is still active before DOM manipulation
+						if (document.hidden) {
+							return;
+						}
+
 						const container = document.getElementById("links-container");
+						if (!container) {
+							return; // Page has unloaded
+						}
+						
 						const columns = data.columns || [];
 
 						if (columns.length === 0) {
@@ -302,16 +327,33 @@
 
 						html += "</div>";
 
-						container.innerHTML = html;
+						// Final check before updating DOM
+						if (!document.hidden && container) {
+							container.innerHTML = html;
+						}
 					} catch (error) {
+						// Ignore abort errors
+						if (error.name === 'AbortError') {
+							return;
+						}
 						console.error("Error loading links:", error);
-						const errorMsg = error.message || "Blame AI";
-						document.getElementById("links-container").innerHTML = `<p class="opacity">My bad: ${errorMsg}.</p>`;
+						const container = document.getElementById("links-container");
+						if (container && !document.hidden) {
+							const errorMsg = error.message || "Blame AI";
+							container.innerHTML = `<p class="opacity">My bad: ${errorMsg}.</p>`;
+						}
 					}
 				}
 
 				// Load links when page loads
 				loadLinks();
+				
+				// Cancel fetch when page unloads
+				window.addEventListener('beforeunload', function() {
+					if (abortController) {
+						abortController.abort();
+					}
+				});
 			</script>
 		</main>
 
