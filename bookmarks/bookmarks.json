@@ -431,7 +431,7 @@
 				},
 				{
 					"name": "Photography",
-					"note": "(WIP) Favourite photographers, photos, and cameras.",
+					"note": "X100VI resources, photos, and photographers.",
 					"links": [
 						{
 							"title": "FujiFilm X100VI",
@@ -444,12 +444,6 @@
 							"url": "https://fujifilm-dsc.com/en/manual/x100vi/",
 							"urlDisplay": "fujifilm-dsc.com/manual/x100vi",
 							"urlMobile": "fujifilm-dsc.com"
-						},
-						{
-							"title": "Sigma BF",
-							"url": "https://www.sigma-global.com/en/cameras/bf/",
-							"urlDisplay": "sigma-global.com/bf",
-							"urlMobile": "sigma-global.com"
 						},
 						{
 							"title": "Glass (B&W)",
