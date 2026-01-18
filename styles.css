@@ -571,18 +571,34 @@ form {
 	flex: 1;
 	padding: 12px 16px 12px 16px;
 	margin-right: 10px;
-	color: var(--text-color);
-	background-color: var(--bg-color);
+	color: #000000;
+	background-color: #ffffff;
 	border: 1px solid var(--text-color);
 }
 
-::placeholder {
-	opacity: 0.5;
+.email::placeholder {
+	color: rgba(0, 0, 0, 0.5);
+	opacity: 1;
+}
+
+.email::-webkit-input-placeholder {
+	color: rgba(0, 0, 0, 0.5);
+	opacity: 1;
+}
+
+.email::-moz-placeholder {
+	color: rgba(0, 0, 0, 0.5);
+	opacity: 1;
+}
+
+.email:-ms-input-placeholder {
+	color: rgba(0, 0, 0, 0.5);
+	opacity: 1;
 }
 
 input:focus {
 	outline: none;
-	opacity: 0.9;
+	opacity: 1;
 	border-color: var(--text-color);
 }
 
