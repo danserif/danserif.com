@@ -2,3 +2,5 @@
 .DS_Store
 # WIP files
 *~
+# Local development server
+server.py
