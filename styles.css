@@ -661,7 +661,7 @@ figcaption {
 	opacity: 0.3;
 }
 .markdown a {
-	color: var(--highlight-color);
+	color: var(--text-color);
 }
 .markdown a:hover {
 	opacity: 0.8;
