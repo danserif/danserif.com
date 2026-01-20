@@ -189,8 +189,182 @@
 								/></a>
 								<p class="caption">&#8985; <span class="opacity-light">/images/</span>tdu-fractured.png <span class="opacity-light">(ASCII)</span></p>
 							</div>
+							<!-- FORM -->
+							<h3>[The Danserif Update]</h3>					
+							<div class="form">
+								<p>An infrequently emailed update about life, work, design, branding, typography, photography, ASCII, AI, lists, and the Internet.</p>
+								<br />						  
+								<form id="subscribe-form" class="embeddable-buttondown-form">
+									<input class="email" type="email" name="email" id="bd-email" placeholder="Email" required />
+									<button id="subscribe-button" class="subscribe" type="submit">Subscribe</button>
+								</form>					
+								<p class="caption">&#8985; buttondown.com <span class="opacity-light">(Newsletter)</span></p>						
+								<div class="disclaimer">
+									<p>
+										Add
+										<a href="mailto:newsletter@danserif.com" class="hover"
+											><span class="opacity">newsletter</span> <span class="opacity-dark">[at]</span> <span class="opacity">danserif</span> <span class="opacity-dark">[dot]</span> <span class="opacity">com</span></a
+										>
+										to your contacts so my emails dont’t end up in spam, and check your email to opt in! <span class="opacity-dark">\m/</span>
+									</p>
+								</div>
+							</div>
+							<script>
+								const form = document.getElementById("subscribe-form");
+								const button = document.getElementById("subscribe-button");
+
+								form.addEventListener("submit", async function (e) {
+									e.preventDefault(); // Stop normal form
+
+									const email = document.getElementById("bd-email").value;
+
+									// Disable button and change text
+									button.disabled = true;
+									button.innerText = "Submitting...";
+
+									try {
+										await fetch("https://buttondown.com/api/emails/embed-subscribe/danserif", {
+											method: "POST",
+											headers: {
+												"Content-Type": "application/x-www-form-urlencoded",
+											},
+											body: new URLSearchParams({ email }),
+										});
+
+										if (window.fathom) fathom.trackEvent("Subscribe");
+
+										// Redirect to ~/thanks
+										window.location.href = "https://danserif.com/thanks/";
+									} catch (error) {
+										console.error("Subscription failed:", error);
+										alert("Oops! Something went wrong. Please try again.");
+
+										// Re-enable button and reset text if error
+										button.disabled = false;
+										button.innerText = "Subscribe";
+									}
+								});
+							</script>
 						</div>
 						<div class="column-25">
+							<!-- CURRENTLY -->
+							<h3>[Currently]</h3>
+							<table>
+								<colgroup>
+									<col style="width: 20%" />
+									<col style="width: 80%" />
+								</colgroup>
+								<tr>
+									<td class="opacity-light">Knolling</td>
+									<td class="opacity-dark">Co-founder / Director</td>
+									<td class="opacity-dark hide">2025—Present</td>
+								</tr>
+								<tr>
+									<td><span class="opacity-dark">&#8985;</span> <span class="opacity">DaaS</span> <span class="opacity-dark hide">(Graphics)</span></td>
+									<td class="opacity-dark">Creative Director <span class="hide">/ Designer</span></td>
+									<td class="opacity-dark hide">2025—Present</td>
+								</tr>
+								<tr>
+									<td><span class="opacity-dark">&#8985;</span> <span class="opacity">D/ART</span> <span class="opacity-dark hide">(Department)</span></td>
+									<td class="opacity-dark">Shop Proprietor</td>
+									<td class="opacity-dark">Coming Soon</td>
+								</tr>
+								<tr>
+									<td><span class="opacity-dark">&#8985;</span> <span class="opacity">STØNK$¥</span></td>
+									<td class="opacity-dark">Vibe Coder</td>
+									<td class="opacity-dark hide">Coming Soon</td>
+								</tr>
+								<tr>
+									<td><span class="opacity-dark">&#8985;</span> <span class="opacity">(W)</span><span class="opacity-dark">1CK3T5</span></td>
+									<td class="opacity-dark">Cricket Watcher</td>
+									<td class="opacity-dark hide">Coming Soon</td>
+								</tr>
+						  </table>
+							<!-- PREVIOUSLY -->
+							<h3>[Previously]</h3>
+							<table>
+								<colgroup>
+									<col style="width: 20%" />
+									<col style="width: 80%" />
+								</colgroup>
+								<tr>
+									<td class="opacity-light">Axiom</td>
+									<td class="opacity-dark">Head of Design</td>
+									<td class="opacity-dark hide">2022—2025</td>
+								</tr>
+								<tr>
+									<td class="opacity-light">Stedi</td>
+									<td class="opacity-dark">Design Lead</td>
+									<td class="opacity-dark hide">2021—2022</td>
+								</tr>
+								<tr>
+									<td class="opacity-light">Springload</td>
+									<td class="opacity-dark">Creative Director</td>
+									<td class="opacity-dark hide">2017—2021</td>
+								</tr>
+								<tr>
+									<td class="opacity-light">Koordinates</td>
+									<td class="opacity-dark">Head of Design</td>
+									<td class="opacity-dark hide">2015—2017</td>
+								</tr>
+								<tr>
+									<td class="opacity-light">Xero</td>
+									<td class="opacity-dark">Creative Director</td>
+									<td class="opacity-dark hide">2012—2015</td>
+								</tr>
+								<tr>
+									<td class="opacity-light">Tigerspike</td>
+									<td class="opacity-dark">Creative Director</td>
+									<td class="opacity-dark hide">2010—2012</td>
+								</tr>
+								<tr>
+									<td class="opacity-light">Flightless</td>
+									<td class="opacity-dark">Designer / <span class="hide">Frontend</span> Engineer</td>
+									<td class="opacity-dark hide">2007—2009</td>
+								</tr>
+								<tr>
+									<td class="opacity-light">The D.A.</td>
+									<td class="opacity-dark">Co-founder / Designer</td>
+									<td class="opacity-dark hide">2001—2007</td>
+								</tr>
+							</table>				
+						</div>
+					</div>
+					<div class="column-50">
+						<div class="column-25">
+							<!-- URLS -->
+							<h3>[URLs]</h3>
+							<table>
+								<colgroup>
+									<col style="width: 20%" />
+									<col style="width: 80%" />
+								</colgroup>
+								<tr>
+									<td><a href="https://daas.graphics" onclick="fathom.trackEvent('Studio', 0);">daas.graphics</a></td>
+									<td class="opacity"><span class="opacity-light">(DaaS)</span> Dan as a Service</td>
+									<td class="arrow"><a href="https://daas.graphics" onclick="fathom.trackEvent('Studio', 0);">&nearr;</a></td>
+								</tr>
+								<tr>
+									<td><a href="https://dan.newman.is" onclick="fathom.trackEvent('Portfolio', 0);">dan.newman.is</a></td>
+									<td class="opacity">Portfolio</td>
+									<td class="arrow"><a href="https://dan.newman.is" onclick="fathom.trackEvent('Portfolio', 0);">&nearr;</a></td>
+								</tr>
+								<!--<tr class="opacity-dark hide">
+									<td>****.****</td>
+									<td>Store</td>
+									<td>Coming Soon</td>
+								</tr>
+								<tr class="opacity-dark hide">
+									<td>********.******</td>
+									<td>Office</td>
+									<td>Coming Soon</td>
+								</tr>
+								<tr class="opacity-dark hide">
+									<td>*******.***</td>
+									<td>App</td>
+									<td>Coming Soon</td>
+								</tr>-->
+							</table>				
 							<!-- ACCOUNTS -->
 							<h3>[Accounts]</h3>
 							<table>
@@ -247,37 +421,7 @@
 								</tr>
 							</table>
 						</div>
-					</div>
-					<div class="column-50">
 						<div class="column-25">
-							<!-- URLS -->
-							<h3>[URLs]</h3>
-							<table>
-								<colgroup>
-									<col style="width: 20%" />
-									<col style="width: 80%" />
-								</colgroup>
-								<tr>
-									<td><a href="https://daas.graphics" onclick="fathom.trackEvent('Studio', 0);">daas.graphics</a></td>
-									<td class="opacity"><span class="opacity-light">(DaaS)</span> Dan as a Service</td>
-									<td class="arrow"><a href="https://daas.graphics" onclick="fathom.trackEvent('Studio', 0);">&nearr;</a></td>
-								</tr>
-								<tr>
-									<td><a href="https://dan.newman.is" onclick="fathom.trackEvent('Portfolio', 0);">dan.newman.is</a></td>
-									<td class="opacity">Portfolio</td>
-									<td class="arrow"><a href="https://dan.newman.is" onclick="fathom.trackEvent('Portfolio', 0);">&nearr;</a></td>
-								</tr>
-								<tr class="opacity-dark hide">
-									<td>****.****</td>
-									<td>Store</td>
-									<td>Coming Soon</td>
-								</tr>
-								<tr class="opacity-dark hide">
-									<td>********.******</td>
-									<td>Office</td>
-									<td>Coming Soon</td>
-								</tr>
-							</table>
 							<!-- RESUME -->
 							<h3>[Résumé]</h3>
 							<table>
@@ -298,8 +442,6 @@
 									<td class="arrow"><a href="https://github.com/danserif/danserif.com/raw/main/dan-newman-cv.pdf" onclick="fathom.trackEvent('CV', 0);">&darr;</a></td>
 								</tr>
 							</table>
-						</div>
-						<div class="column-25">
 							<!-- CONTACT -->
 							<h3>[Contact]</h3>
 							<table>
