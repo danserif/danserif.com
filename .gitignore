@@ -4,3 +4,7 @@
 *~
 # Local development server
 server.py
+# Newsletter template
+/newsletter/template/index.html
+# Newsletter markdown files
+/newsletter/**/*.md
