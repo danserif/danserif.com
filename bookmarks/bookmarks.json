@@ -7,6 +7,12 @@
 					"note": "(WIP) Recent links of interest.",
 					"links": [
 						{
+							"title": "Holographik (Medium)",
+							"titleMobile": "Holographik",
+							"url": "https://medium.com/holographik",
+							"note": "New typefaces and typographic inspiration from Holographik."
+						},
+						{
 							"title": "FH Duo (Text & Display)",
 							"titleMobile": "FH Duo",
 							"url": "https://www.typografische.com/typefaces/fh-duo",
@@ -332,6 +338,10 @@
 							"title": "Stockholm Design Lab",
 							"titleMobile": "SDL",
 							"url": "https://www.stockholmdesignlab.se"
+						},
+						{
+							"title": "Holographik",
+							"url": "https://holographik.co"
 						},
 						{
 							"title": "Order",
