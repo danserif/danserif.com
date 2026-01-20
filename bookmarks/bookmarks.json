@@ -399,6 +399,10 @@
 							"url": "https://cursor.com"
 						},
 						{
+							"title": "Claude",
+							"url": "https://claude.ai"
+						},
+						{
 							"title": "GitHub",
 							"url": "https://github.com"
 						},
@@ -415,8 +419,16 @@
 							"url": "https://xero.com"
 						},
 						{
+							"title": "Wise",
+							"url": "https://wise.com"
+						},
+						{
 							"title": "Harvest",
 							"url": "https://getharvest.com"
+						},
+						{
+							"title": "Google",
+							"url": "https://workspace.google.com"
 						}
 					]
 				},
