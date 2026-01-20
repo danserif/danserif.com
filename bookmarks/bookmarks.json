@@ -7,6 +7,13 @@
 					"note": "(WIP) Recent links of interest.",
 					"links": [
 						{
+							"title": "FH Duo (Text & Display)",
+							"titleMobile": "FH Duo",
+							"url": "https://www.typografische.com/typefaces/fh-duo",
+							"urlDisplay": "typografische.com/fh-duo",
+							"urlMobile": "typografische.com"
+						},
+						{
 							"title": "Phosphor Icons",
 							"url": "https://phosphoricons.com"
 						},
@@ -271,6 +278,16 @@
 							"title": "Metodo (Mono)",
 							"url": "https://optimo.ch/typefaces/metodo",
 							"urlMobile": "optimo.ch"
+						},
+						{
+							"title": "FH Dfaalt",
+							"url": "https://www.typografische.com/typefaces/fh-dfaalt",
+							"urlDisplay": "typografische.com/fh-dfaalt",
+							"urlMobile": "typografische.com"
+						},
+						{
+							"title": "Inter",
+							"url": "https://rsms.me/inter/"
 						}
 					]
 				}
