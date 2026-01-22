@@ -112,6 +112,10 @@
 							"url": "https://klim.co.nz/in-use"
 						},
 						{
+							"title": "Fonts In Use",
+							"url": "https://fontsinuse.com"
+						},
+						{
 							"title": "Cosmos",
 							"url": "https://cosmos.so/discover"
 						}
@@ -335,13 +339,18 @@
 							"url": "https://smith-diction.com"
 						},
 						{
+							"title": "Holographik",
+							"url": "https://holographik.co"
+						},
+						{
 							"title": "Stockholm Design Lab",
 							"titleMobile": "SDL",
 							"url": "https://www.stockholmdesignlab.se"
 						},
 						{
-							"title": "Holographik",
-							"url": "https://holographik.co"
+							"title": "Special Offer, Inc.",
+							"titleMobile": "Special Offer",
+							"url": "https://www.special-offer.studio"
 						},
 						{
 							"title": "Order",
