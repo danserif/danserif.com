@@ -426,7 +426,7 @@ p.caption {
 
 p.mode {
 	font-size: 12px;
-	padding-top: 20px;
+	padding-top: 0;
 	opacity: 0.5;
 }
 
@@ -644,6 +644,44 @@ footer {
 footer .top {
 	font-size: 40px;
 	margin: 0;
+}
+
+footer .menu {
+	display: flex;
+	flex-direction: row;
+	font-size: 12px;
+	padding-top: 5px;
+}
+
+footer .menu ul {
+	display: flex;
+	gap: 0.5rem;
+	margin: 0;
+	padding: 0 0 5px 0;
+	opacity: 0.5;
+}
+
+footer .menu ul li {
+	display: inline;
+}
+
+footer .menu ul li a {
+	text-decoration: none;
+	color: var(--text-color);
+}
+
+footer .menu ul li.mode {
+	padding-left: 20px;
+
+}
+
+footer .menu p.mode {
+	margin-left: auto;
+	margin-bottom: 5px;
+}
+
+footer>p.caption:last-of-type {
+	padding-top: 5px;
 }
 
 .back {
@@ -883,6 +921,10 @@ figcaption {
 		padding-top: 60px;
 		padding-bottom: 20px;
 	}
+
+	footer .menu {
+		font-size: 10px;
+	}
 }
 
 @media only screen and (max-width: 1040px) {
@@ -942,6 +984,23 @@ figcaption {
 
 	.menu {
 		display: inline;
+	}
+
+	footer .menu {
+		flex-direction: column;
+		padding-top: 5px;
+	}
+
+	footer .menu p.mode {
+		margin: 5px 0 5px 0;
+	}
+
+	footer>p.caption:last-of-type {
+		padding-top: 5px;
+	}
+
+	footer>hr:last-of-type {
+		display: flex;
 	}
 
 	.mobile ul {
