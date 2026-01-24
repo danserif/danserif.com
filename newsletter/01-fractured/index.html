@@ -1,508 +1,629 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-		<title>TDU-01: FRAC/TURED</title>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-		<meta
-			name="description"
-			content="This inaugural issue features some bad news (a fractured foot and redundancy) plus some good news (a healed foot, new work, side projects, vibe coding, ASCII, fonts, and a new camera)."
-		/>
-		<meta name="author" content="Dan Newman" />
-		<meta name="copyright" content="Copyright Dan Newman, 2026" />
+	<title>TDU-01: FRAC/TURED</title>
 
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta name="description"
+		content="This inaugural issue features some bad news (a fractured foot and redundancy) plus some good news (a healed foot, new work, side projects, vibe coding, ASCII, fonts, and a new camera)." />
+	<meta name="author" content="Dan Newman" />
+	<meta name="copyright" content="Copyright Dan Newman, 2026" />
 
-		<link rel="stylesheet" href="/styles.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-		<link rel="preload" href="/fonts/berkeley-mono.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+	<link rel="stylesheet" href="/styles.css" />
 
-		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-		<link rel="icon" type="image/png" href="https://danserif.com/icons/favicon-16x16.png" sizes="16x16" />
-		<link rel="icon" type="image/png" href="https://danserif.com/icons/favicon-32x32.png" sizes="32x32" />
-		<link rel="icon" type="image/png" href="https://danserif.com/icons/icon.png" sizes="1024x1024" />
-		<link rel="apple-touch-icon" href="https://danserif.com/icons/apple-touch-icon.png" sizes="1024x1024" />
-		<link rel="mask-icon" href="https://danserif.com/icons/safari-pinned-tab.svg" color="#000000" />
+	<link rel="preload" href="/fonts/berkeley-mono.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="#000000" />
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+	<link rel="icon" type="image/png" href="https://danserif.com/icons/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="https://danserif.com/icons/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="https://danserif.com/icons/icon.png" sizes="1024x1024" />
+	<link rel="apple-touch-icon" href="https://danserif.com/icons/apple-touch-icon.png" sizes="1024x1024" />
+	<link rel="mask-icon" href="https://danserif.com/icons/safari-pinned-tab.svg" color="#000000" />
 
-		<meta name="theme-color" content="#000000" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000000" />
 
-		<meta property="og:title" content="TDU-01: FRAC/TURED" />
-		<meta
-			property="og:description"
-			content="This inaugural issue features some bad news (a fractured foot and redundancy) plus some good news (a healed foot, new work, side projects, vibe coding, ASCII, fonts, and a new camera)."
-		/>
-		<meta property="og:image" content="https://danserif.com/images/opengraph-image-tdu-01.png" />
-		<meta property="og:image:type" content="image/png" />
-		<meta property="og:image:alt" content="Dan Newman — Newsletter" />
-		<meta property="og:image:width" content="1200" />
-		<meta property="og:image:height" content="630" />
-		<meta property="og:site_name" content="danserif.com/newsletter" />
+	<meta name="theme-color" content="#000000" />
 
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="TDU-01: FRAC/TURED" />
-		<meta
-			name="twitter:description"
-			content="This inaugural issue features some bad news (a fractured foot and redundancy) plus some good news (a healed foot, new work, side projects, vibe coding, ASCII, fonts, and a new camera)."
-		/>
-		<meta name="twitter:image" content="https://danserif.com/images/opengraph-image-tdu-01.png" />
-		<meta name="twitter:site" content="danserif.com/newsletter" />
+	<meta property="og:title" content="TDU-01: FRAC/TURED" />
+	<meta property="og:description"
+		content="This inaugural issue features some bad news (a fractured foot and redundancy) plus some good news (a healed foot, new work, side projects, vibe coding, ASCII, fonts, and a new camera)." />
+	<meta property="og:image" content="https://danserif.com/images/opengraph-image-tdu-01.png" />
+	<meta property="og:image:type" content="image/png" />
+	<meta property="og:image:alt" content="Dan Newman — Newsletter" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:site_name" content="danserif.com/newsletter" />
 
-		<script src="https://cdn.usefathom.com/script.js" data-site="YGLQBNIN" defer></script>
-	</head>
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="TDU-01: FRAC/TURED" />
+	<meta name="twitter:description"
+		content="This inaugural issue features some bad news (a fractured foot and redundancy) plus some good news (a healed foot, new work, side projects, vibe coding, ASCII, fonts, and a new camera)." />
+	<meta name="twitter:image" content="https://danserif.com/images/opengraph-image-tdu-01.png" />
+	<meta name="twitter:site" content="danserif.com/newsletter" />
 
-	<body id="top" class="page">
-		<header>
-			<h1>
-				<a class="hover" href="/" onclick="fathom.trackEvent('Home', 0);">danserif.com</a
-				><a class="hover" href="/newsletter/" onclick="fathom.trackEvent('Newsletter', 0);"><span class="opacity-dark">/newsletter/</span></a
-				><span class="highlight">01</span>
-			</h1>
-			<p class="caption">&#8985; @danserif <span class="opacity-light">(Handle)</span></p>
-		</header>
+	<script src="https://cdn.usefathom.com/script.js" data-site="YGLQBNIN" defer></script>
+</head>
 
-		<nav>
-			<ul>
-				<li class="label">[Menu]</li>
-				<li><a class="highlight" href="/newsletter/" onclick="fathom.trackEvent('Newsletter', 0);">Newsletter</a> <span class="opacity-dark">(1)</span></li>
-				<li><a href="/bookmarks/" onclick="fathom.trackEvent('Bookmarks', 0);">Bookmarks</a></li>
-				<li><a href="/about/" onclick="fathom.trackEvent('About', 0);">About</a></li>
+<body id="top" class="page">
+	<header>
+		<h1>
+			<a class="hover" href="/" onclick="fathom.trackEvent('Home', 0);">danserif.com</a><a class="hover"
+				href="/newsletter/" onclick="fathom.trackEvent('Newsletter', 0);"><span
+					class="opacity-dark">/newsletter/</span></a><span class="highlight">01</span>
+		</h1>
+		<p class="caption">&#8985; @danserif <span class="opacity-light">(Handle)</span></p>
+	</header>
+
+	<nav>
+		<ul>
+			<li class="label">[Menu]</li>
+			<li><a class="highlight" href="/newsletter/" onclick="fathom.trackEvent('Newsletter', 0);">Newsletter</a> <span
+					class="opacity-dark">(1)</span></li>
+			<li><a href="/bookmarks/" onclick="fathom.trackEvent('Bookmarks', 0);">Bookmarks</a></li>
+			<li><a href="/about/" onclick="fathom.trackEvent('About', 0);">About</a></li>
+		</ul>
+		<!-- MOBILE -->
+		<div class="mobile menu">
+			<ul id="menu">
+				<li class="title">[Menu]</li>
+				<li class="link"><a href="/" onclick="fathom.trackEvent('Home', 0);">Home</a></li>
+				<li class="link"><a href="/newsletter/" onclick="fathom.trackEvent('Newsletter', 0);">Newsletter</a></li>
+				<li class="link"><a href="/bookmarks/" onclick="fathom.trackEvent('Bookmarks', 0);">Bookmarks</a></li>
+				<li class="link"><a href="/about/" onclick="fathom.trackEvent('About', 0);">About</a></li>
+				<li class="title">[Contact]</li>
+				<li class="inline">
+					<span class="opacity">Email:</span>
+					<a href="mailto:dan@newman.is" onclick="fathom.trackEvent('Email', 0);">dan <span
+							class="opacity-light">[at]</span> newman <span class="opacity-light">[dot]</span> is</a>
+				</li>
+				<li class="inline">
+					<span class="opacity">Follow:</span> <a href="https://linkedin.com/in/danserif"
+						onclick="fathom.trackEvent('LinkedIn', 0);">LinkedIn</a> <span class="opacity-dark">/</span>
+					<a href="https://twitter.com/danserif" onclick="fathom.trackEvent('Twitter', 0);">Twitter</a>
+					<span class="opacity-dark">(RIP)</span>
+				</li>
+				<li class="title">[Mode]</li>
+				<li class="inline"><a href="#" class="dark-mode-toggle">&#9654; Dark</a> <span class="opacity-dark">/</span> <a
+						href="#" class="light-mode-toggle">&#9655; Light</a></li>
+				<li class="logo">
+					<a href="/">
+						<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="Layer_1" x="0" y="0"
+							style="enable-background: new 0 0 109 82" version="1.1" viewBox="0 0 109 82">
+							<style>
+								.st0 {
+									fill: #ffffff;
+								}
+							</style>
+							<path
+								d="M80 31.7v49.9h9V34.1c0-4.3 4.1-4.7 5.5-4.7s5.5.3 5.5 4.7v47.5h9V31.7c0-10.4-11.4-11.3-14.5-11.3S80 21.3 80 31.7zM71.7 81.7v-69c0-10.4-13.1-12-16.3-12s-16.3 1.6-16.3 12v69h9.7V56.1H62v25.6h9.7zm-22.9-36V15.1c0-4.3 5.1-4.7 6.6-4.7s6.6.3 6.6 4.7v30.6H48.8z"
+								class="st0" />
+							<path
+								d="M.4 52.7v-31h16.2c4.7 0 14.3 1.2 14.3 14.4v31.2c0 13.2-9.6 14.4-14.3 14.4H.4v-29zm9.7-.1v-23h4.7c3 0 6.4.2 6.4 8.9v25.9c0 8.7-3.4 8.9-6.4 8.9h-4.7V52.6z"
+								style="fill-rule: evenodd; clip-rule: evenodd; fill: #ffffff" />
+						</svg>
+					</a>
+					<span class="caption opacity">&#8985; logo.svg <span class="opacity-light">(Braun & Dieter Rams
+							Homage)</span></span>
+				</li>
 			</ul>
-			<!-- MOBILE -->
-			<div class="mobile menu">
-				<ul id="menu">
-					<li class="title">[Menu]</li>
-					<li class="link"><a href="/" onclick="fathom.trackEvent('Home', 0);">Home</a></li>
-					<li class="link"><a href="/newsletter/" onclick="fathom.trackEvent('Newsletter', 0);">Newsletter</a></li>
-					<li class="link"><a href="/bookmarks/" onclick="fathom.trackEvent('Bookmarks', 0);">Bookmarks</a></li>
-					<li class="link"><a href="/about/" onclick="fathom.trackEvent('About', 0);">About</a></li>
-					<li class="title">[Contact]</li>
-					<li class="inline">
-						<span class="opacity">Email:</span>
-						<a href="mailto:dan@newman.is" onclick="fathom.trackEvent('Email', 0);">dan <span class="opacity-light">[at]</span> newman <span class="opacity-light">[dot]</span> is</a>
-					</li>
-					<li class="inline">
-						<span class="opacity">Follow:</span> <a href="https://linkedin.com/in/danserif" onclick="fathom.trackEvent('LinkedIn', 0);">LinkedIn</a> <span class="opacity-dark">/</span>
-						<a href="https://twitter.com/danserif" onclick="fathom.trackEvent('Twitter', 0);">Twitter</a>
-						<span class="opacity-dark">(RIP)</span>
-					</li>
-					<li class="title">[Mode]</li>
-					<li class="inline"><a href="#" class="dark-mode-toggle">&#9654; Dark</a> <span class="opacity-dark">/</span> <a href="#" class="light-mode-toggle">&#9655; Light</a></li>
-					<li class="logo">
-						<a href="/">
-							<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="Layer_1" x="0" y="0" style="enable-background: new 0 0 109 82" version="1.1" viewBox="0 0 109 82">
-								<style>
-									.st0 {
-										fill: #ffffff;
-									}
-								</style>
-								<path
-									d="M80 31.7v49.9h9V34.1c0-4.3 4.1-4.7 5.5-4.7s5.5.3 5.5 4.7v47.5h9V31.7c0-10.4-11.4-11.3-14.5-11.3S80 21.3 80 31.7zM71.7 81.7v-69c0-10.4-13.1-12-16.3-12s-16.3 1.6-16.3 12v69h9.7V56.1H62v25.6h9.7zm-22.9-36V15.1c0-4.3 5.1-4.7 6.6-4.7s6.6.3 6.6 4.7v30.6H48.8z"
-									class="st0"
-								/>
-								<path
-									d="M.4 52.7v-31h16.2c4.7 0 14.3 1.2 14.3 14.4v31.2c0 13.2-9.6 14.4-14.3 14.4H.4v-29zm9.7-.1v-23h4.7c3 0 6.4.2 6.4 8.9v25.9c0 8.7-3.4 8.9-6.4 8.9h-4.7V52.6z"
-									style="fill-rule: evenodd; clip-rule: evenodd; fill: #ffffff"
-								/>
-							</svg>
-						</a>
-						<span class="caption opacity">&#8985; logo.svg <span class="opacity-light">(Braun & Dieter Rams Homage)</span></span>
-					</li>
-				</ul>
-				<a href="javascript:void(0);" onclick="mobileMenu()">
-					<i class="icon">
-						<svg width="15" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.75.75h14M.75 10.75h14M.75 5.75h14" stroke="currentColor" stroke-linejoin="round" /></svg
-					></i>
-				</a>
-				<script>
-					function mobileMenu() {
-						var x = document.getElementById("menu");
-						if (x.style.display === "block") {
-							x.style.display = "none";
-						} else {
-							x.style.display = "block";
-						}
+			<a href="javascript:void(0);" onclick="mobileMenu()">
+				<i class="icon">
+					<svg width="15" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M.75.75h14M.75 10.75h14M.75 5.75h14" stroke="currentColor" stroke-linejoin="round" />
+					</svg></i>
+			</a>
+			<script>
+				function mobileMenu() {
+					var x = document.getElementById("menu");
+					if (x.style.display === "block") {
+						x.style.display = "none";
+					} else {
+						x.style.display = "block";
 					}
-				</script>
-			</div>
-		</nav>
+				}
+			</script>
+		</div>
+	</nav>
 
-		<hr />
+	<hr />
 
-		<main>
-			<section class="intro">
-				<!-- NEWSLETTER -->
-				<h2>[Newsletter]</h2>
-				<h3 class="uppercase">The Danserif Update <span class="opacity-dark">[TDU]</span></h3>
-				<p>An infrequently emailed update about life, work, design, branding, <br class="hide" />typography, photography, ASCII, AI, lists, and the Internet.</p>
-				<p class="opacity-dark">Please excuse the typos, puns, gifs, and photos of the dog.</p>
-			</section>
+	<main>
+		<section class="intro">
+			<!-- NEWSLETTER -->
+			<h2>[Newsletter]</h2>
+			<h3 class="uppercase">The Danserif Update <span class="opacity-dark">[TDU]</span></h3>
+			<p>An infrequently emailed update about life, work, design, branding, <br class="hide" />typography, photography,
+				ASCII, AI, lists, and the Internet.</p>
+			<p class="opacity-dark">Please excuse the typos, puns, gifs, and photos of the dog.</p>
+		</section>
 
-			<section class="tables">
-				<div class="row">
-					<div class="column-50">
-						<div class="column-25">
-							<!-- ISSUE -->
-							<div class="markdown">
-								<h3>[Start]</h3>
-								<p>0% [ <span class="highlight">█</span> _ _ _ _ _ _ _ _ _ ] 100%</p>
-								<p class="arrow">↓</p>
-								<h2>Frac<span class="opacity-dark">/</span>tured <span class="opacity-dark">[TDU-01]</span></h2>
-								<hr />
-								<!-- MARKDOWN -->
-								<p>
-									This inaugural issue features some bad news <span class="opacity-light">(a fractured foot and redundancy)</span> plus some good news
-									<span class="opacity-light">(a healed foot, new work, side projects, vibe coding, ASCII, fonts, and a new camera).</span>
-								</p>
-								<p class="opacity-dark">//</p>
-								<p>
-									According to thousands of newsletter influencers I’m supposed to start this first email off with a positive introduction about what you’ll get below
-									<span class="opacity-light">(and in your inbox in the future).</span> Not only am I not following that advice <span class="opacity-light">(fractured foot, redundancy, etc.),</span> I’m only just getting
-									around to sending a newsletter many months after first asking you all to sign up. Best practice is to send something straight away. My bad. I tried to get around this by asking people to sign up again
-									last week, so a few of you will be impressed to get this email right away!
-								</p>
-								<p>In hindsight, I should have set expectations more clearly. When I said my newsletter would be “infrequent”, I was thinking maybe once a quarter. It’s now shaping up to be an annual thing.</p>
-								<p>
-									Despite the best intentions of sending a newsletter the minute I set it up, I’m instead cutting it fine and getting one out before the end of the year. Insert
-									<span class="opacity-light">indiana-jones.gif</span> of him sliding under the door.
-								</p>
-								<p>
-									And finally, the last bit of advice from the influencers was to write something short and snappy… I haven’t done that. My justification is I’m fighting the constant stream of snack-sized-slop and
-									instead have written a long update, so get a beverage and settle in. Somehow, the fracturing of my foot also provides an appropriate title for this email. It’s a fractured list of things from the year.
-								</p>
-								<hr />
-								<p>LIFE</p>
-								<figure>
-									<img src="https://assets.buttondown.email/images/fd71075f-1ac5-4ccd-9647-344bf2fd65af.png" alt="ASCII foot x-ray." draggable="false" />
-									<figcaption>⌙ fractured-foot.png <span class="opacity-light">(18kb)</span></figcaption>
-								</figure>
-								<p>
-									Earlier this year I took a tumble and fractured my foot. It had been a very long time since I’d broken a bone, and that was only a couple fingers playing cricket. I’d got off lightly growing up when it
-									comes to casts and slings, so I wasn’t well prepared for what was ahead. Dealing with a cast in my 40s <span class="opacity-light">(and over summer)</span> was not ideal, but spoiler alert, I’m fine.
-									People break bones and end up in a lot more discomfort than what I experienced, so all things considered I got lucky.
-								</p>
-								<p>
-									The first thing everyone asked me was “what happened” and if I was doing anything exciting… the short answer is, no. I wasn’t skateboarding, I was visiting a good friend to learn about coffee. He’d
-									setup his outdoor table with a wonderful arrangement of coffee gadgets and various beans to taste. I got distracted coming down the stairs to his coffee wonderland, I missed the last few steps onto the
-									deck and before I realised what had happened I was on my back. At first I thought I’d been knocked out as I felt very nauseous. Turns out (as my doctor informed me later) that was my body trying to hide
-									the pain in my foot! Part shock, and part preoccupied by coffee, I didn’t realise how bad it was, so I stayed and nursed my foot with an icepack. Enjoying the coffee and conversation, it was only when I
-									went to stand up to leave I noticed I couldn’t put any weight on my foot. Also, when I took my sandal off, my foot pointed in the wrong direction!
-								</p>
-								<p>
-									I probably should have gone straight to the hospital, because after getting an x-ray, it was confirmed my foot was broken and I needed a <a href="https://www.instagram.com/p/DFJXRoozDtw/">cast</a>. Then
-									I was sent home with crutches, some powerful painkillers, and strict instructions not to stand on my foot and to keep it raised as much as possible.
-								</p>
-								<p>
-									One of the highlights of what was a mostly grim/boring time waiting for my foot to heal was getting a ride on a robotic chair to help me out of my house! If you’re familiar with Wellington, you’ll know
-									it has many steep sections with too many steps. I live in one of said sections, and it was a challenge to get in and out. 22 steps in my case with a couple of paths splitting them up. They’d never been
-									a problem previously, but kept me pretty much housebound while I healed. To get to one of the appointments at the fracture clinic in the hospital, I was helpfully strapped to the chair and it climbed up
-									the steps with a paramedic guiding it. Felt very futuristic. It was kind of like a wheel chair with tank tracks. I unfortunately didn’t get a photo, but I did get one of my
-									<a href="https://www.instagram.com/p/DFjqHPmp77Y/">scooter</a> I used to zoom around.
-								</p>
-								<p class="opacity-dark">//</p>
-								<p>
-									Before I fractured my foot, a few days earlier I’d started the year with news that the startup I was working at was doing a round of redundancies. Not great, but credit where it’s due: it wasn’t before
-									Christmas.
-								</p>
-								<p>
-									Having experienced it before, I tried to make light of this one and rebrand it as a <span class="opacity-light">RedunDANcy.</span> Axiom no longer needed a Dan, but that just meant I was free to provide
-									<span class="opacity-light">RedunDANcy</span> to other businesses needing design. Laughter is the best medicine.
-								</p>
-								<p>
-									There’s no perfect time to get made redundant, or break a bone, so I tried to make the best of it. However, they say bad things happen in threes, so to complete the trifecta, Ada got sick and was on
-									rest orders from the vet, which is a challenging thing for an active dog that loves the beach! We weren’t able to get to the bottom of what was wrong, but it was possibly a problem with a nerve or disc
-									in her spine. Fortunately she’s doing better now after exhausting our pet insurance.
-								</p>
-								<p class="opacity-dark">//</p>
-								<p>
-									While I was laid up waiting for the foot to heal I tried to use the time productively to think about my future. Having that time ended up being for the best, as I made some decisions about what I wanted
-									to do next…
-								</p>
-								<hr />
-								<p>WORK</p>
-								<figure>
-									<img src="https://assets.buttondown.email/images/e2166584-e99d-49af-9ce0-2da0fcf41ec6.png" alt="ASCII DaaS (Graphics) logo and face." draggable="false" />
-									<figcaption>⌙ daas-graphics.png <span class="opacity-light">(12kb)</span></figcaption>
-								</figure>
-								<p>
-									A few folks have asked what I’ve been up to since leaving <a href="https://dan.newman.is/archiving/axiom/">Axiom</a> <span class="opacity-light">(Case Study).</span> The TL;DR
-									<span class="opacity-light">(previously posted on LinkedIn):</span>
-								</p>
-								<p>
-									I’ve been helping a couple of startups out under the name DaaS <span class="opacity-light">(Graphics)</span> aka Dan as a Service. Having a blast. I’m fully booked polishing pixels and arranging ASCII.
-								</p>
-								<p>Most recently I’ve been working with the talented team at <a href="https://loopholelabs.io">Loophole Labs</a>. They’re getting up to some seriously impressive stuff.</p>
-								<p>
-									It’s been loads of fun to work on their identity, branding, and design. Getting to define so much from scratch has been a unique and inspiring opportunity. Also, bonus points for getting to play with a
-									new font (<a href="https://commitmono.com">Commit Mono</a>), and get up to my same antics with glyphs and grids.
-								</p>
-								<p>
-									Thus far I’ve been creating a design system for both Loophole Labs and Architect, their console application. One of the more interesting details is the logo marks can be easily typed out
-									<span class="opacity-light">{∞}</span> <span class="opacity-dark">+</span> <span class="opacity-light">/~\</span> as part of a flexible identity that’ll work in a CLI or on a t-shirt.
-								</p>
-								<p>
-									ICYMI you can see some of this work in these posts:
-									<a href="https://www.linkedin.com/posts/danserif_loophole-labs-logo-specifications-activity-7398471030090149888-qio0">Logo Specifications</a>
-									<span class="opacity-dark">+</span>
-									<a href="https://www.linkedin.com/posts/danserif_loophole-labs-ascii-team-activity-7396309494026252289-zYdf">ASCII Team</a>
-									<span class="opacity-dark">+</span>
-									<a href="https://www.linkedin.com/posts/danserif_loophole-labs-architect-k8s-activity-7396679266731515904-w0YQ">Architect Animation</a>.
-								</p>
-								<p class="opacity-dark">//</p>
-								<p>
-									While AI continues to come for everything in its path, it still hasn’t quite got to ASCII <span class="opacity-light">(and me).</span> So I’m still designing, and working on some fun new projects. DaaS
-									<span class="opacity-light">(Graphics)</span> ended up being a nice excuse to define some personal branding to use across my sites and newsletter. Pixels, mono fonts, ASCII, lists, black<span
-										class="opacity"
-										>/</span
-									>white, and highlighter lime<span class="opacity">/</span>yellow.
-								</p>
-								<p>
-									What started as me making a joke, DaaS <span class="opacity-light">(Dan as a Service)</span> has ended up how I’m going to work with companies<span class="opacity">/</span>clients for the foreseeable. I
-									worked on a site whilst the foot healed, but was fortunate to have people I’ve previously worked with referring me before I was able to launch it, so I was able to jump straight into several
-									opportunities as I got back on my feet.
-								</p>
-								<hr />
-								<p>FONTS</p>
-								<figure>
-									<img src="https://assets.buttondown.email/images/fba44348-044b-473a-bab2-6776d6fd8fc2.png" alt="List of favourite fonts from 2025." draggable="false" />
-									<figcaption>⌙ favourite-fonts.png <span class="opacity-light">(34kb)</span></figcaption>
-								</figure>
-								<p>
-									After spending a significant time looking at foundry sites throughout my career, and then making a neue one for <a href="https://klim.co.nz">Klim</a>, I took an overdue break from fonts. It’s been five
-									years now since I worked on the site with my mate <a href="https://zakbrown.co">Zak</a> and a lot has changed. Foundry sites have become similar, and there’s so many fonts to catch up on!
-								</p>
-								<p>
-									Over the last few years I’ve been using various mono typefaces for work<span class="opacity">/</span>clients including <a href="https://usgraphics.com/products/berkeley-mono">Berkeley Mono</a>,
-									<a href="https://commitmono.com">Commit Mono</a>, and <a href="https://klim.co.nz/fonts/pitch-sans/">Pitch Sans</a>, as well as some old faithfuls
-									<a href="https://klim.co.nz/collections/soehne/">Söhne</a> and <a href="https://klim.co.nz/collections/untitled/">Untitled</a>.
-								</p>
-								<p>
-									Some years I’ve ended up working at places where I’d use the same font. As someone who loves typography, thats often been a challenge, so I’m back looking for new fonts, and new ways to use existing
-									fonts. A lot of this work has been ASCII and pushing how far I can use just a typeface <span class="opacity-light">(and glyphs)</span> as that main element in the graphic language of the brands I’ve
-									worked with.
-								</p>
-								<p>
-									For DaaS <span class="opacity-light">(Graphics)</span> I’ve been using <a href="https://departuremono.com">Departure Mono</a> <span class="opacity-light">(a monospace pixel font),</span> along with
-									<a href="https://foundry.basement.studio/fonts/adhesion">Adhesion</a> <span class="opacity-light">(a blackletter pixel font),</span> and <a href="https://klim.co.nz/fonts/die-grotesk/">Die Grotesk</a>
-									<span class="opacity-light">(Klim Type Foundry’s Helvetica).</span> At some point, I’ll ship a site and you’ll see more than just a few GIFs on LinkedIn or Twitter.
-								</p>
-								<p>
-									My list of fonts I want to buy<span class="opacity">/</span>use has got pretty unmanageable this year as I’ve gotten back into following foundries more closely. There’s so many great fonts and so little
-									time. Some at the top of the list to use are <a href="https://www.frostype.xyz/typeface/scenik-mono">Scenik Mono</a>, <a href="https://www.frostype.xyz/typeface/system-grotesk">System</a>, and
-									<a href="https://www.frostype.xyz/typeface/system-mono">System Mono</a>
-									from Frost Type, <a href="https://system.mass-driver.com">MD System</a> <span class="opacity-light">(confusingly another named System, but also not a system font),</span>
-									<a href="https://mass-driver.com/typefaces/md-thermochrome/">MD Thermochrome</a>, and <a href="https://mass-driver.com/typefaces/md-io/">MD IO</a> from Mass Driver;
-									<a href="https://foundry.gardedesign.se/typefaces/gd-octio">GD Octio</a> and <a href="https://foundry.gardedesign.se/typefaces/gd-gaio">GD Gaio</a> from GD Foundry; and
-									<a href="https://order.design/otf/vanity">Vanity</a> and <a href="https://order.design/otf/sita">Sita</a> from Order.
-								</p>
-								<p>
-									If you have other fonts you think I’ll like, send me an email. I’m collecting <a href="https://www.cosmos.so/danserif/mono">mono fonts</a> and
-									<a href="https://www.cosmos.so/danserif/typography">typographic</a> inspiration on <a href="https://www.cosmos.so/danserif">Cosmos</a>, and have been thinking of doing some sort of font related side
-									project. Speaking of side projects…
-								</p>
-								<hr />
-								<p>SIDE PROJECTS</p>
-								<figure>
-									<img src="https://assets.buttondown.email/images/404fa9f8-d97e-4e68-bb78-e9683aae3e0d.png" alt="ASCII graphic for STONKSY." draggable="false" />
-									<figcaption>⌙ stonksy.png <span class="opacity-light">(40kb)</span></figcaption>
-								</figure>
-								<p>
-									I’ve been working on a couple of vibe coded apps this year as a way to keep up with the insanity that is AI. Some of you will have seen a bit of them as I prompted them into existence. And of course
-									they needed branding and domain names before starting. Yes, I do have ASCII logos and URLs for said side projects… <span class="opacity-light no-wrap">STØNK$¥, T1M3ZØN3D,</span> and
-									<span class="opacity-light no-wrap">(W)1CK3T5.</span>
-								</p>
-								<p>
-									The interesting thing with all these projects is they started as ideas to solve minor problems with tools<span class="opacity">/</span>sites I use. For example, my stocks are managed by Forsyth Barr and
-									I don’t like their UI. No shame on them, it’s probably fine for a boomer. There’s just no ASCII and ticker… so I set about fixing that by making a scrolling ASCII stock ticker. That then led to some
-									scope creep into a stock viewer for my portfolio!
-								</p>
-								<p>
-									With some trial and error <span class="opacity-light no-wrap">STØNK$¥</span> now runs locally and connects to an API of stock data. I can check how things are trending, see gains
-									<span class="opacity-light">(and losses)</span> converted into my local currency, and a portfolio summary. For now it’s still manual to add stocks
-									<span class="opacity-light">(via updating a JSON file/schema).</span> I like the idea of it being manual and complementary to the ASCII style.
-								</p>
-								<p>
-									You can check <span class="opacity-light no-wrap">STØNK$¥</span> out at <a href="https://en.wikipedia.org/wiki/Localhost">http://localhost:8080</a> <span class="opacity-light">(jokes).</span> If you
-									think I should finish it up <span class="opacity-light">(i.e. you would like use it and pay me money),</span> let me know!
-								</p>
-								<p>
-									Next up was <span class="opacity-light no-wrap">T1M3ZØN3D.</span> It’s pretty self explanatory: an ASCII map and a way for me to check the time for people I’m working with or to see when I can chat with
-									friends overseas. There are so many time zone tools that I could have just used one of them, but nothing had the ASCII vibe I wanted. Needs a bit of polish like features to set your location and
-									timezones you want to view. So far I’ve just hardcoded in New Zealand <span class="opacity-light">(and where friends, family, and clients are).</span>
-								</p>
-								<p>
-									And lastly, I’ve struggled to make progress on my cricket app, <span class="opacity-light no-wrap">(W)1CK3T5.</span> This was the main idea for a side project I wanted to work on. I’ve always thought
-									there’s a huge opportunity to make a better version of <a href="https://www.espncricinfo.com">ESPNCricInfo</a>. It’s a massive resource for cricket news, stats, commentary, and live scores. I just don’t
-									need the bloat and want a simple ASCII version of the next fixtures, scores, and the Blackcaps <span class="opacity-light">(New Zealand)</span> team stats. The hard part has been getting the data I
-									need. Compared to <span class="opacity-light no-wrap">STØNK$¥</span> where there are numerous companies providing APIs to use, its a bit wild and confusing how I’m going to solve this. For now, where
-									I’m headed is basically <a href="https://plaintextsports.com">Plain Text Sports</a> for cricket.
-								</p>
-								<p>
-									As the year progressed, I got busier with work and all my vibe coded apps started to gather dust<span class="opacity">/</span>bugs and fizzled out as I tried to spend more time outside with my camera…
-								</p>
-								<hr />
-								<p>GF1 → X100VI</p>
-								<figure>
-									<img src="https://assets.buttondown.email/images/376c83b4-009f-46d4-bb02-66c6ad465e0c.jpg" alt="Photo of the Point Halswell Lighthouse." draggable="false" />
-									<figcaption>DMC-GF1 Lumix <span class="opacity-light">(20mm ~ 1/100 ~ f/1.8 ~ 100)</span><br />⌙ point-halswell-lighthouse.jpg <span class="opacity-light">(62kb)</span></figcaption>
-								</figure>
-								<p>
-									With the absurd acceleration of AI, for the first time in ages I’ve felt like I needed a proper hobby away from a computer. Something creative, and something active. I’m already a collector of cameras,
-									and love photography, so I decided to spend more time out exploring Wellington taking photos.
-								</p>
-								<p>
-									Considering you can now prompt any scene into being, it also seemed even more timely to capture reality. What I see with my own eyes. Not AI. Not fake news. Just the beauty I find in what’s around me. I
-									don’t travel much these days, so the nice benefit of getting back into photography around Wellington is seeing the city with fresh eyes after living here for many years. It’s also a chance to change the
-									perspective and avoid all the bad news aka doom and gloom. The local economy is indeed bad, but there are moments of hope and charm around Wellington worth capturing and celebrating.
-								</p>
-								<p>
-									To get back into “proper” photography I decided to retire my GF1 <span class="opacity-light">(an amazing camera I’ve had since 2010)</span> and I upgraded to a new
-									<a href="https://www.fujifilm-x.com/en-us/products/cameras/x100vi/">FujiFilm X100VI</a>. I love it. It’s a fixed lens and perfect for taking everywhere with me, similar to the GF1 with a pancake lens.
-								</p>
-								<p>
-									Despite my GF1 being 15 years old I took it out for one last wander around and ended up snapping one of my favourite photos. The shot <span class="opacity-light">(above)</span> of the Point Halswell
-									Lighthouse as a storm was coming in. I got very lucky with the birds matching the checkered pattern.
-								</p>
-								<p>
-									Using the GF1 for one more outing highlighted it’s not really about the tech specs of a camera, however, the X100VI has way better stabilisation and for the last few months I’ve been loving getting used
-									to the built-in recipes and custom settings you can use to create film simulations.
-								</p>
-								<figure>
-									<img src="https://assets.buttondown.email/images/f84826f2-2bb9-4f45-8eaa-816bf511e75d.jpg" alt="Photo of a boatshed being prepared for sale." draggable="false" />
-									<figcaption>FUJIFILM X100VI <span class="opacity-light">(23mm ~ 1/4000 ~ f/5.6 ~ 500)</span><br />⌙ for-sale.jpg <span class="opacity-light">(83kb)</span></figcaption>
-								</figure>
-								<figure>
-									<img src="https://assets.buttondown.email/images/ade9fb7a-b098-450c-a654-18b9f5872c4a.jpg" alt="Photo of Ada with her favourite ball." draggable="false" />
-									<figcaption>FUJIFILM X100VI <span class="opacity-light">(23mm ~ 1/640 ~ f/2.8 ~ 500)</span><br />⌙ ada.jpg <span class="opacity-light">(75kb)</span></figcaption>
-								</figure>
-								<p>
-									For now, I’m going to keep snapping and someday will put together an exhibition of my favourite prints. Until then, you can check out more of the photos I’ve been taking on my X100VI on
-									<a href="https://www.instagram.com/danserif/">Instagram</a> or <a href="https://glass.photo/danserif">Glass</a>. It’s mostly black and white photos of Wellington
-									<span class="opacity-light">(and the dog).</span>
-								</p>
-								<p class="opacity-dark">//</p>
-								<p>
-									Finally, thanks for signing up and reading this far! The only AI used to write this newsletter was <a href="https://anoushkaisaac.com">Anoushka Isaac</a> <span class="opacity-light">(AI).</span> My
-									editor and co-pawrent to Ada. I’ll try to send more than one newsletter next year. Maybe. If you want to encourage <span class="opacity-light">(or discourage)</span> that, let me know what you think by
-									replying to this email. As a bribe, you’re officially one of the select few <span class="opacity-light">#FansOfDan.</span> This hashtag will be your discount code for some exciting things coming soon.
-									Don’t hold your breath, but remember the hashtag<span class="opacity">/</span>code!
-								</p>
-								<p>And, happy holidays! It would have been wrong to sign off at this point without an ASCII Christmas tree…</p>
-								<figure>
-									<img src="/images/gifs/happy-holidays.gif" alt="ASCII Christmas Tree GIF" />
-									<figcaption>⌙ happy-holidays.gif <span class="opacity-light">(32kb)</span></figcaption>
-								</figure>
-								<p>Have a great break with friends and family. See you in 2026.</p>
+		<section class="tables">
+			<div class="row">
+				<div class="column-50">
+					<div class="column-25">
+						<!-- ISSUE -->
+						<div class="markdown">
+							<h3>[Start]</h3>
+							<p>0% [ <span class="highlight">█</span> _ _ _ _ _ _ _ _ _ ] 100%</p>
+							<p class="arrow">↓</p>
+							<h2>Frac<span class="opacity-dark">/</span>tured <span class="opacity-dark">[TDU-01]</span></h2>
+							<hr />
+							<!-- MARKDOWN -->
+							<p>
+								This inaugural issue features some bad news <span class="opacity-light">(a fractured foot and
+									redundancy)</span> plus some good news
+								<span class="opacity-light">(a healed foot, new work, side projects, vibe coding, ASCII, fonts, and a
+									new camera).</span>
+							</p>
+							<p class="opacity-dark">//</p>
+							<p>
+								According to thousands of newsletter influencers I’m supposed to start this first email off with a
+								positive introduction about what you’ll get below
+								<span class="opacity-light">(and in your inbox in the future).</span> Not only am I not following that
+								advice <span class="opacity-light">(fractured foot, redundancy, etc.),</span> I’m only just getting
+								around to sending a newsletter many months after first asking you all to sign up. Best practice is to
+								send something straight away. My bad. I tried to get around this by asking people to sign up again
+								last week, so a few of you will be impressed to get this email right away!
+							</p>
+							<p>In hindsight, I should have set expectations more clearly. When I said my newsletter would be
+								“infrequent”, I was thinking maybe once a quarter. It’s now shaping up to be an annual thing.</p>
+							<p>
+								Despite the best intentions of sending a newsletter the minute I set it up, I’m instead cutting it fine
+								and getting one out before the end of the year. Insert
+								<span class="opacity-light">indiana-jones.gif</span> of him sliding under the door.
+							</p>
+							<p>
+								And finally, the last bit of advice from the influencers was to write something short and snappy… I
+								haven’t done that. My justification is I’m fighting the constant stream of snack-sized-slop and
+								instead have written a long update, so get a beverage and settle in. Somehow, the fracturing of my foot
+								also provides an appropriate title for this email. It’s a fractured list of things from the year.
+							</p>
+							<hr />
+							<p>LIFE</p>
+							<figure>
+								<img src="https://assets.buttondown.email/images/fd71075f-1ac5-4ccd-9647-344bf2fd65af.png"
+									alt="ASCII foot x-ray." draggable="false" />
+								<figcaption>⌙ fractured-foot.png <span class="opacity-light">(18kb)</span></figcaption>
+							</figure>
+							<p>
+								Earlier this year I took a tumble and fractured my foot. It had been a very long time since I’d broken a
+								bone, and that was only a couple fingers playing cricket. I’d got off lightly growing up when it
+								comes to casts and slings, so I wasn’t well prepared for what was ahead. Dealing with a cast in my 40s
+								<span class="opacity-light">(and over summer)</span> was not ideal, but spoiler alert, I’m fine.
+								People break bones and end up in a lot more discomfort than what I experienced, so all things considered
+								I got lucky.
+							</p>
+							<p>
+								The first thing everyone asked me was “what happened” and if I was doing anything exciting… the short
+								answer is, no. I wasn’t skateboarding, I was visiting a good friend to learn about coffee. He’d
+								setup his outdoor table with a wonderful arrangement of coffee gadgets and various beans to taste. I got
+								distracted coming down the stairs to his coffee wonderland, I missed the last few steps onto the
+								deck and before I realised what had happened I was on my back. At first I thought I’d been knocked out
+								as I felt very nauseous. Turns out (as my doctor informed me later) that was my body trying to hide
+								the pain in my foot! Part shock, and part preoccupied by coffee, I didn’t realise how bad it was, so I
+								stayed and nursed my foot with an icepack. Enjoying the coffee and conversation, it was only when I
+								went to stand up to leave I noticed I couldn’t put any weight on my foot. Also, when I took my sandal
+								off, my foot pointed in the wrong direction!
+							</p>
+							<p>
+								I probably should have gone straight to the hospital, because after getting an x-ray, it was confirmed
+								my foot was broken and I needed a <a href="https://www.instagram.com/p/DFJXRoozDtw/">cast</a>. Then
+								I was sent home with crutches, some powerful painkillers, and strict instructions not to stand on my
+								foot and to keep it raised as much as possible.
+							</p>
+							<p>
+								One of the highlights of what was a mostly grim/boring time waiting for my foot to heal was getting a
+								ride on a robotic chair to help me out of my house! If you’re familiar with Wellington, you’ll know
+								it has many steep sections with too many steps. I live in one of said sections, and it was a challenge
+								to get in and out. 22 steps in my case with a couple of paths splitting them up. They’d never been
+								a problem previously, but kept me pretty much housebound while I healed. To get to one of the
+								appointments at the fracture clinic in the hospital, I was helpfully strapped to the chair and it
+								climbed up
+								the steps with a paramedic guiding it. Felt very futuristic. It was kind of like a wheel chair with tank
+								tracks. I unfortunately didn’t get a photo, but I did get one of my
+								<a href="https://www.instagram.com/p/DFjqHPmp77Y/">scooter</a> I used to zoom around.
+							</p>
+							<p class="opacity-dark">//</p>
+							<p>
+								Before I fractured my foot, a few days earlier I’d started the year with news that the startup I was
+								working at was doing a round of redundancies. Not great, but credit where it’s due: it wasn’t before
+								Christmas.
+							</p>
+							<p>
+								Having experienced it before, I tried to make light of this one and rebrand it as a <span
+									class="opacity-light">RedunDANcy.</span> Axiom no longer needed a Dan, but that just meant I was free
+								to provide
+								<span class="opacity-light">RedunDANcy</span> to other businesses needing design. Laughter is the best
+								medicine.
+							</p>
+							<p>
+								There’s no perfect time to get made redundant, or break a bone, so I tried to make the best of it.
+								However, they say bad things happen in threes, so to complete the trifecta, Ada got sick and was on
+								rest orders from the vet, which is a challenging thing for an active dog that loves the beach! We
+								weren’t able to get to the bottom of what was wrong, but it was possibly a problem with a nerve or disc
+								in her spine. Fortunately she’s doing better now after exhausting our pet insurance.
+							</p>
+							<p class="opacity-dark">//</p>
+							<p>
+								While I was laid up waiting for the foot to heal I tried to use the time productively to think about my
+								future. Having that time ended up being for the best, as I made some decisions about what I wanted
+								to do next…
+							</p>
+							<hr />
+							<p>WORK</p>
+							<figure>
+								<img src="https://assets.buttondown.email/images/e2166584-e99d-49af-9ce0-2da0fcf41ec6.png"
+									alt="ASCII DaaS (Graphics) logo and face." draggable="false" />
+								<figcaption>⌙ daas-graphics.png <span class="opacity-light">(12kb)</span></figcaption>
+							</figure>
+							<p>
+								A few folks have asked what I’ve been up to since leaving <a
+									href="https://dan.newman.is/archiving/axiom/">Axiom</a> <span class="opacity-light">(Case
+									Study).</span> The TL;DR
+								<span class="opacity-light">(previously posted on LinkedIn):</span>
+							</p>
+							<p>
+								I’ve been helping a couple of startups out under the name DaaS <span
+									class="opacity-light">(Graphics)</span> aka Dan as a Service. Having a blast. I’m fully booked
+								polishing pixels and arranging ASCII.
+							</p>
+							<p>Most recently I’ve been working with the talented team at <a href="https://loopholelabs.io">Loophole
+									Labs</a>. They’re getting up to some seriously impressive stuff.</p>
+							<p>
+								It’s been loads of fun to work on their identity, branding, and design. Getting to define so much from
+								scratch has been a unique and inspiring opportunity. Also, bonus points for getting to play with a
+								new font (<a href="https://commitmono.com">Commit Mono</a>), and get up to my same antics with glyphs
+								and grids.
+							</p>
+							<p>
+								Thus far I’ve been creating a design system for both Loophole Labs and Architect, their console
+								application. One of the more interesting details is the logo marks can be easily typed out
+								<span class="opacity-light">{∞}</span> <span class="opacity-dark">+</span> <span
+									class="opacity-light">/~\</span> as part of a flexible identity that’ll work in a CLI or on a t-shirt.
+							</p>
+							<p>
+								ICYMI you can see some of this work in these posts:
+								<a
+									href="https://www.linkedin.com/posts/danserif_loophole-labs-logo-specifications-activity-7398471030090149888-qio0">Logo
+									Specifications</a>
+								<span class="opacity-dark">+</span>
+								<a
+									href="https://www.linkedin.com/posts/danserif_loophole-labs-ascii-team-activity-7396309494026252289-zYdf">ASCII
+									Team</a>
+								<span class="opacity-dark">+</span>
+								<a
+									href="https://www.linkedin.com/posts/danserif_loophole-labs-architect-k8s-activity-7396679266731515904-w0YQ">Architect
+									Animation</a>.
+							</p>
+							<p class="opacity-dark">//</p>
+							<p>
+								While AI continues to come for everything in its path, it still hasn’t quite got to ASCII <span
+									class="opacity-light">(and me).</span> So I’m still designing, and working on some fun new projects.
+								DaaS
+								<span class="opacity-light">(Graphics)</span> ended up being a nice excuse to define some personal
+								branding to use across my sites and newsletter. Pixels, mono fonts, ASCII, lists, black<span
+									class="opacity">/</span>white, and highlighter lime<span class="opacity">/</span>yellow.
+							</p>
+							<p>
+								What started as me making a joke, DaaS <span class="opacity-light">(Dan as a Service)</span> has ended
+								up how I’m going to work with companies<span class="opacity">/</span>clients for the foreseeable. I
+								worked on a site whilst the foot healed, but was fortunate to have people I’ve previously worked with
+								referring me before I was able to launch it, so I was able to jump straight into several
+								opportunities as I got back on my feet.
+							</p>
+							<hr />
+							<p>FONTS</p>
+							<figure>
+								<img src="https://assets.buttondown.email/images/fba44348-044b-473a-bab2-6776d6fd8fc2.png"
+									alt="List of favourite fonts from 2025." draggable="false" />
+								<figcaption>⌙ favourite-fonts.png <span class="opacity-light">(34kb)</span></figcaption>
+							</figure>
+							<p>
+								After spending a significant time looking at foundry sites throughout my career, and then making a neue
+								one for <a href="https://klim.co.nz">Klim</a>, I took an overdue break from fonts. It’s been five
+								years now since I worked on the site with my mate <a href="https://zakbrown.co">Zak</a> and a lot has
+								changed. Foundry sites have become similar, and there’s so many fonts to catch up on!
+							</p>
+							<p>
+								Over the last few years I’ve been using various mono typefaces for work<span
+									class="opacity">/</span>clients including <a
+									href="https://usgraphics.com/products/berkeley-mono">Berkeley Mono</a>,
+								<a href="https://commitmono.com">Commit Mono</a>, and <a
+									href="https://klim.co.nz/fonts/pitch-sans/">Pitch Sans</a>, as well as some old faithfuls
+								<a href="https://klim.co.nz/collections/soehne/">Söhne</a> and <a
+									href="https://klim.co.nz/collections/untitled/">Untitled</a>.
+							</p>
+							<p>
+								Some years I’ve ended up working at places where I’d use the same font. As someone who loves typography,
+								thats often been a challenge, so I’m back looking for new fonts, and new ways to use existing
+								fonts. A lot of this work has been ASCII and pushing how far I can use just a typeface <span
+									class="opacity-light">(and glyphs)</span> as that main element in the graphic language of the brands
+								I’ve
+								worked with.
+							</p>
+							<p>
+								For DaaS <span class="opacity-light">(Graphics)</span> I’ve been using <a
+									href="https://departuremono.com">Departure Mono</a> <span class="opacity-light">(a monospace pixel
+									font),</span> along with
+								<a href="https://foundry.basement.studio/fonts/adhesion">Adhesion</a> <span class="opacity-light">(a
+									blackletter pixel font),</span> and <a href="https://klim.co.nz/fonts/die-grotesk/">Die Grotesk</a>
+								<span class="opacity-light">(Klim Type Foundry’s Helvetica).</span> At some point, I’ll ship a site and
+								you’ll see more than just a few GIFs on LinkedIn or Twitter.
+							</p>
+							<p>
+								My list of fonts I want to buy<span class="opacity">/</span>use has got pretty unmanageable this year as
+								I’ve gotten back into following foundries more closely. There’s so many great fonts and so little
+								time. Some at the top of the list to use are <a
+									href="https://www.frostype.xyz/typeface/scenik-mono">Scenik Mono</a>, <a
+									href="https://www.frostype.xyz/typeface/system-grotesk">System</a>, and
+								<a href="https://www.frostype.xyz/typeface/system-mono">System Mono</a>
+								from Frost Type, <a href="https://system.mass-driver.com">MD System</a> <span
+									class="opacity-light">(confusingly another named System, but also not a system font),</span>
+								<a href="https://mass-driver.com/typefaces/md-thermochrome/">MD Thermochrome</a>, and <a
+									href="https://mass-driver.com/typefaces/md-io/">MD IO</a> from Mass Driver;
+								<a href="https://foundry.gardedesign.se/typefaces/gd-octio">GD Octio</a> and <a
+									href="https://foundry.gardedesign.se/typefaces/gd-gaio">GD Gaio</a> from GD Foundry; and
+								<a href="https://order.design/otf/vanity">Vanity</a> and <a
+									href="https://order.design/otf/sita">Sita</a> from Order.
+							</p>
+							<p>
+								If you have other fonts you think I’ll like, send me an email. I’m collecting <a
+									href="https://www.cosmos.so/danserif/mono">mono fonts</a> and
+								<a href="https://www.cosmos.so/danserif/typography">typographic</a> inspiration on <a
+									href="https://www.cosmos.so/danserif">Cosmos</a>, and have been thinking of doing some sort of font
+								related side
+								project. Speaking of side projects…
+							</p>
+							<hr />
+							<p>SIDE PROJECTS</p>
+							<figure>
+								<img src="https://assets.buttondown.email/images/404fa9f8-d97e-4e68-bb78-e9683aae3e0d.png"
+									alt="ASCII graphic for STONKSY." draggable="false" />
+								<figcaption>⌙ stonksy.png <span class="opacity-light">(40kb)</span></figcaption>
+							</figure>
+							<p>
+								I’ve been working on a couple of vibe coded apps this year as a way to keep up with the insanity that is
+								AI. Some of you will have seen a bit of them as I prompted them into existence. And of course
+								they needed branding and domain names before starting. Yes, I do have ASCII logos and URLs for said side
+								projects… <span class="opacity-light no-wrap">STØNK$¥, T1M3ZØN3D,</span> and
+								<span class="opacity-light no-wrap">(W)1CK3T5.</span>
+							</p>
+							<p>
+								The interesting thing with all these projects is they started as ideas to solve minor problems with
+								tools<span class="opacity">/</span>sites I use. For example, my stocks are managed by Forsyth Barr and
+								I don’t like their UI. No shame on them, it’s probably fine for a boomer. There’s just no ASCII and
+								ticker… so I set about fixing that by making a scrolling ASCII stock ticker. That then led to some
+								scope creep into a stock viewer for my portfolio!
+							</p>
+							<p>
+								With some trial and error <span class="opacity-light no-wrap">STØNK$¥</span> now runs locally and
+								connects to an API of stock data. I can check how things are trending, see gains
+								<span class="opacity-light">(and losses)</span> converted into my local currency, and a portfolio
+								summary. For now it’s still manual to add stocks
+								<span class="opacity-light">(via updating a JSON file/schema).</span> I like the idea of it being manual
+								and complementary to the ASCII style.
+							</p>
+							<p>
+								You can check <span class="opacity-light no-wrap">STØNK$¥</span> out at <a
+									href="https://en.wikipedia.org/wiki/Localhost">http://localhost:8080</a> <span
+									class="opacity-light">(jokes).</span> If you
+								think I should finish it up <span class="opacity-light">(i.e. you would like use it and pay me
+									money),</span> let me know!
+							</p>
+							<p>
+								Next up was <span class="opacity-light no-wrap">T1M3ZØN3D.</span> It’s pretty self explanatory: an ASCII
+								map and a way for me to check the time for people I’m working with or to see when I can chat with
+								friends overseas. There are so many time zone tools that I could have just used one of them, but nothing
+								had the ASCII vibe I wanted. Needs a bit of polish like features to set your location and
+								timezones you want to view. So far I’ve just hardcoded in New Zealand <span class="opacity-light">(and
+									where friends, family, and clients are).</span>
+							</p>
+							<p>
+								And lastly, I’ve struggled to make progress on my cricket app, <span
+									class="opacity-light no-wrap">(W)1CK3T5.</span> This was the main idea for a side project I wanted to
+								work on. I’ve always thought
+								there’s a huge opportunity to make a better version of <a
+									href="https://www.espncricinfo.com">ESPNCricInfo</a>. It’s a massive resource for cricket news, stats,
+								commentary, and live scores. I just don’t
+								need the bloat and want a simple ASCII version of the next fixtures, scores, and the Blackcaps <span
+									class="opacity-light">(New Zealand)</span> team stats. The hard part has been getting the data I
+								need. Compared to <span class="opacity-light no-wrap">STØNK$¥</span> where there are numerous companies
+								providing APIs to use, its a bit wild and confusing how I’m going to solve this. For now, where
+								I’m headed is basically <a href="https://plaintextsports.com">Plain Text Sports</a> for cricket.
+							</p>
+							<p>
+								As the year progressed, I got busier with work and all my vibe coded apps started to gather dust<span
+									class="opacity">/</span>bugs and fizzled out as I tried to spend more time outside with my camera…
+							</p>
+							<hr />
+							<p>GF1 → X100VI</p>
+							<figure>
+								<img src="https://assets.buttondown.email/images/376c83b4-009f-46d4-bb02-66c6ad465e0c.jpg"
+									alt="Photo of the Point Halswell Lighthouse." draggable="false" />
+								<figcaption>DMC-GF1 Lumix <span class="opacity-light">(20mm ~ 1/100 ~ f/1.8 ~ 100)</span><br />⌙
+									point-halswell-lighthouse.jpg <span class="opacity-light">(62kb)</span></figcaption>
+							</figure>
+							<p>
+								With the absurd acceleration of AI, for the first time in ages I’ve felt like I needed a proper hobby
+								away from a computer. Something creative, and something active. I’m already a collector of cameras,
+								and love photography, so I decided to spend more time out exploring Wellington taking photos.
+							</p>
+							<p>
+								Considering you can now prompt any scene into being, it also seemed even more timely to capture reality.
+								What I see with my own eyes. Not AI. Not fake news. Just the beauty I find in what’s around me. I
+								don’t travel much these days, so the nice benefit of getting back into photography around Wellington is
+								seeing the city with fresh eyes after living here for many years. It’s also a chance to change the
+								perspective and avoid all the bad news aka doom and gloom. The local economy is indeed bad, but there
+								are moments of hope and charm around Wellington worth capturing and celebrating.
+							</p>
+							<p>
+								To get back into “proper” photography I decided to retire my GF1 <span class="opacity-light">(an amazing
+									camera I’ve had since 2010)</span> and I upgraded to a new
+								<a href="https://www.fujifilm-x.com/en-us/products/cameras/x100vi/">FujiFilm X100VI</a>. I love it. It’s
+								a fixed lens and perfect for taking everywhere with me, similar to the GF1 with a pancake lens.
+							</p>
+							<p>
+								Despite my GF1 being 15 years old I took it out for one last wander around and ended up snapping one of
+								my favourite photos. The shot <span class="opacity-light">(above)</span> of the Point Halswell
+								Lighthouse as a storm was coming in. I got very lucky with the birds matching the checkered pattern.
+							</p>
+							<p>
+								Using the GF1 for one more outing highlighted it’s not really about the tech specs of a camera, however,
+								the X100VI has way better stabilisation and for the last few months I’ve been loving getting used
+								to the built-in recipes and custom settings you can use to create film simulations.
+							</p>
+							<figure>
+								<img src="https://assets.buttondown.email/images/f84826f2-2bb9-4f45-8eaa-816bf511e75d.jpg"
+									alt="Photo of a boatshed being prepared for sale." draggable="false" />
+								<figcaption>FUJIFILM X100VI <span class="opacity-light">(23mm ~ 1/4000 ~ f/5.6 ~ 500)</span><br />⌙
+									for-sale.jpg <span class="opacity-light">(83kb)</span></figcaption>
+							</figure>
+							<figure>
+								<img src="https://assets.buttondown.email/images/ade9fb7a-b098-450c-a654-18b9f5872c4a.jpg"
+									alt="Photo of Ada with her favourite ball." draggable="false" />
+								<figcaption>FUJIFILM X100VI <span class="opacity-light">(23mm ~ 1/640 ~ f/2.8 ~ 500)</span><br />⌙
+									ada.jpg <span class="opacity-light">(75kb)</span></figcaption>
+							</figure>
+							<p>
+								For now, I’m going to keep snapping and someday will put together an exhibition of my favourite prints.
+								Until then, you can check out more of the photos I’ve been taking on my X100VI on
+								<a href="https://www.instagram.com/danserif/">Instagram</a> or <a
+									href="https://glass.photo/danserif">Glass</a>. It’s mostly black and white photos of Wellington
+								<span class="opacity-light">(and the dog).</span>
+							</p>
+							<p class="opacity-dark">//</p>
+							<p>
+								Finally, thanks for signing up and reading this far! The only AI used to write this newsletter was <a
+									href="https://anoushkaisaac.com">Anoushka Isaac</a> <span class="opacity-light">(AI).</span> My
+								editor and co-pawrent to Ada. I’ll try to send more than one newsletter next year. Maybe. If you want to
+								encourage <span class="opacity-light">(or discourage)</span> that, let me know what you think by
+								replying to this email. As a bribe, you’re officially one of the select few <span
+									class="opacity-light">#FansOfDan.</span> This hashtag will be your discount code for some exciting
+								things coming soon.
+								Don’t hold your breath, but remember the hashtag<span class="opacity">/</span>code!
+							</p>
+							<p>And, happy holidays! It would have been wrong to sign off at this point without an ASCII Christmas
+								tree…</p>
+							<figure>
+								<img src="/images/gifs/happy-holidays.gif" alt="ASCII Christmas Tree GIF" />
+								<figcaption>⌙ happy-holidays.gif <span class="opacity-light">(32kb)</span></figcaption>
+							</figure>
+							<p>Have a great break with friends and family. See you in 2026.</p>
 
-								<!-- SIGNOFF -->
-								<p class="opacity-dark">\m/</p>
-								<p>
-									Until next time,<br />
-									Dan
-								</p>
-								<hr />
-								<p class="links">
-									You can get in touch by <a href="mailto:dan@newman.is" onclick="fathom.trackEvent('Email', 0);">email</a>, or follow me on
-									<a href="https://linkedin.com/in/danserif" onclick="fathom.trackEvent('LinkedIn', 0);">LinkedIn</a> and <a href="https://twitter.com/danserif" onclick="fathom.trackEvent('Twitter', 0);">Twitter</a>
-									<span class="opacity-dark">(RIP).</span>
-								</p>
-								<br />
-								<p>0% [ <span class="highlight">█ █ █ █ █ █ █ █ █ █ █</span> ] 100%</p>
-								<h3>[End]</h3>
-							</div>
-						</div>
-						<div class="column-25">
-							<div class="column-25">
-								<!-- FORM -->
-								<h3>[Form]</h3>
-								<div class="form">
-									<form id="subscribe-form" class="embeddable-buttondown-form">
-										<input class="email" type="email" name="email" id="bd-email" placeholder="Email" required />
-										<button id="subscribe-button" class="subscribe" type="submit">Subscribe</button>
-									</form>
-									<p class="caption">&#8985; buttondown.com <span class="opacity-light">(Newsletter)</span></p>
-									<div class="disclaimer">
-										<p>
-											Add
-											<a href="mailto:newsletter@danserif.com" class="hover"
-												><span class="opacity">newsletter</span> <span class="opacity-dark">[at]</span> <span class="opacity">danserif</span> <span class="opacity-dark">[dot]</span> <span class="opacity">com</span></a
-											>
-											to your contacts so my emails dont’t end up in spam, and check your email to opt in! <span class="opacity-dark">\m/</span>
-										</p>
-										<p>When the newsletter is sent you’ll also be able to read it here.</p>
-									</div>
-								</div>
-
-								<script>
-									const form = document.getElementById("subscribe-form");
-									const button = document.getElementById("subscribe-button");
-
-									form.addEventListener("submit", async function (e) {
-										e.preventDefault(); // Stop normal form
-
-										const email = document.getElementById("bd-email").value;
-
-										// Disable button and change text
-										button.disabled = true;
-										button.innerText = "Submitting...";
-
-										try {
-											await fetch("https://buttondown.com/api/emails/embed-subscribe/danserif", {
-												method: "POST",
-												headers: {
-													"Content-Type": "application/x-www-form-urlencoded",
-												},
-												body: new URLSearchParams({ email }),
-											});
-
-											if (window.fathom) fathom.trackEvent("Subscribe");
-
-											// Redirect to ~/thanks
-											window.location.href = "https://danserif.com/thanks/";
-										} catch (error) {
-											console.error("Subscription failed:", error);
-											alert("Oops! Something went wrong. Please try again.");
-
-											// Re-enable button and reset text if error
-											button.disabled = false;
-											button.innerText = "Subscribe";
-										}
-									});
-								</script>
-
-								<!-- ISSUES -->
-								<h3>[Issues]</h3>
-								<table>
-									<colgroup>
-										<col style="width: 20%" />
-										<col style="width: 80%" />
-									</colgroup>
-									<tr>
-										<td><span class="opacity">TDU-01</span></td>
-										<td>
-											<span class="opacity-dark uppercase">Frac<span class="opacity-light">/</span>tured</span>
-										</td>
-										<td><span class="opacity-dark uppercase hide">Sent</span></td>
-									</tr>
-									<tr>
-										<td><span class="opacity">TDU-02</span></td>
-										<td><span class="opacity-dark">*******</span></td>
-										<td><span class="opacity-dark hide">WIP</span></td>
-									</tr>
-								</table>
-							</div>
+							<!-- SIGNOFF -->
+							<p class="opacity-dark">\m/</p>
+							<p>
+								Until next time,<br />
+								Dan
+							</p>
+							<hr />
+							<p class="links">
+								You can get in touch by <a href="mailto:dan@newman.is"
+									onclick="fathom.trackEvent('Email', 0);">email</a>, or follow me on
+								<a href="https://linkedin.com/in/danserif" onclick="fathom.trackEvent('LinkedIn', 0);">LinkedIn</a> and
+								<a href="https://twitter.com/danserif" onclick="fathom.trackEvent('Twitter', 0);">Twitter</a>
+								<span class="opacity-dark">(RIP).</span>
+							</p>
+							<br />
+							<p>0% [ <span class="highlight">█ █ █ █ █ █ █ █ █ █ █</span> ] 100%</p>
+							<h3>[End]</h3>
 						</div>
 					</div>
-					<div class="column-50">
+					<div class="column-25">
 						<div class="column-25">
-							<!-- ASCII -->
-							<h3>[ASCII]</h3>
-							<div class="block">
-								<pre class="tdu opacity-light">
+							<!-- FORM -->
+							<h3>[Form]</h3>
+							<div class="form">
+								<form id="subscribe-form" class="embeddable-buttondown-form">
+									<input class="email" type="email" name="email" id="bd-email" placeholder="Email" required />
+									<button id="subscribe-button" class="subscribe" type="submit">Subscribe</button>
+								</form>
+								<p class="caption">&#8985; buttondown.com <span class="opacity-light">(Newsletter)</span></p>
+								<div class="disclaimer">
+									<p>
+										Add
+										<a href="mailto:newsletter@danserif.com" class="hover"><span class="opacity">newsletter</span> <span
+												class="opacity-dark">[at]</span> <span class="opacity">danserif</span> <span
+												class="opacity-dark">[dot]</span> <span class="opacity">com</span></a>
+										to your contacts so my emails dont’t end up in spam, and check your email to opt in! <span
+											class="opacity-dark">\m/</span>
+									</p>
+									<p>When the newsletter is sent you’ll also be able to read it here.</p>
+								</div>
+							</div>
+
+							<script>
+								const form = document.getElementById("subscribe-form");
+								const button = document.getElementById("subscribe-button");
+
+								form.addEventListener("submit", async function (e) {
+									e.preventDefault(); // Stop normal form
+
+									const email = document.getElementById("bd-email").value;
+
+									// Disable button and change text
+									button.disabled = true;
+									button.innerText = "Submitting...";
+
+									try {
+										await fetch("https://buttondown.com/api/emails/embed-subscribe/danserif", {
+											method: "POST",
+											headers: {
+												"Content-Type": "application/x-www-form-urlencoded",
+											},
+											body: new URLSearchParams({ email }),
+										});
+
+										if (window.fathom) fathom.trackEvent("Subscribe");
+
+										// Redirect to ~/thanks
+										window.location.href = "https://danserif.com/thanks/";
+									} catch (error) {
+										console.error("Subscription failed:", error);
+										alert("Oops! Something went wrong. Please try again.");
+
+										// Re-enable button and reset text if error
+										button.disabled = false;
+										button.innerText = "Subscribe";
+									}
+								});
+							</script>
+
+							<!-- ISSUES -->
+							<h3>[Issues]</h3>
+							<table>
+								<colgroup>
+									<col style="width: 20%" />
+									<col style="width: 80%" />
+								</colgroup>
+								<tr>
+									<td><span class="opacity">TDU-01</span></td>
+									<td>
+										<span class="opacity-dark uppercase">Frac<span class="opacity-light">/</span>tured</span>
+									</td>
+									<td><span class="opacity-dark uppercase hide">Sent</span></td>
+								</tr>
+								<tr>
+									<td><span class="opacity">TDU-02</span></td>
+									<td><span class="opacity-dark">*******</span></td>
+									<td><span class="opacity-dark hide">WIP</span></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="column-50">
+					<div class="column-25">
+						<!-- ASCII -->
+						<h3>[ASCII]</h3>
+						<div class="block">
+							<pre class="tdu opacity-light">
 [[[[                          ]]]]
 [[    //////  DDDDD   #    #    ]]
 [[      //    D    D  #    #    ]]
@@ -510,143 +631,155 @@
 [[      //    D    D  #    #    ]]
 [[      //    D    D  #    #    ]]
 [[      //    DDDDD    ####     ]]
-[[[[                          ]]]]</pre
-								>
-								<p class="caption">&#8985; <span class="uppercase">The Danserif Update</span> <span class="opacity-light">(Logo)</span></p>
-							</div>
-						</div>
-						<div class="column-25">
-							<!-- FOLLOW -->
-							<h3>[Follow]</h3>
-							<table>
-								<colgroup>
-									<col style="width: 20%" />
-									<col style="width: 80%" />
-								</colgroup>
-								<tr>
-									<td><a href="https://linkedin.com/in/danserif" onclick="fathom.trackEvent('LinkedIn', 0);">LinkedIn</a></td>
-									<td><span class="opacity-dark">linkedin.com/in/</span><span class="opacity">danserif</span></td>
-									<td class="arrow"><a href="https://linkedin.com/in/danserif" onclick="fathom.trackEvent('LinkedIn', 0);">&nearr;</a></td>
-								</tr>
-								<tr>
-									<td>
-										<a href="https://twitter.com/danserif" onclick="fathom.trackEvent('Twitter', 0);">Twitter <span class="opacity-dark">(RIP)</span></a>
-									</td>
-									<td class="opacity">@danserif</td>
-									<td class="arrow"><a href="https://twitter.com/danserif" onclick="fathom.trackEvent('Twitter', 0);">&nearr;</a></td>
-								</tr>
-								<tr>
-									<td><a href="https://instagram.com/danserif" onclick="fathom.trackEvent('Instagram', 0);">Instagram</a></td>
-									<td><span class="opacity-dark">instagram.com/</span><span class="opacity">danserif</span></td>
-									<td class="arrow"><a href="https://instagram.com/danserif" onclick="fathom.trackEvent('Instagram', 0);">&nearr;</a></td>
-								</tr>
-								<tr>
-									<td><a href="https://glass.photo/danserif" onclick="fathom.trackEvent('Glass', 0);">Glass</a></td>
-									<td><span class="opacity-dark">glass.photo/</span><span class="opacity">danserif</span></td>
-									<td class="arrow"><a href="https://glass.photo/danserif" onclick="fathom.trackEvent('Glass', 0);">&nearr;</a></td>
-								</tr>
-							</table>
-							<!-- STACK -->
-							<h3>[Stack]</h3>
-							<table>
-								<colgroup>
-									<col style="width: 20%" />
-									<col style="width: 80%" />
-								</colgroup>
-								<tr>
-									<td>
-										<a href="https://github.com/danserif/danserif.com" onclick="fathom.trackEvent('GitHub', 0);">GitHub <span class="opacity-dark">(Pages)</span></a>
-									</td>
-									<td>
-										<span class="opacity-dark"><</span><span class="opacity-light">HTML</span><span class="opacity-dark">/></span> <span class="opacity-light">CSS</span><span class="opacity-dark">{}</span>
-										<span class="opacity-light">JS</span><span class="opacity-dark">();</span>
-									</td>
-									<td class="arrow"><a href="https://11ty.dev" onclick="fathom.trackEvent('11ty', 0);">&nearr;</a></td>
-								</tr>
-								<tr>
-									<td><a href="https://buttondown.com/refer/danserif" onclick="fathom.trackEvent('Buttondown', 0);">Buttondown</a></td>
-									<td><span class="opacity-dark">buttondown.com</span><span class="opacity-dark hide">/refer/</span><span class="opacity hide">danserif</span></td>
-									<td class="arrow"><a href="https://buttondown.com/refer/danserif" onclick="fathom.trackEvent('Buttondown', 0);">&nearr;</a></td>
-								</tr>
-							</table>
+[[[[                          ]]]]</pre>
+							<p class="caption">&#8985; <span class="uppercase">The Danserif Update</span> <span
+									class="opacity-light">(Logo)</span></p>
 						</div>
 					</div>
+					<div class="column-25">
+						<!-- FOLLOW -->
+						<h3>[Follow]</h3>
+						<table>
+							<colgroup>
+								<col style="width: 20%" />
+								<col style="width: 80%" />
+							</colgroup>
+							<tr>
+								<td><a href="https://linkedin.com/in/danserif" onclick="fathom.trackEvent('LinkedIn', 0);">LinkedIn</a>
+								</td>
+								<td><span class="opacity-dark">linkedin.com/in/</span><span class="opacity">danserif</span></td>
+								<td class="arrow"><a href="https://linkedin.com/in/danserif"
+										onclick="fathom.trackEvent('LinkedIn', 0);">&nearr;</a></td>
+							</tr>
+							<tr>
+								<td>
+									<a href="https://twitter.com/danserif" onclick="fathom.trackEvent('Twitter', 0);">Twitter <span
+											class="opacity-dark">(RIP)</span></a>
+								</td>
+								<td class="opacity">@danserif</td>
+								<td class="arrow"><a href="https://twitter.com/danserif"
+										onclick="fathom.trackEvent('Twitter', 0);">&nearr;</a></td>
+							</tr>
+							<tr>
+								<td><a href="https://instagram.com/danserif" onclick="fathom.trackEvent('Instagram', 0);">Instagram</a>
+								</td>
+								<td><span class="opacity-dark">instagram.com/</span><span class="opacity">danserif</span></td>
+								<td class="arrow"><a href="https://instagram.com/danserif"
+										onclick="fathom.trackEvent('Instagram', 0);">&nearr;</a></td>
+							</tr>
+							<tr>
+								<td><a href="https://glass.photo/danserif" onclick="fathom.trackEvent('Glass', 0);">Glass</a></td>
+								<td><span class="opacity-dark">glass.photo/</span><span class="opacity">danserif</span></td>
+								<td class="arrow"><a href="https://glass.photo/danserif"
+										onclick="fathom.trackEvent('Glass', 0);">&nearr;</a></td>
+							</tr>
+						</table>
+						<!-- STACK -->
+						<h3>[Stack]</h3>
+						<table>
+							<colgroup>
+								<col style="width: 20%" />
+								<col style="width: 80%" />
+							</colgroup>
+							<tr>
+								<td>
+									<a href="https://github.com/danserif/danserif.com" onclick="fathom.trackEvent('GitHub', 0);">GitHub
+										<span class="opacity-dark">(Pages)</span></a>
+								</td>
+								<td>
+									<span class="opacity-dark">
+										&lt;<span class="opacity-light">HTML</span><span class="opacity-dark">/&gt;</span> <span
+											class="opacity-light">CSS</span><span class="opacity-dark">{}</span>
+										<span class="opacity-light">JS</span><span class="opacity-dark">();</span>
+								</td>
+								<td class="arrow"><a href="https://11ty.dev" onclick="fathom.trackEvent('11ty', 0);">&nearr;</a></td>
+							</tr>
+							<tr>
+								<td><a href="https://buttondown.com/refer/danserif"
+										onclick="fathom.trackEvent('Buttondown', 0);">Buttondown</a></td>
+								<td><span class="opacity-dark">buttondown.com</span><span class="opacity-dark hide">/refer/</span><span
+										class="opacity hide">danserif</span></td>
+								<td class="arrow"><a href="https://buttondown.com/refer/danserif"
+										onclick="fathom.trackEvent('Buttondown', 0);">&nearr;</a></td>
+							</tr>
+						</table>
+					</div>
 				</div>
-			</section>
-		</main>
+			</div>
+		</section>
+	</main>
 
-		<footer>
-			<div class="logo">
-				<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="Layer_1" x="0" y="0" style="enable-background: new 0 0 109 82" version="1.1" viewBox="0 0 109 82">
-					<style>
-						.st0 {
-							fill: #ffffff;
-						}
-					</style>
-					<path
-						d="M80 31.7v49.9h9V34.1c0-4.3 4.1-4.7 5.5-4.7s5.5.3 5.5 4.7v47.5h9V31.7c0-10.4-11.4-11.3-14.5-11.3S80 21.3 80 31.7zM71.7 81.7v-69c0-10.4-13.1-12-16.3-12s-16.3 1.6-16.3 12v69h9.7V56.1H62v25.6h9.7zm-22.9-36V15.1c0-4.3 5.1-4.7 6.6-4.7s6.6.3 6.6 4.7v30.6H48.8z"
-						class="st0"
-					/>
-					<path
-						d="M.4 52.7v-31h16.2c4.7 0 14.3 1.2 14.3 14.4v31.2c0 13.2-9.6 14.4-14.3 14.4H.4v-29zm9.7-.1v-23h4.7c3 0 6.4.2 6.4 8.9v25.9c0 8.7-3.4 8.9-6.4 8.9h-4.7V52.6z"
-						style="fill-rule: evenodd; clip-rule: evenodd; fill: #ffffff"
-					/>
-				</svg>
-				<p class="caption">&#8985; logo.svg <span class="opacity-light">(Braun & Dieter Rams Homage)</span></p>
-			</div>
-			<div class="list">
-				<p>
-					Dan Newman. Dog Dad. Creative Director. Designer. Pākehā. Wellingtonian.<br class="hide" />
-					Nerd. Font Fiend. Camera Collector. Book Buyer. Cricket Fan. List Maker.
-				</p>
-				<p class="caption">&#8985; list.txt <span class="opacity-light">(Bio)</span></p>
-			</div>
-			<div class="back">
-				<p class="top"><a href="/newsletter/01-fractured/#top" class="hover">&uarr;</a></p>
-				<p class="caption">&#8985; #top <span class="opacity-light">(Link)</span></p>
-			</div>
-			<hr />
-			<p class="mode"><a href="#" class="dark-mode-toggle">&#9654; Dark</a> <span class="opacity-dark">/</span> <a href="#" class="light-mode-toggle">&#9655; Light</a> <span class="opacity-light">(Mode)</span></p>
-			<p class="caption">
-				Brought to you by the letter D <span class="opacity-light">[U+0044].</span><br />
-				<span class="opacity-light">Copyright &copy; 1982—2026.</span>
+	<footer>
+		<div class="logo">
+			<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="Layer_1" x="0" y="0"
+				style="enable-background: new 0 0 109 82" version="1.1" viewBox="0 0 109 82">
+				<style>
+					.st0 {
+						fill: #ffffff;
+					}
+				</style>
+				<path
+					d="M80 31.7v49.9h9V34.1c0-4.3 4.1-4.7 5.5-4.7s5.5.3 5.5 4.7v47.5h9V31.7c0-10.4-11.4-11.3-14.5-11.3S80 21.3 80 31.7zM71.7 81.7v-69c0-10.4-13.1-12-16.3-12s-16.3 1.6-16.3 12v69h9.7V56.1H62v25.6h9.7zm-22.9-36V15.1c0-4.3 5.1-4.7 6.6-4.7s6.6.3 6.6 4.7v30.6H48.8z"
+					class="st0" />
+				<path
+					d="M.4 52.7v-31h16.2c4.7 0 14.3 1.2 14.3 14.4v31.2c0 13.2-9.6 14.4-14.3 14.4H.4v-29zm9.7-.1v-23h4.7c3 0 6.4.2 6.4 8.9v25.9c0 8.7-3.4 8.9-6.4 8.9h-4.7V52.6z"
+					style="fill-rule: evenodd; clip-rule: evenodd; fill: #ffffff" />
+			</svg>
+			<p class="caption">&#8985; logo.svg <span class="opacity-light">(Braun & Dieter Rams Homage)</span></p>
+		</div>
+		<div class="list">
+			<p>
+				Dan Newman. Dog Dad. Creative Director. Designer. Pākehā. Wellingtonian.<br class="hide" />
+				Nerd. Font Fiend. Camera Collector. Book Buyer. Cricket Fan. List Maker.
 			</p>
-		</footer>
-		<script>
-			// Light/Dark Mode Toggle - Apply immediately to prevent flash
-			(function () {
-				const root = document.documentElement;
-				const savedMode = localStorage.getItem("colorMode") || "dark";
-				if (savedMode === "light") {
-					root.classList.add("light-mode");
-				}
-			})();
-		</script>
-		<script>
-			// Light/Dark Mode Toggle - Event handlers
-			document.addEventListener("DOMContentLoaded", function () {
-				const root = document.documentElement;
-				const darkModeBtns = document.querySelectorAll(".dark-mode-toggle");
-				const lightModeBtns = document.querySelectorAll(".light-mode-toggle");
-
-				// Toggle handlers for all dark mode buttons
-				darkModeBtns.forEach(function (btn) {
-					btn.addEventListener("click", function (e) {
-						e.preventDefault();
-						root.classList.remove("light-mode");
-						localStorage.setItem("colorMode", "dark");
-					});
-				});
-
-				// Toggle handlers for all light mode buttons
-				lightModeBtns.forEach(function (btn) {
-					btn.addEventListener("click", function (e) {
-						e.preventDefault();
-						root.classList.add("light-mode");
-						localStorage.setItem("colorMode", "light");
-					});
+			<p class="caption">&#8985; list.txt <span class="opacity-light">(Bio)</span></p>
+		</div>
+		<div class="back">
+			<p class="top"><a href="/newsletter/01-fractured/#top" class="hover">&uarr;</a></p>
+			<p class="caption">&#8985; #top <span class="opacity-light">(Link)</span></p>
+		</div>
+		<hr />
+		<p class="mode"><a href="#" class="dark-mode-toggle">&#9654; Dark</a> <span class="opacity-dark">/</span> <a
+				href="#" class="light-mode-toggle">&#9655; Light</a> <span class="opacity-light">(Mode)</span></p>
+		<p class="caption">
+			Brought to you by the letter D <span class="opacity-light">[U+0044].</span><br />
+			<span class="opacity-light">Copyright &copy; 1982—2026.</span>
+		</p>
+	</footer>
+	<script>
+		// Light/Dark Mode Toggle - Apply immediately to prevent flash
+		(function () {
+			const root = document.documentElement;
+			const savedMode = localStorage.getItem("colorMode") || "dark";
+			if (savedMode === "light") {
+				root.classList.add("light-mode");
+			}
+		})();
+	</script>
+	<script>
+		// Light/Dark Mode Toggle - Event handlers
+		document.addEventListener("DOMContentLoaded", function () {
+			const root = document.documentElement;
+			const darkModeBtns = document.querySelectorAll(".dark-mode-toggle");
+			const lightModeBtns = document.querySelectorAll(".light-mode-toggle");
+			// Toggle handlers for all dark mode buttons
+			darkModeBtns.forEach(function (btn) {
+				btn.addEventListener("click", function (e) {
+					e.preventDefault();
+					root.classList.remove("light-mode");
+					localStorage.setItem("colorMode", "dark");
 				});
 			});
-		</script>
-	</body>
+			// Toggle handlers for all light mode buttons
+			lightModeBtns.forEach(function (btn) {
+				btn.addEventListener("click", function (e) {
+					e.preventDefault();
+					root.classList.add("light-mode");
+					localStorage.setItem("colorMode", "light");
+				});
+			});
+		});
+	</script>
+</body>
+
 </html>
