@@ -8,3 +8,5 @@ server.py
 /newsletter/template/index.html
 # Newsletter markdown files
 /newsletter/**/*.md
+# Cursor debug logs
+.cursor/
