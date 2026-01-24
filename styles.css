@@ -1055,8 +1055,12 @@ figcaption {
 	}
 
 	.mobile li.logo {
-		padding-top: 60px;
+		padding-top: 100px;
 		display: block;
+	}
+
+	.mobile li.logo a {
+		color: var(--text-color);
 	}
 
 	.mobile li.inline {
