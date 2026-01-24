@@ -541,9 +541,9 @@
 								<td>
 									<a href="https://github.com/danserif/danserif.com" onclick="fathom.trackEvent('Stack', 0);"><span
 											class="opacity-dark hide">GitHub Pages — </span><span class="opacity-dark">
-											&lt;<span class="opacity-light">HTML</span><span class="opacity-dark">/&gt;</span>
-											<span class="opacity-light">CSS</span><span class="opacity-dark">{}</span> <span
-												class="opacity-light">JS</span><span class="opacity-dark">();</span></a>
+											&lt;</span><span class="opacity-light">HTML</span><span class="opacity-dark">/&gt;</span>
+										<span class="opacity-light">CSS</span><span class="opacity-dark">{}</span> <span
+											class="opacity-light">JS</span><span class="opacity-dark">();</span></a>
 								</td>
 							</tr>
 							<tr>
@@ -662,7 +662,6 @@
 			const root = document.documentElement;
 			const darkModeBtns = document.querySelectorAll(".dark-mode-toggle");
 			const lightModeBtns = document.querySelectorAll(".light-mode-toggle");
-
 			// Toggle handlers for all dark mode buttons
 			darkModeBtns.forEach(function (btn) {
 				btn.addEventListener("click", function (e) {
@@ -671,7 +670,6 @@
 					localStorage.setItem("colorMode", "dark");
 				});
 			});
-
 			// Toggle handlers for all light mode buttons
 			lightModeBtns.forEach(function (btn) {
 				btn.addEventListener("click", function (e) {
