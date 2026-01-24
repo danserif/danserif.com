@@ -69,11 +69,23 @@
 		<!-- MOBILE -->
 		<div class="mobile menu">
 			<ul id="menu">
+				<!-- MENU -->
 				<li class="title">[Menu]</li>
-				<li class="link"><a href="/" onclick="fathom.trackEvent('Home', 0);">Home</a></li>
-				<li class="link"><a href="/newsletter/" onclick="fathom.trackEvent('Newsletter', 0);">Newsletter</a></li>
-				<li class="link"><a href="/bookmarks/" onclick="fathom.trackEvent('Bookmarks', 0);">Bookmarks</a></li>
-				<li class="link"><a href="/about/" onclick="fathom.trackEvent('About', 0);">About</a></li>
+				<li class="link"><a href="/" onclick="fathom.trackEvent('Home', 0);"><span class="opacity-dark">~</span>
+						Home</a></li>
+				<li class="link"><a href="/newsletter/" onclick="fathom.trackEvent('Newsletter', 0);"><span
+							class="opacity-dark">#</span> Newsletter</a></li>
+				<li class="link"><a href="/bookmarks/" onclick="fathom.trackEvent('Bookmarks', 0);"><span
+							class="opacity-dark">+</span> Bookmarks</a></li>
+				<li class="link"><a href="/about/" onclick="fathom.trackEvent('About', 0);"><span class="opacity-dark">?</span>
+						About</a></li>
+				<!-- URLS -->
+				<li class="title">[URLS]</li>
+				<li class="inline"><span class="opacity">Work:</span> <a href="https://daas.graphics"
+						onclick="fathom.trackEvent('DaaS', 0);">daas.graphics &rarr;</a></li>
+				<li class="inline"><span class="opacity">Portfolio:</span> <a href="https://dan.newman.is"
+						onclick="fathom.trackEvent('Portfolio', 0);">dan.newman.is &rarr;</a></li>
+				<!-- CONTACT -->
 				<li class="title">[Contact]</li>
 				<li class="inline">
 					<span class="opacity">Email:</span>
@@ -86,9 +98,11 @@
 					<a href="https://twitter.com/danserif" onclick="fathom.trackEvent('Twitter', 0);">Twitter</a>
 					<span class="opacity-dark">(RIP)</span>
 				</li>
+				<!-- MODE -->
 				<li class="title">[Mode]</li>
 				<li class="inline"><a href="#" class="dark-mode-toggle">&#9654; Dark</a> <span class="opacity-dark">/</span> <a
 						href="#" class="light-mode-toggle">&#9655; Light</a></li>
+				<!-- LOGO -->
 				<li class="logo">
 					<a href="/">
 						<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="Layer_1" x="0" y="0"
