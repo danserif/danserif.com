@@ -7,6 +7,19 @@
 					"note": "(WIP) Recent links of interest.",
 					"links": [
 						{
+							"title": "The Adolescence of Technology",
+							"url": "https://www.darioamodei.com/essay/the-adolescence-of-technology",
+							"urlDisplay": "darioamodei.com",
+							"urlMobile": "darioamodei.com",
+							"note": "Incredible (and timely) essay about AI by Dario Amodei."
+						},
+						{
+							"title": "Machines of Loving Grace",
+							"url": "https://www.darioamodei.com/essay/machines-of-loving-grace",
+							"urlDisplay": "darioamodei.com",
+							"urlMobile": "darioamodei.com"
+						},
+						{
 							"title": "Matter of Sorts",
 							"url": "https://www.matterofsorts.com",
 							"note": "Typographic practice of Vincent Chan & Co."
