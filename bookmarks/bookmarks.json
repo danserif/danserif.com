@@ -7,6 +7,15 @@
 					"note": "(WIP) Recent links of interest.",
 					"links": [
 						{
+							"title": "Matter of Sorts",
+							"url": "https://www.matterofsorts.com",
+							"note": "Typographic practice of Vincent Chan & Co."
+						},
+						{
+							"title": "Counter Forms",
+							"url": "https://counter-forms.com"
+						},
+						{
 							"title": "Physical Intelligence (π)",
 							"titleMobile": "PI (π)",
 							"url": "https://www.pi.website"
