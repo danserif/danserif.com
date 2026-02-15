@@ -7,6 +7,18 @@
 					"note": "(WIP) Recent links of interest.",
 					"links": [
 						{
+							"title": "ES Schwarzweiss",
+							"url": "https://extraset.ch/typefaces/es-schwarzweiss/",
+							"urlDisplay": "extraset.ch/es-schwarzweiss",
+							"urlMobile": "extraset.ch",
+							"note": "Coooooool new typeface from Extraset."
+						},
+						{
+							"title": "Grainrad",
+							"url": "https://grainrad.com",
+							"note": "Free browser-based ASCII/Dithering tool by Alim Maasoglu."
+						},
+						{
 							"title": "The Adolescence of Technology",
 							"url": "https://www.darioamodei.com/essay/the-adolescence-of-technology",
 							"urlDisplay": "darioamodei.com",
@@ -397,6 +409,10 @@
 					"name": "Resources",
 					"note": "Useful links I’m often trying to remember.",
 					"links": [
+						{
+							"title": "MonoSketch",
+							"url": "https://monosketch.io"
+						},
 						{
 							"title": "Atlas of Type",
 							"url": "https://type-atlas.xyz/news"
