@@ -7,6 +7,12 @@
 					"note": "(WIP) Recent links of interest.",
 					"links": [
 						{
+							"title": "Between Worlds",
+							"url": "https://danielirizarry.design/projects/between-worlds",
+							"urlDisplay": "danielirizarry.design",
+							"note": "A typographic self-portrait by Puerto Rican designer, Daniel Irizarry."
+						},
+						{
 							"title": "ES Schwarzweiss",
 							"url": "https://extraset.ch/typefaces/es-schwarzweiss/",
 							"urlDisplay": "extraset.ch/es-schwarzweiss",
@@ -380,6 +386,10 @@
 						{
 							"title": "Smith & Diction",
 							"url": "https://smith-diction.com"
+						},
+						{
+							"title": "Studio DRAMA",
+							"url": "https://studio-drama.com"
 						},
 						{
 							"title": "Holographik",
