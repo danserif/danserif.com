@@ -7,6 +7,12 @@
 					"note": "(WIP) Recent links of interest.",
 					"links": [
 						{
+							"title": "Schengen (Dinamo)",
+							"url": "https://abcdinamo.com/typefaces/schengen",
+							"urlMobile": "abcdinamo.com",
+							"note": "New typeface by Seb McLauchlan."
+						},
+						{
 							"title": "Between Worlds",
 							"url": "https://danielirizarry.design/projects/between-worlds",
 							"urlDisplay": "danielirizarry.design",
@@ -287,6 +293,11 @@
 						{
 							"title": "Universal Sans",
 							"url": "https://universalsans.com"
+						},
+						{
+							"title": "Schengen",
+							"url": "https://abcdinamo.com/typefaces/schengen",
+							"urlMobile": "abcdinamo.com"
 						},
 						{
 							"title": "Adhesion",
