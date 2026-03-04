@@ -7,6 +7,18 @@
 					"note": "(WIP) Recent links of interest.",
 					"links": [
 						{
+							"title": "David Jonathan Ross (DJR)",
+							"titleMobile": "DJR",
+							"url": "https://glyphs.djr.com",
+							"note": "An infinite glyph navigator for the DJR type catalogue."
+						},
+						{
+							"title": "Weymann Serif",
+							"url": "https://typemates.com/fonts/weymann-serif",
+							"urlDisplay": "typemates.com/weymann-serif",
+							"urlMobile": "typemates.com"
+						},
+						{
 							"title": "Neue DIN",
 							"url": "https://neuedin.com"
 						},
@@ -254,6 +266,10 @@
 							"title": "CoType Foundry",
 							"titleMobile": "CoType",
 							"url": "https://cotypefoundry.com"
+						},
+						{
+							"title": "TypeMates",
+							"url": "https://typemates.com"
 						},
 						{
 							"title": "Fontwerk",
