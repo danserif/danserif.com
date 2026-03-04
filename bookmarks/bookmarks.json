@@ -7,6 +7,10 @@
 					"note": "(WIP) Recent links of interest.",
 					"links": [
 						{
+							"title": "Neue DIN",
+							"url": "https://neuedin.com"
+						},
+						{
 							"title": "Schengen (Dinamo)",
 							"titleMobile": "Schengen",
 							"url": "https://abcdinamo.com/typefaces/schengen",
@@ -250,6 +254,10 @@
 							"title": "CoType Foundry",
 							"titleMobile": "CoType",
 							"url": "https://cotypefoundry.com"
+						},
+						{
+							"title": "Fontwerk",
+							"url": "https://fontwerk.com"
 						}
 					]
 				},
