@@ -289,7 +289,8 @@ td:first-child {
 }
 
 .colophon td:last-child,
-.awards td:last-child {
+.awards td:last-child,
+.seo td:last-child {
 	padding-right: 0;
 	text-align: left;
 	white-space: wrap;
@@ -352,7 +353,7 @@ nav ul {
 nav ul li {
 	display: inline;
 	font-size: 14px;
-	padding-left: 120px;
+	padding-left: 80px;
 }
 
 nav a {
@@ -422,6 +423,10 @@ p {
 p.caption {
 	font-size: 12px;
 	opacity: 0.5;
+}
+
+p.page-link {
+	padding-top: 15px;
 }
 
 p.mode {
@@ -550,10 +555,6 @@ p.large {
 	padding-left: 5px;
 }
 
-.desktop {
-	display: none;
-}
-
 .no-wrap {
 	white-space: nowrap;
 }
@@ -632,73 +633,6 @@ input:focus {
 	cursor: pointer;
 }
 
-.disclaimer {
-	max-width: 600px;
-	padding: 20px 0 10px 0;
-}
-
-footer {
-	padding: 20px 0 0 0;
-}
-
-footer .top {
-	font-size: 40px;
-	margin: 0;
-}
-
-footer .menu {
-	display: flex;
-	flex-direction: row;
-	font-size: 12px;
-	padding-top: 5px;
-}
-
-footer .menu ul {
-	display: flex;
-	gap: 0.5rem;
-	margin: 0;
-	padding: 0 0 5px 0;
-	opacity: 0.5;
-}
-
-footer .menu ul li {
-	display: inline;
-}
-
-footer .menu ul li a {
-	text-decoration: none;
-	color: var(--text-color);
-}
-
-footer .menu ul li.mode {
-	padding-left: 20px;
-
-}
-
-footer .menu p.mode {
-	margin-left: auto;
-	margin-bottom: 5px;
-}
-
-footer>p.caption:last-of-type {
-	padding-top: 5px;
-}
-
-footer .menu p.contact {
-	margin-left: 40px;
-	margin-bottom: 5px;
-	opacity: 0.5;
-}
-
-p.contact a {
-	text-decoration: none;
-	color: var(--text-color);
-}
-
-.back {
-	padding: 0 0 20px 0;
-}
-
 /* PROSE MARKDOWN STYLES */
 
 .markdown {
@@ -754,6 +688,74 @@ figcaption {
 	opacity: 0.6;
 }
 
+/* -- FOOTER STYLES -- */
+.disclaimer {
+	max-width: 600px;
+	padding: 20px 0 10px 0;
+}
+
+footer {
+	padding: 20px 0 0 0;
+}
+
+footer .top {
+	font-size: 40px;
+	margin: 0;
+}
+
+footer .menu {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	font-size: 12px;
+	padding: 0;
+}
+
+footer .menu ul {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 5px 0 5px 0;
+	opacity: 0.5;
+}
+
+footer .menu ul:nth-of-type(2) {
+	margin-left: auto;
+	justify-content: flex-end;
+}
+
+footer .menu ul li {
+	display: inline;
+	white-space: nowrap;
+	padding-right: 20px;
+}
+
+footer .menu ul li:nth-last-child(1) {
+	padding-right: 0;
+}
+
+footer .menu ul li a {
+	text-decoration: none;
+	color: var(--text-color);
+}
+
+footer .menu ul:nth-of-type(2) li:nth-last-child(2) {
+	padding-left: 80px;
+}
+
+footer>p.caption:last-of-type {
+	padding-top: 5px;
+}
+
+.back {
+	padding: 0 0 20px 0;
+}
+
+.desktop {
+	display: none;
+}
+
+
 /* ==|== media queries ======================================================
    EXAMPLE Media Query for Responsive Design.
    This example overrides the primary ('mobile first') styles
@@ -791,14 +793,15 @@ figcaption {
 		max-width: 90%;
 	}
 
-	footer .desktop {
-		display: block;
-	}
 }
 
 @media only screen and (max-width: 1680px) {
 	.tdu {
 		font-size: 20px;
+	}
+
+	footer .menu ul:nth-of-type(2) li:nth-last-child(2) {
+		padding-left: 2rem;
 	}
 }
 
@@ -828,11 +831,11 @@ figcaption {
 	}
 
 	nav ul {
-		padding-top: 18px;
+		padding-top: 15px;
 	}
 
 	nav ul li {
-		padding-left: 40px;
+		padding-left: 20px;
 	}
 
 	body {
@@ -936,13 +939,13 @@ figcaption {
 	footer .menu {
 		font-size: 10px;
 	}
+
+	footer .menu ul:nth-of-type(2) li:nth-last-child(2) {
+		padding-left: 1rem;
+	}
 }
 
 @media only screen and (max-width: 1040px) {
-	body {
-		max-width: 800px;
-	}
-
 	.row {
 		display: block;
 		width: 100%;
@@ -962,6 +965,105 @@ figcaption {
 
 	td:first-of-type {
 		min-width: 280px;
+	}
+
+	/* Mobile Menu */
+	header,
+	nav {
+		float: none;
+	}
+
+	nav ul {
+		display: none;
+		padding-top: 0px;
+	}
+
+	nav ul li {
+		padding-left: 0px;
+	}
+
+	.menu {
+		display: inline;
+	}
+
+	.mobile ul {
+		overflow: hidden;
+		position: relative;
+		margin-top: 12px;
+		margin-bottom: 40px;
+		border-top: 1px dashed var(--border-color);
+	}
+
+	.mobile ul li {
+		display: block;
+		font-size: 12px;
+	}
+
+	.mobile ul li.link {
+		font-size: 16px;
+	}
+
+	.mobile li.title {
+		font-size: 10px;
+		opacity: 0.3;
+		text-transform: uppercase;
+		padding: 43px 0 15px 0;
+	}
+
+	.mobile a {
+		display: block;
+		line-height: 1.8em;
+	}
+
+	.mobile a i.icon {
+		display: block;
+		position: absolute;
+		right: 20px;
+		top: 38px;
+	}
+
+	.mobile li.logo {
+		padding-top: 100px;
+		display: block;
+	}
+
+	.mobile li.logo a {
+		color: var(--text-color);
+	}
+
+	.mobile li.inline {
+		padding: 0 0 4px 0;
+	}
+
+	.mobile li.inline a {
+		display: inline;
+	}
+
+	footer .menu {
+		flex-direction: column;
+	}
+
+	footer .menu ul {
+		flex-wrap: wrap;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	footer .menu hr {
+		margin: 15px 0 10px 0;
+	}
+
+	footer .desktop {
+		display: block;
+	}
+
+	footer .menu ul:nth-of-type(2) {
+		justify-content: flex-start;
+	}
+
+	footer .menu ul li.mode {
+		margin: 0;
 	}
 }
 
@@ -995,27 +1097,6 @@ figcaption {
 
 	.menu {
 		display: inline;
-	}
-
-	footer .menu {
-		flex-direction: column;
-		padding-top: 5px;
-	}
-
-	footer .menu p.contact {
-		display: none;
-	}
-
-	footer .menu p.mode {
-		margin: 5px 0 5px 0;
-	}
-
-	footer>p.caption:last-of-type {
-		padding-top: 5px;
-	}
-
-	footer>hr:last-of-type {
-		display: flex;
 	}
 
 	.mobile ul {
@@ -1072,6 +1153,79 @@ figcaption {
 	}
 
 	/* ---- */
+
+	footer .menu {
+		flex-direction: column;
+	}
+
+	footer .menu ul:first-of-type {
+		display: grid;
+		grid-template-columns: 154px 1fr;
+		width: 100%;
+		max-width: 100%;
+		font-size: 12px;
+	}
+
+	footer .menu ul:first-of-type li:first-of-type {
+		font-size: 10px;
+		padding-bottom: 15px;
+		grid-column: 1 / -1;
+		grid-row: 1;
+	}
+
+	footer .menu ul:first-of-type li:nth-child(2) {
+		grid-column: 1;
+		grid-row: 2;
+	}
+
+	footer .menu ul:first-of-type li:nth-child(3) {
+		grid-column: 1;
+		grid-row: 3;
+	}
+
+	footer .menu ul:first-of-type li:nth-child(4) {
+		grid-column: 1;
+		grid-row: 4;
+	}
+
+	footer .menu ul:first-of-type li:nth-child(5) {
+		grid-column: 2;
+		grid-row: 2;
+	}
+
+	footer .menu ul:first-of-type li:nth-child(6) {
+		grid-column: 2;
+		grid-row: 3;
+	}
+
+	footer .menu ul:first-of-type li:nth-child(7) {
+		grid-column: 2;
+		grid-row: 4;
+	}
+
+	footer .menu ul {
+		flex-wrap: wrap;
+		width: 100%;
+		margin: 0;
+		gap: 0;
+	}
+
+	footer .menu ul:nth-of-type(2) {
+		margin-left: 0;
+		justify-content: flex-start;
+	}
+
+	footer .menu ul li.contact {
+		display: inline;
+	}
+
+	footer .menu ul li.mode {
+		margin: 0;
+	}
+
+	footer>p.caption:last-of-type {
+		padding-top: 5px;
+	}
 }
 
 @media only screen and (max-width: 560px) {

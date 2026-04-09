@@ -33,7 +33,7 @@
 	<meta property="og:title" content="THE DANSERIF UPDATE [TDU]" />
 	<meta property="og:description"
 		content="An infrequently emailed update about life, work, design, branding, typography, photography, ASCII, AI, lists, and the Internet." />
-	<meta property="og:image" content="https://danserif.com/images/opengraph-image-tdu.png" />
+	<meta property="og:image" content="https://danserif.com/images/opengraph-image-newsletter.png" />
 	<meta property="og:image:type" content="image/png" />
 	<meta property="og:image:alt" content="Dan Newman — Newsletter" />
 	<meta property="og:image:width" content="1200" />
@@ -44,7 +44,7 @@
 	<meta name="twitter:title" content="THE DANSERIF UPDATE [TDU]" />
 	<meta name="twitter:description"
 		content="An infrequently emailed update about life, work, design, branding, typography, photography, ASCII, AI, lists, and the Internet." />
-	<meta name="twitter:image" content="https://danserif.com/images/opengraph-image-tdu.png" />
+	<meta name="twitter:image" content="https://danserif.com/images/opengraph-image-newsletter.png" />
 	<meta name="twitter:site" content="danserif.com/newsletter" />
 
 	<script src="https://cdn.usefathom.com/script.js" data-site="YGLQBNIN" defer></script>
@@ -61,9 +61,11 @@
 		<ul>
 			<li class="label">[Menu]</li>
 			<li><a href="/newsletter/" onclick="fathom.trackEvent('Newsletter', 0);"><span class="opacity">#</span>
-					Newsletter</a> <span class="opacity-dark">(1)</span></li>
+					<span class="highlight">Newsletter</span></a> <span class="opacity-dark">(1)</span></li>
 			<li><a href="/bookmarks/" onclick="fathom.trackEvent('Bookmarks', 0);"><span class="opacity">+</span>
 					Bookmarks</a></li>
+			<li><a href="/work/" onclick="fathom.trackEvent('Work', 0);"><span class="opacity">$</span>
+					Work</a></li>
 			<li><a href="/about/" onclick="fathom.trackEvent('About', 0);"><span class="opacity">?</span> About</a></li>
 		</ul>
 		<!-- MOBILE -->
@@ -77,11 +79,13 @@
 							class="opacity-dark">#</span> Newsletter</a></li>
 				<li class="link"><a href="/bookmarks/" onclick="fathom.trackEvent('Bookmarks', 0);"><span
 							class="opacity-dark">+</span> Bookmarks</a></li>
+				<li class="link"><a href="/work/" onclick="fathom.trackEvent('Work', 0);"><span class="opacity-dark">$</span>
+						Work</a></li>
 				<li class="link"><a href="/about/" onclick="fathom.trackEvent('About', 0);"><span class="opacity-dark">?</span>
 						About</a></li>
 				<!-- URLS -->
 				<li class="title">[URLS]</li>
-				<li class="inline"><span class="opacity">Work:</span> <a href="https://daas.graphics"
+				<li class="inline"><span class="opacity">Studio:</span> <a href="https://daas.graphics"
 						onclick="fathom.trackEvent('DaaS', 0);">daas.graphics &rarr;</a></li>
 				<li class="inline"><span class="opacity">Portfolio:</span> <a href="https://dan.newman.is"
 						onclick="fathom.trackEvent('Portfolio', 0);">dan.newman.is &rarr;</a></li>
@@ -406,28 +410,31 @@
 		<hr />
 		<div class="menu">
 			<ul>
-				<li><a href="/" onclick="fathom.trackEvent('Home', 0);"><span class="opacity-light">~</span> Home</a> <span
-						class="opacity-dark">/</span></li>
-				<li><a href="/newsletter/" onclick="fathom.trackEvent('Newsletter', 0);"><span class="opacity-light">#</span>
-						Newsletter</a> <span class="opacity-dark">/</span></li>
-				<li><a href="/bookmarks/" onclick="fathom.trackEvent('Bookmarks', 0);"><span class="opacity-light">+</span>
-						Bookmarks</a> <span class="opacity-dark">/</span></li>
-				<li><a href="/about/" onclick="fathom.trackEvent('About', 0);"><span class="opacity-light">?</span> About</a>
-					<span class="opacity-dark">/</span>
+				<li><span class="opacity uppercase">[Menu]</span></li>
+				<li><a href="/" onclick="fathom.trackEvent('Home', 0);"><span class="opacity">~</span> Home</a></li>
+				<li><a href="/newsletter/" onclick="fathom.trackEvent('Newsletter', 0);"><span class="opacity">#</span>
+						Newsletter</a></li>
+				<li><a href="/bookmarks/" onclick="fathom.trackEvent('Bookmarks', 0);"><span class="opacity">+</span>
+						Bookmarks</a></li>
+				<li><a href="/work/" onclick="fathom.trackEvent('Work', 0);"><span class="opacity">$</span> Work</a></li>
+				<li><a href="/about/" onclick="fathom.trackEvent('About', 0);"><span class="opacity">?</span> About</a>
 				</li>
-				<li><span class="opacity-light">(Menu)</span></li>
 			</ul>
 			<hr class="desktop" />
-			<p class="contact"><a href="mailto:dan@newman.is" onclick="fathom.trackEvent('Email', 0);"><span
-						class="opacity-light">@</span> Email</a> <span class="opacity-dark">/</span> <span
-					class="opacity-light">(Contact)</span></p>
-			<p class="mode"> <a href="#" class="dark-mode-toggle"><span class="opacity-light">&#9654;</span> Dark</a> <span
-					class="opacity-dark">/</span> <a href="#" class="light-mode-toggle"><span class="opacity-light">&#9655;</span>
-					Light</a> <span class="opacity-dark">/</span> <span class="opacity-light">(Mode)</span></p>
+			<ul>
+				<li><span class="opacity uppercase">[Contact]</span></li>
+				<li class="contact"><a href="mailto:dan@newman.is" onclick="fathom.trackEvent('Email', 0);"><span
+							class="opacity">@</span> Email</a></li>
+				<li><span class="opacity uppercase">[Mode]</span></li>
+				<li class="mode"><a href="#" class="dark-mode-toggle"><span class="opacity">&#9654;</span> Dark</a> <span
+						class="opacity-dark">/</span> <a href="#" class="light-mode-toggle"><span class="opacity">&#9655;</span>
+						Light</a>
+				</li>
+			</ul>
 		</div>
 		<hr />
 		<p class="caption">
-			Brought to you by the letter D <span class="opacity-light">[U+0044].</span> <br />
+			Brought to you by the letter D <span class="opacity-light">(U+0044).</span> <br />
 			<span class="opacity-light">Copyright &copy; 1982—2026.</span>
 		</p>
 	</footer>
