@@ -10,5 +10,7 @@ server.py
 /newsletter/**/*.md
 # Newsletter build script
 /newsletter/build.py
+# Internal docs
+/docs/
 # Cursor debug logs
 .cursor/
