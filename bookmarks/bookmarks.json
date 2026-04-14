@@ -7,6 +7,13 @@
 					"note": "(WIP) Recent links of interest.",
 					"links": [
 						{
+							"title": "Artemis II Lunar Flyby",
+							"url": "https://www.nasa.gov/gallery/lunar-flyby/",
+							"urlDisplay": "nasa.gov/lunar-flyby",
+							"urlMobile": "nasa.gov",
+							"note": "Stunning photos from the Artemis II mission to the Moon."
+						},
+						{
 							"title": "David Jonathan Ross (DJR)",
 							"titleMobile": "DJR",
 							"url": "https://glyphs.djr.com",
@@ -373,6 +380,11 @@
 							"title": "Metodo (Mono)",
 							"url": "https://optimo.ch/typefaces/metodo",
 							"urlMobile": "optimo.ch"
+						},
+						{
+							"title": "GD Octio",
+							"url": "https://foundry.gardedesign.se/typefaces/gd-octio",
+							"urlDisplay": "foundry.gardedesign.se"
 						},
 						{
 							"title": "FH Dfaalt",
