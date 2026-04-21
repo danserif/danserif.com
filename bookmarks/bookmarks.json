@@ -7,6 +7,11 @@
 					"note": "(WIP) Recent links of interest.",
 					"links": [
 						{
+							"title": "GT ",
+							"url": "https://gt-mechanik.com/",
+							"note": "Stunning site. Magneficent mono."
+						},
+						{
 							"title": "Artemis II Lunar Flyby",
 							"titleMobile": "Artemis II",
 							"url": "https://www.nasa.gov/gallery/lunar-flyby/",
@@ -358,6 +363,10 @@
 							"url": "https://lineto.com/typefaces/dmt-var-3-axis",
 							"urlDisplay": "lineto.com/typefaces/dmt",
 							"urlMobile": "lineto.com"
+						},
+						{
+							"title": "GT Mechanik",
+							"url": "https://gt-mechanik.com"
 						},
 						{
 							"title": "GT Standard",
