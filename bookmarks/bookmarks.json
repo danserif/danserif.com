@@ -292,6 +292,10 @@
 						{
 							"title": "Fontwerk",
 							"url": "https://fontwerk.com"
+						},
+						{
+							"title": "Optimo",
+							"url": "https://optimo.ch"
 						}
 					]
 				},
@@ -414,6 +418,12 @@
 						{
 							"title": "Inter",
 							"url": "https://rsms.me/inter"
+						},
+						{
+							"title": "IBM Plex",
+							"url": "https://mikeabbink.com/typefaces/ibm-plex-sans/",
+							"urlDisplay": "mikeabbink.com/ibm-plex/",
+							"urlMobile": "mikeabbink.com"
 						}
 					]
 				}
@@ -455,6 +465,10 @@
 							"url": "https://smith-diction.com"
 						},
 						{
+							"title": "Mike Abbink",
+							"url": "https://mikeabbink.com"
+						},
+						{
 							"title": "ID—C",
 							"url": "https://id-c.se"
 						},
@@ -466,6 +480,10 @@
 							"title": "Stockholm Design Lab",
 							"titleMobile": "SDL",
 							"url": "https://www.stockholmdesignlab.se"
+						},
+						{
+							"title": "DIA (Studio)",
+							"url": "https://dia.tv"
 						},
 						{
 							"title": "Special Offer, Inc.",
