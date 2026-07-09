@@ -296,6 +296,10 @@
 						{
 							"title": "Optimo",
 							"url": "https://optimo.ch"
+						},
+						{
+							"title": "CcType",
+							"url": "https://cctype.com"
 						}
 					]
 				},
@@ -414,6 +418,12 @@
 						{
 							"title": "Quadrant",
 							"url": "https://www.matterofsorts.com"
+						},
+						{
+							"title": "CcTimeline",
+							"url": "https://cctype.com/typefaces/cc-timeline",
+							"urlDisplay": "cctype.com/cc-timeline",
+							"urlMobile": "cctype.com"
 						},
 						{
 							"title": "Inter",
