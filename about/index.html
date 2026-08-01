@@ -60,7 +60,7 @@
 </head>
 
 <body id="top">
-<!-- \m/ Thanks for looking at the code. Press M: to switch modes. \m/ -->
+<!-- \m/ Thanks for looking at the code. Press M: to switch modes, and D: to see the letter D. \m/ -->
 	<header>
 		<h1><a class="hover" href="/" onclick="fathom.trackEvent('Home', 0);">danserif.com</a><span
 				class="opacity-25">/about</span></h1>
@@ -490,10 +490,13 @@
 		</div>
 		<hr />
 		<p class="caption">
-			Brought to you by the letter D <span class="opacity-75">(U+0044).</span> <br />
+			<button type="button" class="letter-d-overlay-trigger">
+				Brought to you by the letter D <span class="opacity-75">(U+0044).</span>
+			</button><br />
 			<span class="opacity-75">Copyright &copy; 1982—2026.</span>
 		</p>
 	</footer>
+	<div class="letter-d-overlay" id="letter-d-overlay" aria-hidden="true"></div>
 	<script src="/js/main.js" defer></script>
 
 </body>
