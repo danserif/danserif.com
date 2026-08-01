@@ -324,6 +324,12 @@ td:first-child {
 	--text-color: #dddddd;
 	--highlight-color: #aaff00;
 	--border-color: #1a1a1a;
+	--opacity-15: rgba(221, 221, 221, 0.15);
+	--opacity-25: rgba(221, 221, 221, 0.25);
+	--opacity-35: rgba(221, 221, 221, 0.35);
+	--opacity-50: rgba(221, 221, 221, 0.5);
+	--opacity-75: rgba(221, 221, 221, 0.75);
+	--opacity-90: rgba(221, 221, 221, 0.9);
 }
 
 /* Light Mode */
@@ -332,6 +338,12 @@ td:first-child {
 	--text-color: #000000;
 	--highlight-color: #000000;
 	--border-color: #e5e5e5;
+	--opacity-15: rgba(0, 0, 0, 0.15);
+	--opacity-25: rgba(0, 0, 0, 0.25);
+	--opacity-35: rgba(0, 0, 0, 0.35);
+	--opacity-50: rgba(0, 0, 0, 0.5);
+	--opacity-75: rgba(0, 0, 0, 0.75);
+	--opacity-90: rgba(0, 0, 0, 0.9);
 }
 
 body {
@@ -506,16 +518,40 @@ h3 {
 	margin-right: 0;
 }
 
-.opacity {
-	opacity: 0.5;
+/* Color-based (not opacity:) so nested tints keep relative contrast inside hovered links. */
+.opacity-15 {
+	color: var(--opacity-15);
+	opacity: 1;
 }
 
-.opacity-dark {
-	opacity: 0.3;
+.opacity-25 {
+	color: var(--opacity-25);
+	opacity: 1;
 }
 
-.opacity-light {
-	opacity: 0.7;
+.opacity-35 {
+	color: var(--opacity-35);
+	opacity: 1;
+}
+
+.opacity-50 {
+	color: var(--opacity-50);
+	opacity: 1;
+}
+
+.opacity-75 {
+	color: var(--opacity-75);
+	opacity: 1;
+}
+
+.opacity-90 {
+	color: var(--opacity-90);
+	opacity: 1;
+}
+
+.opacity-100 {
+	color: var(--text-color);
+	opacity: 1;
 }
 
 h3.uppercase,
