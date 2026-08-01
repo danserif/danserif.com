@@ -17,13 +17,13 @@
 							"url": "https://www.nasa.gov/gallery/lunar-flyby/",
 							"urlDisplay": "nasa.gov/lunar-flyby",
 							"urlMobile": "nasa.gov",
-							"note": "Phenomenal photos from the Artemis II mission to the Moon."
+							"note": "Phenomenal photos from the Artemis II mission."
 						},
 						{
 							"title": "David Jonathan Ross (DJR)",
 							"titleMobile": "DJR",
 							"url": "https://glyphs.djr.com",
-							"note": "An infinite glyph navigator for the DJR type catalogue."
+							"note": "An infinite glyph navigator."
 						},
 						{
 							"title": "Weymann Serif",
@@ -45,8 +45,7 @@
 						{
 							"title": "Between Worlds",
 							"url": "https://danielirizarry.design/projects/between-worlds",
-							"urlDisplay": "danielirizarry.design",
-							"note": "A typographic self-portrait by Puerto Rican designer Daniel Irizarry, with display typefaces (Borinqueneers, Piraqua, and Callejón) available for purchase."
+							"urlDisplay": "danielirizarry.design"
 						},
 						{
 							"title": "ES Schwarzweiss",
@@ -58,14 +57,7 @@
 						{
 							"title": "Grainrad",
 							"url": "https://grainrad.com",
-							"note": "Free browser-based ASCII/Dithering tool by Alim Maasoglu."
-						},
-						{
-							"title": "The Adolescence of Technology",
-							"url": "https://www.darioamodei.com/essay/the-adolescence-of-technology",
-							"urlDisplay": "darioamodei.com",
-							"urlMobile": "darioamodei.com",
-							"note": "Excellent essay about “Confronting and Overcoming the Risks of Powerful AI”, by Anthropic CEO, Dario Amodei."
+							"note": "Free browser-based ASCII/Dithering tool."
 						},
 						{
 							"title": "Machines of Loving Grace",
@@ -509,6 +501,7 @@
 						},
 						{
 							"title": "Mouthwash Studio",
+							"titleMobile": "MW.S",
 							"url": "https://mouthwash.studio"
 						},
 						{
@@ -532,12 +525,12 @@
 						{
 							"title": "Website Specifications",
 							"url": "https://specification.website",
-							"note": "Tool for humans and agents to check technical specifications."
+							"note": "Tool for humans and agents to check specifications."
 						},
 						{
 							"title": "Storied Colors",
 							"url": "https://storiedcolors.com",
-							"note": "An excellent resource on the history of colo(u)rs."
+							"note": "A resource on the history of colo(u)rs."
 						},
 						{
 							"title": "MonoSketch",
@@ -559,7 +552,7 @@
 						{
 							"title": "Making Software",
 							"url": "https://www.makingsoftware.com",
-							"note": "A reference manual for people who design and build software."
+							"note": "A reference manual for designing / building software."
 						},
 						{
 							"title": "text.makeup",
@@ -671,6 +664,7 @@
 						},
 						{
 							"title": "Unsung (Marcin Wichary)",
+							"titleMobile": "Unsung",
 							"url": "https://unsung.aresluna.org"
 						}
 					]
