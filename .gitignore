@@ -2,8 +2,10 @@
 .DS_Store
 # WIP files
 *~
-# Local development server
-server.py
+# Dependencies / local npm scripts (npx may create these)
+node_modules/
+/package.json
+/package-lock.json
 # Newsletter template
 /newsletter/template/index.html
 # Newsletter markdown files
@@ -14,3 +16,6 @@ server.py
 /docs/
 # Cursor debug logs
 .cursor/
+# Bookmarks link-rot local artifacts
+/bookmarks/requirements.txt
+/bookmarks/link-report.json
