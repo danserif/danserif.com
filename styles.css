@@ -444,15 +444,6 @@ p.mode a {
 	cursor: pointer;
 }
 
-/* SVG logo colors - override inline styles */
-svg .st0 {
-	fill: var(--text-color) !important;
-}
-
-svg path[style*="fill: #ffffff"] {
-	fill: var(--text-color) !important;
-}
-
 h1 {
 	font-weight: 400;
 	font-size: 32px;
@@ -541,9 +532,14 @@ p.large {
 	padding: 20px 0 20px 0;
 }
 
-.logo svg {
+.logo img {
 	width: 100px;
+	height: auto;
 	padding-bottom: 10px;
+}
+
+:root.light-mode .logo img {
+	filter: invert(1);
 }
 
 .zero {
@@ -919,7 +915,7 @@ footer>p.caption:last-of-type {
 		max-width: 480px;
 	}
 
-	.logo svg {
+	.logo img {
 		width: 80px;
 	}
 
