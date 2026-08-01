@@ -23,6 +23,14 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
+	<script>
+		(function () {
+			try {
+				var savedMode = localStorage.getItem("colorMode");
+				if (savedMode === "light") document.documentElement.classList.add("light-mode");
+			} catch (e) { }
+		})();
+	</script>
 	<link rel="stylesheet" href="/styles.css" />
 
 	<link rel="preload" href="/fonts/berkeley-mono.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
@@ -61,6 +69,7 @@
 </head>
 
 <body id="top">
+	<!-- \m/ Thanks for looking at the code. Press M: to switch modes. \m/ -->
 	<header>
 		<h1>@danserif</h1>
 		<p class="caption">&#8985; danserif.com <span class="opacity-75">(URL)</span></p>
@@ -153,13 +162,15 @@
 			<p>
 				I’m <a href="/about/" onclick="fathom.trackEvent('About', 0);">Dan Newman</a> <span class="opacity-50">(aka
 					@danserif)</span> and I live in <span class="no-wrap">Te Whanganui-a-Tara</span>
-				<span class="opacity-50">(Wellington),</span> Aotearoa <span class="opacity-50 no-wrap">(New Zealand)</span> with my
+				<span class="opacity-50">(Wellington),</span> Aotearoa <span class="opacity-50 no-wrap">(New Zealand)</span>
+				with my
 				partner <a href="https://anoushkaisaac.com" onclick="fathom.trackEvent('Noush', 0);">Noush</a> and
 				our dog Ada. Together we run Knolling, a family office focused on making our own products.
 			<p>
 			<p>I also run <a href="https://daas.graphics" onclick="fathom.trackEvent('DaaS', 0);">DaaS</a> <span
 					class="opacity-50">(Graphics)</span> <span class="opacity-75">aka Dan as a Service</span> to provide coaching,
-				design leadership, and branding design for early-stage startups<span class="opacity-50">/</span>founders. If youʻd
+				design leadership, and branding design for early-stage startups<span class="opacity-50">/</span>founders. If
+				youʻd
 				like to get in touch, you can send me an <a href="mailto:dan@newman.is"
 					onclick="fathom.trackEvent('Email', 0);">email</a>.
 			</p>
@@ -216,8 +227,8 @@
 							<div class="disclaimer">
 								<p>
 									Add
-									<a href="mailto:newsletter@danserif.com" class="hover"><span class="opacity-50">newsletter</span> <span
-											class="opacity-25">[at]</span> <span class="opacity-50">danserif</span> <span
+									<a href="mailto:newsletter@danserif.com" class="hover"><span class="opacity-50">newsletter</span>
+										<span class="opacity-25">[at]</span> <span class="opacity-50">danserif</span> <span
 											class="opacity-25">[dot]</span> <span class="opacity-50">com</span></a>
 									to your contacts so my emails dont’t end up in spam, and check your email to opt in! <span
 										class="opacity-25">\m/</span>
@@ -486,8 +497,8 @@
 									<a href="https://github.com/danserif/danserif.com/raw/main/dan-newman-cv.pdf"
 										onclick="fathom.trackEvent('CV', 0);">Download <span class="opacity-25 hide">(PDF)</span></a>
 								</td>
-								<td><span class="opacity-25 desktop">~/</span><span
-										class="opacity-25 hide">danserif.com/</span><span class="opacity-50">dan-newman-cv.pdf</span></td>
+								<td><span class="opacity-25 desktop">~/</span><span class="opacity-25 hide">danserif.com/</span><span
+										class="opacity-50">dan-newman-cv.pdf</span></td>
 								<td class="arrow"><a href="https://github.com/danserif/danserif.com/raw/main/dan-newman-cv.pdf"
 										onclick="fathom.trackEvent('CV', 0);">&darr;</a></td>
 							</tr>
@@ -624,8 +635,8 @@
 							<tr>
 								<td class="opacity-50">Version</td>
 								<td>
-									<span class="opacity-25 hide">Updated — </span><span class="opacity-50">09<span
-											class="opacity-75">/</span>04<span class="opacity-75">/</span>2026</span>
+									<span class="opacity-25 hide">Updated — </span><span class="opacity-50">01<span
+											class="opacity-25">/</span>08<span class="opacity-25">/</span>2026</span>
 									<span class="opacity-25">[DN-01]</span>
 								</td>
 							</tr>
@@ -683,40 +694,8 @@
 			<span class="opacity-75">Copyright &copy; 1982—2026.</span>
 		</p>
 	</footer>
-	<script>
-		// Light/Dark Mode Toggle - Apply immediately to prevent flash
-		(function () {
-			const root = document.documentElement;
-			const savedMode = localStorage.getItem("colorMode") || "dark";
-			if (savedMode === "light") {
-				root.classList.add("light-mode");
-			}
-		})();
-	</script>
-	<script>
-		// Light/Dark Mode Toggle - Event handlers
-		document.addEventListener("DOMContentLoaded", function () {
-			const root = document.documentElement;
-			const darkModeBtns = document.querySelectorAll(".dark-mode-toggle");
-			const lightModeBtns = document.querySelectorAll(".light-mode-toggle");
-			// Toggle handlers for all dark mode buttons
-			darkModeBtns.forEach(function (btn) {
-				btn.addEventListener("click", function (e) {
-					e.preventDefault();
-					root.classList.remove("light-mode");
-					localStorage.setItem("colorMode", "dark");
-				});
-			});
-			// Toggle handlers for all light mode buttons
-			lightModeBtns.forEach(function (btn) {
-				btn.addEventListener("click", function (e) {
-					e.preventDefault();
-					root.classList.add("light-mode");
-					localStorage.setItem("colorMode", "light");
-				});
-			});
-		});
-	</script>
+	<script src="/js/main.js" defer></script>
+
 </body>
 
 </html>

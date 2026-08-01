@@ -14,6 +14,14 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
+	<script>
+		(function () {
+			try {
+				var savedMode = localStorage.getItem("colorMode");
+				if (savedMode === "light") document.documentElement.classList.add("light-mode");
+			} catch (e) {}
+		})();
+	</script>
 	<link rel="stylesheet" href="/styles.css" />
 
 	<link rel="preload" href="/fonts/berkeley-mono.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
@@ -51,6 +59,7 @@
 </head>
 
 <body id="top" class="page">
+<!-- \m/ Thanks for looking at the code. Press M: to switch modes. \m/ -->
 	<header>
 		<h1>
 			<a class="hover" href="/" onclick="fathom.trackEvent('Home', 0);">danserif.com</a><a class="hover"
@@ -763,40 +772,8 @@
 			<span class="opacity-75">Copyright &copy; 1982—2026.</span>
 		</p>
 	</footer>
-	<script>
-		// Light/Dark Mode Toggle - Apply immediately to prevent flash
-		(function () {
-			const root = document.documentElement;
-			const savedMode = localStorage.getItem("colorMode") || "dark";
-			if (savedMode === "light") {
-				root.classList.add("light-mode");
-			}
-		})();
-	</script>
-	<script>
-		// Light/Dark Mode Toggle - Event handlers
-		document.addEventListener("DOMContentLoaded", function () {
-			const root = document.documentElement;
-			const darkModeBtns = document.querySelectorAll(".dark-mode-toggle");
-			const lightModeBtns = document.querySelectorAll(".light-mode-toggle");
-			// Toggle handlers for all dark mode buttons
-			darkModeBtns.forEach(function (btn) {
-				btn.addEventListener("click", function (e) {
-					e.preventDefault();
-					root.classList.remove("light-mode");
-					localStorage.setItem("colorMode", "dark");
-				});
-			});
-			// Toggle handlers for all light mode buttons
-			lightModeBtns.forEach(function (btn) {
-				btn.addEventListener("click", function (e) {
-					e.preventDefault();
-					root.classList.add("light-mode");
-					localStorage.setItem("colorMode", "light");
-				});
-			});
-		});
-	</script>
+	<script src="/js/main.js" defer></script>
+
 </body>
 
 </html>
