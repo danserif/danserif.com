@@ -557,6 +557,17 @@ h3 {
 	opacity: 1;
 }
 
+/* Links with opacity utils keep their color; dim via opacity on hover (beats :root .opacity-*). */
+:root a.opacity-15:hover,
+:root a.opacity-25:hover,
+:root a.opacity-35:hover,
+:root a.opacity-50:hover,
+:root a.opacity-75:hover,
+:root a.opacity-90:hover,
+:root a.opacity-100:hover {
+	opacity: 0.4;
+}
+
 /* Letter D overlay */
 .letter-d-overlay-trigger {
 	background: none;
