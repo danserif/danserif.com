@@ -284,6 +284,10 @@ td.arrow {
 	min-width: 40px;
 }
 
+.archive {
+	text-decoration: line-through;
+}
+
 td:first-child {
 	vertical-align: top;
 }

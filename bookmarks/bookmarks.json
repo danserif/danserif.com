@@ -7,11 +7,6 @@
 					"note": "(WIP) Recent links of interest.",
 					"links": [
 						{
-							"title": "Storied Colors",
-							"url": "https://storiedcolors.com",
-							"note": "An excellent resource on the history of colo(u)rs."
-						},
-						{
 							"title": "GT Mechanik",
 							"url": "https://gt-mechanik.com",
 							"note": "Stunning site. Magneficent mono."
@@ -148,11 +143,6 @@
 							"url": "https://github.com/oxidecomputer/mitos",
 							"urlMobile": "github.com/oxidecomputer/",
 							"note": "ASCII generator built by Oxide."
-						},
-						{
-							"title": "Making Software",
-							"url": "https://www.makingsoftware.com",
-							"note": "A reference manual for people who design and build software."
 						},
 						{
 							"title": "INTDEV",
@@ -300,6 +290,10 @@
 						{
 							"title": "CcType",
 							"url": "https://cctype.com"
+						},
+						{
+							"title": "Fonts Feixen",
+							"url": "https://fonts.studiofeixen.ch"
 						}
 					]
 				},
@@ -426,6 +420,11 @@
 							"urlMobile": "cctype.com"
 						},
 						{
+							"title": "Vanity",
+							"url": "https://order.design/otf/vanity",
+							"urlMobile": "order.design/otf"
+						},
+						{
 							"title": "Inter",
 							"url": "https://rsms.me/inter"
 						},
@@ -507,6 +506,22 @@
 						{
 							"title": "Pentagram",
 							"url": "https://www.pentagram.com"
+						},
+						{
+							"title": "Mouthwash Studio",
+							"url": "https://mouthwash.studio"
+						},
+						{
+							"title": "Studio Feixen",
+							"url": "https://www.studiofeixen.ch"
+						},
+						{
+							"title": "Luke Mitchell",
+							"url": "https://www.interroban.gg"
+						},
+						{
+							"title": "Brian Hennings",
+							"url": "https://www.brianhennings.net"
 						}
 					]
 				},
@@ -514,6 +529,16 @@
 					"name": "Resources",
 					"note": "Useful links I’m often trying to remember.",
 					"links": [
+						{
+							"title": "Website Specifications",
+							"url": "https://specification.website",
+							"note": "Tool for humans and agents to check technical specifications."
+						},
+						{
+							"title": "Storied Colors",
+							"url": "https://storiedcolors.com",
+							"note": "An excellent resource on the history of colo(u)rs."
+						},
 						{
 							"title": "MonoSketch",
 							"url": "https://monosketch.io"
@@ -530,6 +555,11 @@
 						{
 							"title": "Future Fonts",
 							"url": "https://www.futurefonts.com"
+						},
+						{
+							"title": "Making Software",
+							"url": "https://www.makingsoftware.com",
+							"note": "A reference manual for people who design and build software."
 						},
 						{
 							"title": "text.makeup",
@@ -612,7 +642,8 @@
 						},
 						{
 							"title": "Harvest",
-							"url": "https://getharvest.com"
+							"url": "https://getharvest.com",
+							"archive": true
 						},
 						{
 							"title": "Google",
@@ -637,6 +668,10 @@
 							"title": "Simon Willison (Weblog)",
 							"titleMobile": "Simon Willison",
 							"url": "https://simonwillison.net"
+						},
+						{
+							"title": "Unsung (Marcin Wichary)",
+							"url": "https://unsung.aresluna.org"
 						}
 					]
 				},

@@ -209,13 +209,22 @@
 				} else {
 					domainDisplay = regularDomain;
 				}
+
+				const archived = link.archive === true;
+				const titleCell = archived
+					? `<span class="archive opacity-dark">${titleDisplay}</span>`
+					: `<a href="${link.url}" target="_blank" onclick="fathom.trackEvent('Link', 0);">${titleDisplay}</a>`;
+				const arrowCell = archived
+					? `<td class="arrow"></td>`
+					: `<td class="arrow"><a href="${link.url}" target="_blank" onclick="fathom.trackEvent('Link', 0);">&nearr;</a></td>`;
+
 				const linkRow = `
 					<tr>
 						<td>
-							<a href="${link.url}" target="_blank" onclick="fathom.trackEvent('Link', 0);">${titleDisplay}</a>
+							${titleCell}
 						</td>
 						<td><span class="opacity-dark">${domainDisplay}</span></td>
-						<td class="arrow"><a href="${link.url}" target="_blank" onclick="fathom.trackEvent('Link', 0);">&nearr;</a></td>
+						${arrowCell}
 					</tr>
 				`;
 				const noteRow = link.note
