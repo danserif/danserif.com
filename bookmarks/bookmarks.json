@@ -353,8 +353,7 @@
 						},
 						{
 							"title": "LL DMT",
-							"url": "https://lineto.com/typefaces/dmt-var-3-axis",
-							"urlDisplay": "lineto.com/typefaces/dmt",
+							"url": "https://lineto.com/typefaces/dmt-var",
 							"urlMobile": "lineto.com"
 						},
 						{
@@ -556,10 +555,6 @@
 						{
 							"title": "GridType",
 							"url": "https://grid-type.com"
-						},
-						{
-							"title": "DIA (Tools)",
-							"url": "https://tools.dia.tv"
 						},
 						{
 							"title": "Box Characters",
