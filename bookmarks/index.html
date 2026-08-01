@@ -18,7 +18,7 @@
 			try {
 				var savedMode = localStorage.getItem("colorMode");
 				if (savedMode === "light") document.documentElement.classList.add("light-mode");
-			} catch (e) {}
+			} catch (e) { }
 		})();
 	</script>
 	<link rel="stylesheet" href="/styles.css" />
@@ -56,11 +56,11 @@
 </head>
 
 <body id="top">
-<!-- \m/ Thanks for looking at the code. Press M: to switch modes, and D: to see the letter D. \m/ -->
+	<!-- \m/ Thanks for looking at the code. Press M: to switch modes, and D: to see the letter D. \m/ -->
 	<header>
 		<h1><a class="hover" href="/" onclick="fathom.trackEvent('Home', 0);">danserif.com</a><span
 				class="opacity-25">/bookmarks</span></h1>
-		<p class="caption">&#8985; @danserif <span class="opacity-75">(Handle)</span></p>
+		<p class="caption"><span class="opacity-25">&#8985;</span> @danserif <span class="opacity-25">(Handle)</span></p>
 	</header>
 
 	<nav>
@@ -117,7 +117,8 @@
 					<a href="/">
 						<img src="/logo.svg" alt="DAN" width="110" height="79" />
 					</a>
-					<span class="caption opacity-50">&#8985; logo.svg <span class="opacity-75">(Braun & Dieter Rams
+					<span class="caption opacity-50"><span class="opacity-25">&#8985;</span> logo.svg <span
+							class="opacity-25">(Braun & Dieter Rams
 							Homage)</span></span>
 				</li>
 			</ul>
@@ -151,10 +152,11 @@
 				<span class="opacity-50">URLs. Hyperlinks. Domains. Hrefs.</span>
 			</h3>
 			<p>
-				For years I’ve been collecting bookmarks <span class="opacity-50">(in Safari)</span> that have gradually died of <a
-					href="https://en.wikipedia.org/wiki/Link_rot">link rot</a>. So with a little help from AI, I made
+				For years I’ve been collecting bookmarks <span class="opacity-50">(in Safari)</span> that have gradually died of
+				<a href="https://en.wikipedia.org/wiki/Link_rot">link rot</a>. So with a little help from AI, I made
 				a list that’s organized into the following categories:
-				<span class="opacity-50">Latest, Inspiration, Foundries, Fonts, Studios <span class="opacity-50">/</span> Designers,
+				<span class="opacity-50">Latest, Inspiration, Foundries, Fonts, Studios <span class="opacity-25">/</span>
+					Designers,
 					Resources, Tools, Tech, Photography, News, and Cricket.</span>
 			</p>
 		</section>
@@ -182,8 +184,8 @@
 			function wrapBracketsInNotes(text) {
 				return text.replace(/(\([^)]+\))|\//g, (match) =>
 					match === "/"
-						? '<span class="opacity-25">/</span>'
-						: `<span class="opacity-75">${match}</span>`
+						? '<span class="opacity-15">/</span>'
+						: `<span class="opacity-25">${match}</span>`
 				);
 			}
 			// Render a single link
@@ -258,7 +260,7 @@
 					: "";
 
 				return `
-						<h3>[${category.name.replace(/\//g, '<span class="opacity-50">/</span>')}]</h3>
+						<h3>[${category.name.replace(/\//g, '<span class="opacity-15">/</span>')}]</h3>
 						<table>
 							<colgroup>
 								<col style="width: 20%" />
@@ -348,7 +350,7 @@
 							<h3>[PNG]</h3>
 							<div class="image">
 								<img src="/images/bookmarks.png" style="width: 100%; aspect-ratio: 1200 / 675" alt="ASCII Bookmarks" />
-								<p class="caption">&#8985; <span class="opacity-75">/images/</span>bookmarks.png <span class="opacity-75">(ASCII)</span></p>
+								<p class="caption"><span class="opacity-25">&#8985;</span> <span class="opacity-25">/images/</span>bookmarks.png <span class="opacity-25">(ASCII)</span></p>
 							</div>
 						`;
 						}
@@ -396,18 +398,19 @@
 	<footer>
 		<div class="logo">
 			<a href="/"><img src="/logo.svg" alt="DAN" width="110" height="79" /></a>
-			<p class="caption">&#8985; logo.svg <span class="opacity-75">(Braun & Dieter Rams Homage)</span></p>
+			<p class="caption"><span class="opacity-25">&#8985;</span> logo.svg <span class="opacity-25">(Braun & Dieter Rams
+					Homage)</span></p>
 		</div>
 		<div class="list">
 			<p>
 				Dan Newman. Dog Dad. Creative Director. Designer. Pākehā. Wellingtonian.<br class="hide" />
 				Nerd. Font Fiend. Camera Collector. Book Buyer. Cricket Fan. List Maker.
 			</p>
-			<p class="caption">&#8985; list.txt <span class="opacity-75">(Bio)</span></p>
+			<p class="caption"><span class="opacity-25">&#8985;</span> list.txt <span class="opacity-25">(Bio)</span></p>
 		</div>
 		<div class="back">
 			<p class="top"><a href="/bookmarks/#top" class="hover">&uarr;</a></p>
-			<p class="caption">&#8985; #top <span class="opacity-75">(Link)</span></p>
+			<p class="caption"><span class="opacity-25">&#8985;</span> #top <span class="opacity-25">(Link)</span></p>
 		</div>
 		<hr />
 		<div class="menu">
@@ -437,9 +440,9 @@
 		<hr />
 		<p class="caption">
 			<button type="button" class="letter-d-overlay-trigger">
-				Brought to you by the letter D <span class="opacity-75">(U+0044).</span>
+				Brought to you by the letter D <span class="opacity-25">(U+0044).</span>
 			</button><br />
-			<span class="opacity-75">Copyright &copy; 1982—2026.</span>
+			<span class="opacity-25">Copyright &copy; 1982—2026.</span>
 		</p>
 	</footer>
 	<div class="letter-d-overlay" id="letter-d-overlay" aria-hidden="true"></div>

@@ -385,7 +385,7 @@ nav a:hover {
 
 nav li.label {
 	text-transform: uppercase;
-	opacity: 0.3;
+	color: var(--opacity-25);
 }
 
 .menu {
@@ -438,7 +438,7 @@ p {
 
 p.caption {
 	font-size: 12px;
-	opacity: 0.5;
+	color: var(--opacity-50);
 }
 
 p.page-link {
@@ -448,7 +448,7 @@ p.page-link {
 p.mode {
 	font-size: 12px;
 	padding-top: 0;
-	opacity: 0.5;
+	color: var(--opacity-50);
 }
 
 p.mode a {
@@ -472,14 +472,14 @@ h3 {
 	padding: 0 0 16px 0;
 	margin: 0;
 	text-transform: uppercase;
-	opacity: 0.3;
+	color: var(--opacity-25);
 }
 
 .intro h3 {
 	font-size: 26px;
 	line-height: 1.6;
 	text-transform: none;
-	opacity: 1;
+	color: var(--text-color);
 }
 
 .untitled {
@@ -518,38 +518,41 @@ h3 {
 	margin-right: 0;
 }
 
-/* Color-based (not opacity:) so nested tints keep relative contrast inside hovered links. */
-.opacity-15 {
+/*
+ * Color-based opacity utilities (not opacity:) so nested tints keep relative contrast
+ * inside hovered links. :root prefix → (0,2,0) so they win over .markdown a / p, etc.
+ */
+:root .opacity-15 {
 	color: var(--opacity-15);
 	opacity: 1;
 }
 
-.opacity-25 {
+:root .opacity-25 {
 	color: var(--opacity-25);
 	opacity: 1;
 }
 
-.opacity-35 {
+:root .opacity-35 {
 	color: var(--opacity-35);
 	opacity: 1;
 }
 
-.opacity-50 {
+:root .opacity-50 {
 	color: var(--opacity-50);
 	opacity: 1;
 }
 
-.opacity-75 {
+:root .opacity-75 {
 	color: var(--opacity-75);
 	opacity: 1;
 }
 
-.opacity-90 {
+:root .opacity-90 {
 	color: var(--opacity-90);
 	opacity: 1;
 }
 
-.opacity-100 {
+:root .opacity-100 {
 	color: var(--text-color);
 	opacity: 1;
 }
@@ -737,7 +740,8 @@ input:focus {
 .markdown h2 {
 	font-size: 26px;
 	line-height: 1.6;
-	opacity: 1;
+	color: var(--text-color);
+	text-transform: none;
 	padding: 20px 0 0 0;
 }
 
@@ -749,10 +753,6 @@ input:focus {
 	margin: 2em 0;
 }
 
-.markdown p {
-	color: var(--text-color);
-}
-
 figure {
 	margin: 0;
 	padding: 10px 0 30px 0;
@@ -760,7 +760,6 @@ figure {
 
 figcaption {
 	font-size: 12px;
-	opacity: 0.3;
 }
 
 .markdown a {
@@ -1100,7 +1099,7 @@ footer>p.caption:last-of-type {
 
 	.mobile li.title {
 		font-size: 10px;
-		opacity: 0.3;
+		color: var(--opacity-25);
 		text-transform: uppercase;
 		padding: 43px 0 15px 0;
 	}
@@ -1213,7 +1212,7 @@ footer>p.caption:last-of-type {
 
 	.mobile li.title {
 		font-size: 10px;
-		opacity: 0.3;
+		color: var(--opacity-25);
 		text-transform: uppercase;
 		padding: 43px 0 15px 0;
 	}
