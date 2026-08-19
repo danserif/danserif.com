@@ -349,7 +349,7 @@
 							html += `
 							<h3>[PNG]</h3>
 							<div class="image">
-								<img src="/images/bookmarks.png" style="width: 100%; aspect-ratio: 1200 / 675" alt="ASCII Bookmarks" />
+								<img src="/images/dark/bookmarks.png" style="width: 100%; aspect-ratio: 1200 / 675" alt="ASCII Bookmarks" />
 								<p class="caption"><span class="opacity-25">&#8985;</span> <span class="opacity-25">/images/</span>bookmarks.png <span class="opacity-25">(ASCII)</span></p>
 							</div>
 						`;
@@ -368,6 +368,9 @@
 					// Final check before updating DOM
 					if (!document.hidden && container) {
 						container.innerHTML = html;
+						if (typeof window.updateThemedImages === "function") {
+							window.updateThemedImages();
+						}
 					}
 				} catch (error) {
 					// Ignore abort errors

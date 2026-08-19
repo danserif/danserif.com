@@ -336,7 +336,7 @@ td:first-child {
 :root.light-mode {
 	--bg-color: #ffffff;
 	--text-color: #000000;
-	--highlight-color: #000000;
+	--highlight-color: #0044FF;
 	--border-color: #e5e5e5;
 	--opacity-15: rgba(0, 0, 0, 0.15);
 	--opacity-25: rgba(0, 0, 0, 0.25);
@@ -800,7 +800,7 @@ figcaption {
 }
 
 footer {
-	padding: 20px 0 0 0;
+	padding: 60px 0 0 0;
 }
 
 footer .top {
@@ -1034,11 +1034,6 @@ footer>p.caption:last-of-type {
 
 	.list {
 		padding: 10px 0 20px 0;
-	}
-
-	footer {
-		padding-top: 60px;
-		padding-bottom: 0;
 	}
 
 	footer .menu {

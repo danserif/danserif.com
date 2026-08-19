@@ -18,6 +18,47 @@
 			return true;
 		}
 
+		/* Theme-aware images: /dark/ ↔ /light/ (missing light falls back to dark) */
+		var lightImageMissing = {};
+
+		function themedSrc(src) {
+			if (!src || (src.indexOf("/dark/") === -1 && src.indexOf("/light/") === -1)) {
+				return src;
+			}
+			var darkSrc = src.replace("/light/", "/dark/");
+			var lightSrc = darkSrc.replace("/dark/", "/light/");
+			if (root.classList.contains("light-mode") && !lightImageMissing[lightSrc]) {
+				return lightSrc;
+			}
+			return darkSrc;
+		}
+
+		function ensureThemeErrorHandler(img) {
+			if (img.dataset.themeErrorBound) return;
+			img.dataset.themeErrorBound = "1";
+			img.addEventListener("error", function () {
+				var src = img.getAttribute("src") || "";
+				if (src.indexOf("/light/") === -1) return;
+				lightImageMissing[src] = true;
+				img.setAttribute("src", src.replace("/light/", "/dark/"));
+			});
+		}
+
+		function updateThemedImages() {
+			var imgs = document.querySelectorAll('img[src*="/dark/"], img[src*="/light/"]');
+			for (var i = 0; i < imgs.length; i++) {
+				var img = imgs[i];
+				var src = img.getAttribute("src") || "";
+				var next = themedSrc(src);
+				if (next && next !== src) {
+					img.setAttribute("src", next);
+				}
+				ensureThemeErrorHandler(img);
+			}
+		}
+
+		window.updateThemedImages = updateThemedImages;
+
 		function setMode(mode) {
 			if (mode === "light") {
 				root.classList.add("light-mode");
@@ -28,9 +69,11 @@
 				localStorage.setItem("colorMode", mode);
 			} catch (e) {}
 			syncThemeColorMeta();
+			updateThemedImages();
 		}
 
 		syncThemeColorMeta();
+		updateThemedImages();
 
 		document.addEventListener("click", function (e) {
 			var t = e.target;
