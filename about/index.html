@@ -14,14 +14,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-	<script>
-		(function () {
-			try {
-				var savedMode = localStorage.getItem("colorMode");
-				if (savedMode === "light") document.documentElement.classList.add("light-mode");
-			} catch (e) {}
-		})();
-	</script>
+	<script src="/js/theme-boot.js"></script>
 	<link rel="stylesheet" href="/styles.css" />
 
 	<link rel="preload" href="/fonts/berkeley-mono.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
@@ -365,8 +358,7 @@
 						<!-- IMAGE -->
 						<h3>[PNG]</h3>
 						<div class="image">
-							<img src="/images/dark/dog-dad.png"
-								style="width: 100%; aspect-ratio: 1200 / 675" alt="Dan & Ada" />
+							<img data-themed="/images/dog-dad.png" style="width: 100%; aspect-ratio: 1200 / 675" alt="Dan & Ada" />
 							<p class="caption"><span class="opacity-25">&#8985;</span> <span class="opacity-25">/images/</span>dog-dad.png <span
 									class="opacity-25">(Dandan & Ada)</span> <span class="opacity-50 hide">— Hergé illustration via
 									ChatGPT.</span></p>

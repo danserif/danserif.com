@@ -15,14 +15,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-	<script>
-		(function () {
-			try {
-				var savedMode = localStorage.getItem("colorMode");
-				if (savedMode === "light") document.documentElement.classList.add("light-mode");
-			} catch (e) { }
-		})();
-	</script>
+	<script src="/js/theme-boot.js"></script>
 	<link rel="stylesheet" href="/styles.css" />
 
 	<link rel="preload" href="/fonts/berkeley-mono.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
@@ -223,7 +216,7 @@
 						<!-- GIF -->
 						<h3>[GIF]</h3>
 						<div class="image">
-							<img src="/gifs/dark/email-subscription.gif" style="width: 100%; max-width: 1400px; aspect-ratio: 1200 / 675"
+							<img data-themed="/gifs/email-subscription.gif" style="width: 100%; max-width: 1400px; aspect-ratio: 1200 / 675"
 								alt="[TDU]" />
 							<p class="caption"><span class="opacity-25">&#8985;</span> <span class="opacity-25">/gifs/</span>email-subscription.gif <span
 									class="opacity-25">(112kb)</span></p>

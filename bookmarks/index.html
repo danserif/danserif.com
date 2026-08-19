@@ -13,14 +13,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-	<script>
-		(function () {
-			try {
-				var savedMode = localStorage.getItem("colorMode");
-				if (savedMode === "light") document.documentElement.classList.add("light-mode");
-			} catch (e) { }
-		})();
-	</script>
+	<script src="/js/theme-boot.js"></script>
 	<link rel="stylesheet" href="/styles.css" />
 
 	<link rel="preload" href="/fonts/berkeley-mono.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
@@ -349,7 +342,7 @@
 							html += `
 							<h3>[PNG]</h3>
 							<div class="image">
-								<img src="/images/dark/bookmarks.png" style="width: 100%; aspect-ratio: 1200 / 675" alt="ASCII Bookmarks" />
+								<img data-themed="/images/bookmarks.png" style="width: 100%; aspect-ratio: 1200 / 675" alt="ASCII Bookmarks" />
 								<p class="caption"><span class="opacity-25">&#8985;</span> <span class="opacity-25">/images/</span>bookmarks.png <span class="opacity-25">(ASCII)</span></p>
 							</div>
 						`;
