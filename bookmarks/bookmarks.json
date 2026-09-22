@@ -7,9 +7,9 @@
 					"note": "(WIP) Recent links of interest.",
 					"links": [
 						{
-							"title": "Consumer Aesthetics Research Institute",
-							"titleMobile": "CARI",
-							"url": "https://cari.institute"
+							"title": "CARI",
+							"url": "https://cari.institute",
+							"note": "Consumer Aesthetics Research Institute."
 						},
 						{
 							"title": "Visual Society",
