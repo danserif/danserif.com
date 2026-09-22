@@ -7,6 +7,15 @@
 					"note": "(WIP) Recent links of interest.",
 					"links": [
 						{
+							"title": "Consumer Aesthetics Research Institute",
+							"titleMobile": "CARI",
+							"url": "https://cari.institute"
+						},
+						{
+							"title": "Visual Society",
+							"url": "https://visualsociety.ch"
+						},
+						{
 							"title": "GT Mechanik",
 							"url": "https://gt-mechanik.com",
 							"note": "Stunning site. Magneficent mono."
@@ -140,6 +149,12 @@
 							"url": "https://webkit.org/blog/17660/introducing-css-grid-lanes/",
 							"urlDisplay": "webkit.org/css-grid-lanes",
 							"urlMobile": "webkit.org"
+						},
+						{
+							"title": "Areal",
+							"url": "https://abcdinamo.com/typefaces/areal",
+							"urlDisplay": "abcdinamo.com/areal",
+							"urlMobile": "abcdinamo.com"
 						}
 					]
 				},
@@ -386,6 +401,11 @@
 						{
 							"title": "GD Octio",
 							"url": "https://foundry.gardedesign.se/typefaces/gd-octio",
+							"urlDisplay": "foundry.gardedesign.se"
+						},
+						{
+							"title": "GD Gaio (Smooth)",
+							"url": "https://foundry.gardedesign.se/typefaces/gd-gaio-smooth",
 							"urlDisplay": "foundry.gardedesign.se"
 						},
 						{
