@@ -53,7 +53,7 @@
 </head>
 
 <body id="top" class="cv text-pretty">
-	<!-- \m/ Thanks for looking at the code. Press M: to switch modes, and D: to see the letter D. \m/ -->
+	<!-- \m/ Thanks for looking at the code. Press M: to switch modes, C: to check the time, and D: to see the letter D. \m/ -->
 	<header>
 		<h1><a href="/" class="hover">Dan Newman</a> <span class="opacity-25"> (CV)</span></h1>
 		<p class="caption"><span class="opacity-25">&#8985;</span> danserif.com</p>
@@ -176,19 +176,32 @@
 								</td>
 								<td class="arrow"><a href="https://dan.newman.is/a/designer/">&nearr;</a></td>
 							</tr>
+							<tr>
+								<td><a href="https://github.com/danserif">GitHub</a>
+								</td>
+								<td><span class="opacity-25">github.com/</span><span class="opacity-50">danserif</span></td>
+								<td class="arrow"><a href="https://github.com/danserif">&nearr;</a>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="https://linkedin.com/in/danserif">LinkedIn</a>
+								</td>
+								<td><span class="opacity-25">linkedin.com/in/</span><span class="opacity-50">danserif</span></td>
+								<td class="arrow"><a href="https://linkedin.com/in/danserif">&nearr;</a>
+								</td>
+							</tr>
 							<tr class="row-gap">
 								<td>&nbsp;</td>
 								<td></td>
 								<td></td>
 							</tr>
-							<tr>
-								<td>Qualification</td>
-								<td class="opacity-50">Masters <span class="opacity-25">(Design)</span></td>
-								<td></td>
-							</tr>
+
 							<tr>
 								<td>Timezone</td>
-								<td class="opacity-50">GMT+12 <span class="opacity-25">/</span> NZST</td>
+								<td><a href="#" id="nz-time-link" class="opacity-50"><span id="nz-offset">GMT+12</span> <span
+											class="opacity-25">/</span> <span id="nz-zone">NZST</span> <span class="opacity-25">—</span> <span
+											id="nz-time" class="opacity-25"></span></a>
+								</td>
 								<td></td>
 							</tr>
 							<tr>
@@ -441,28 +454,6 @@
 								</td>
 							</tr>
 						</table>
-						<!-- ACCOUNTS -->
-						<h3>[Accounts]</h3>
-						<table class="accounts">
-							<colgroup>
-								<col style="width: 20%" />
-								<col style="width: 80%" />
-							</colgroup>
-							<tr>
-								<td><a href="https://linkedin.com/in/danserif">LinkedIn</a>
-								</td>
-								<td><span class="opacity-25">linkedin.com/in/</span><span class="opacity-50">danserif</span></td>
-								<td class="arrow"><a href="https://linkedin.com/in/danserif">&nearr;</a>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="https://github.com/danserif">GitHub</a>
-								</td>
-								<td><span class="opacity-25">github.com/</span><span class="opacity-50">danserif</span></td>
-								<td class="arrow"><a href="https://github.com/danserif">&nearr;</a>
-								</td>
-							</tr>
-						</table>
 					</div>
 					<div class="column-25">
 						<!-- QUOTES -->
@@ -580,6 +571,7 @@
 	</footer>
 	<div class="letter-d-overlay" id="letter-d-overlay" aria-hidden="true"></div>
 	<script src="/js/main.js" defer></script>
+	<script src="/js/clock.js" defer></script>
 
 </body>
 

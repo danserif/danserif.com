@@ -62,7 +62,7 @@
 </head>
 
 <body id="top">
-	<!-- \m/ Thanks for looking at the code. Press M: to switch modes, and D: to see the letter D. \m/ -->
+	<!-- \m/ Thanks for looking at the code. Press M: to switch modes, C: to check the time, and D: to see the letter D. \m/ -->
 	<header>
 		<h1>@danserif</h1>
 		<p class="caption"><span class="opacity-25">&#8985;</span> danserif.com <span class="opacity-25">(URL)</span></p>
@@ -538,7 +538,7 @@
 							<tr>
 								<td class="opacity-50">Time<span class="hide">zone</span></td>
 								<td>
-									<span id="clock"></span>
+									<a href="#" id="nz-time-link"><span id="clock"></span></a>
 									<script>
 										// Thanks to Chatty G aka ChatGPT
 										function updateClock() {
@@ -650,6 +650,7 @@
 	</footer>
 	<div class="letter-d-overlay" id="letter-d-overlay" aria-hidden="true"></div>
 	<script src="/js/main.js" defer></script>
+	<script src="/js/clock.js" defer></script>
 
 </body>
 

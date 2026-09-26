@@ -761,6 +761,121 @@ h3 {
 	}
 }
 
+/* NZ analog clock overlay (clock.js). C toggles it. */
+#nz-time-link {
+	cursor: pointer;
+}
+
+#clock-overlay {
+	position: fixed;
+	inset: 0;
+	z-index: 100000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--bg-color);
+	opacity: 0;
+	pointer-events: none;
+	visibility: hidden;
+	transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#clock-overlay.is-open {
+	opacity: 1;
+	pointer-events: auto;
+	visibility: visible;
+}
+
+#clock-overlay.clock-no-transition {
+	transition: none;
+}
+
+#clock-svg {
+	width: min(560px, 85vmin);
+	height: min(560px, 85vmin);
+}
+
+#clock-svg .clock-marker {
+	stroke: var(--text-color);
+	stroke-width: 0.8;
+	opacity: 0.75;
+}
+
+#clock-svg .clock-marker-hour {
+	stroke-width: 0.8;
+}
+
+#clock-svg .clock-numeral {
+	fill: var(--text-color);
+	font-family: "Untitled Sans", sans-serif;
+	font-size: 12px;
+	text-anchor: middle;
+	dominant-baseline: central;
+}
+
+#clock-svg .clock-logo {
+	fill: var(--text-color);
+}
+
+#clock-svg .clock-tz {
+	fill: var(--text-color);
+	font-family: "Berkeley Mono", monospace;
+	font-size: 5px;
+	text-anchor: middle;
+	dominant-baseline: hanging;
+	opacity: 0.75;
+}
+
+#clock-svg .clock-hand-hour {
+	stroke: var(--text-color);
+	stroke-width: 3.5;
+	stroke-linecap: round;
+}
+
+#clock-svg .clock-hand-minute {
+	stroke: var(--text-color);
+	stroke-width: 2.5;
+	stroke-linecap: round;
+}
+
+#clock-svg .clock-hand-second {
+	stroke: var(--highlight-color);
+	stroke-width: 1.2;
+	stroke-linecap: round;
+}
+
+#clock-svg .clock-cap {
+	fill: var(--highlight-color);
+}
+
+@media (max-width: 1640px) {
+	#clock-svg {
+		width: min(392px, 59.5vmin);
+		height: min(392px, 59.5vmin);
+	}
+
+	#clock-svg .clock-numeral {
+		font-size: 10px;
+	}
+
+	#clock-svg .clock-tz {
+		font-size: 4px;
+	}
+}
+
+@media (max-width: 600px) {
+	#clock-svg {
+		width: 70vmin;
+		height: 70vmin;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	#clock-overlay {
+		transition: none;
+	}
+}
+
 h3.uppercase,
 .uppercase {
 	text-transform: uppercase;

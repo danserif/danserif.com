@@ -18,6 +18,13 @@
 			return true;
 		}
 
+		// Swap the tab title while this tab is in the background.
+		var originalTitle = document.title;
+		var awayTitle = "Tick. Tock.";
+		document.addEventListener("visibilitychange", function () {
+			document.title = document.hidden ? awayTitle : originalTitle;
+		});
+
 		function setMode(mode) {
 			if (mode === "light") {
 				root.classList.add("light-mode");
