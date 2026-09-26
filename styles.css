@@ -806,6 +806,10 @@ p.large {
 	text-wrap: pretty;
 }
 
+.text-balanced {
+	text-wrap: balance;
+}
+
 .hover {
 	text-decoration: none;
 }
