@@ -97,7 +97,9 @@ a {
 	color: var(--text-color);
 	outline: none;
 	text-decoration: underline;
-	text-underline-offset: 2px;
+	text-underline-position: from-font;
+	text-underline-offset: 3px;
+	text-decoration-skip-ink: auto;
 }
 
 a:visited {
@@ -348,7 +350,9 @@ td:first-child {
 .awards a {
 	display: inline;
 	text-decoration: underline;
-	text-underline-offset: 2px;
+	text-underline-position: from-font;
+	text-underline-offset: 3px;
+	text-decoration-skip-ink: auto;
 }
 
 .quote {
