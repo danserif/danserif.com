@@ -1187,6 +1187,11 @@ footer>p.caption:last-of-type {
 		float: none;
 	}
 
+	header {
+		-webkit-user-select: none;
+		user-select: none;
+	}
+
 	nav ul {
 		display: none;
 		padding-top: 0px;
@@ -1224,16 +1229,28 @@ footer>p.caption:last-of-type {
 		padding: 43px 0 15px 0;
 	}
 
-	.mobile a {
+	.mobile ul a {
 		display: block;
 		line-height: 1.8em;
 	}
 
+	.mobile > a {
+		position: absolute;
+		top: 28px;
+		right: 10px;
+		z-index: 2;
+		display: block;
+		padding: 10px;
+		line-height: 0;
+		-webkit-tap-highlight-color: transparent;
+		-webkit-user-select: none;
+		user-select: none;
+	}
+
 	.mobile a i.icon {
 		display: block;
-		position: absolute;
-		right: 20px;
-		top: 38px;
+		position: static;
+		line-height: 0;
 	}
 
 	.mobile li.logo {
@@ -1300,6 +1317,11 @@ footer>p.caption:last-of-type {
 		float: none;
 	}
 
+	header {
+		-webkit-user-select: none;
+		user-select: none;
+	}
+
 	nav ul {
 		display: none;
 		padding-top: 0px;
@@ -1337,16 +1359,28 @@ footer>p.caption:last-of-type {
 		padding: 43px 0 15px 0;
 	}
 
-	.mobile a {
+	.mobile ul a {
 		display: block;
 		line-height: 1.8em;
 	}
 
+	.mobile > a {
+		position: absolute;
+		top: 28px;
+		right: 10px;
+		z-index: 2;
+		display: block;
+		padding: 10px;
+		line-height: 0;
+		-webkit-tap-highlight-color: transparent;
+		-webkit-user-select: none;
+		user-select: none;
+	}
+
 	.mobile a i.icon {
 		display: block;
-		position: absolute;
-		right: 20px;
-		top: 38px;
+		position: static;
+		line-height: 0;
 	}
 
 	.mobile li.logo {
@@ -1485,8 +1519,8 @@ footer>p.caption:last-of-type {
 		max-width: 100%;
 	}
 
-	.mobile a i.icon {
-		top: 36px;
+	.mobile > a {
+		top: 26px;
 	}
 }
 
