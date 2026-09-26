@@ -1469,6 +1469,10 @@ footer>p.caption:last-of-type {
 		padding-top: 0;
 	}
 
+	.roles tr:not(:has(.untitled)) td {
+		font-size: 14px;
+	}
+
 	.hide {
 		display: none;
 	}
