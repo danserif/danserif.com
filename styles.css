@@ -769,6 +769,10 @@ p.large {
 	white-space: nowrap;
 }
 
+.text-pretty {
+	text-wrap: pretty;
+}
+
 .hover {
 	text-decoration: none;
 }
