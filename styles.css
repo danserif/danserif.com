@@ -247,6 +247,14 @@ tr {
 	border-bottom: 1px dashed var(--border-color);
 }
 
+tr.row-gap {
+	border-top: none;
+}
+
+tr.row-gap+tr {
+	border-top: none;
+}
+
 td {
 	vertical-align: middle;
 	padding: 15px 0 15px 0;
@@ -297,8 +305,54 @@ td:first-child {
 .seo td:last-child {
 	padding-right: 0;
 	text-align: left;
-	white-space: wrap;
+	white-space: normal;
 	min-width: 100px;
+}
+
+.roles td {
+	vertical-align: top;
+}
+
+.roles tr:not(:has(.untitled)) td:first-of-type {
+	min-width: 0;
+	width: 22%;
+}
+
+.roles tr:not(:has(.untitled)) td:nth-child(2) {
+	white-space: nowrap;
+}
+
+.roles tr:not(:has(.untitled)) {
+	border-bottom: none;
+}
+
+.roles tr:has(.untitled) {
+	border-top: none;
+}
+
+.roles tr:has(.untitled) td:first-of-type {
+	width: 22%;
+	min-width: 0;
+	padding: 0;
+}
+
+.cv .roles td.untitled {
+	font-size: 14px;
+	text-align: left;
+	white-space: normal;
+	padding-top: 0;
+	padding-bottom: 24px;
+}
+
+.roles a,
+.awards a {
+	display: inline;
+	text-decoration: underline;
+	text-underline-offset: 2px;
+}
+
+.quote {
+	padding-bottom: 28px;
 }
 
 /* =============================================================================
@@ -485,6 +539,53 @@ h3 {
 .untitled {
 	font-family: Untitled Sans;
 	font-size: 16px;
+}
+
+.cv .untitled {
+	font-size: 15px;
+}
+
+.cv .intro h3 {
+	font-family: Untitled Sans;
+	font-size: 32px;
+	line-height: 40px;
+}
+
+.cv .block>p:last-child,
+.cv .quote:last-child>p:last-child {
+	margin-bottom: 0;
+}
+
+.cv .quote:last-child {
+	padding-bottom: 70px;
+}
+
+.cv .quote blockquote {
+	margin: 0;
+	padding: 0 0 0 20px;
+	border-left: 1px solid var(--border-color);
+	font-size: inherit;
+}
+
+.cv .quote blockquote p:first-child {
+	text-indent: -0.5em;
+	padding-left: 0.5em;
+}
+
+.cv .quote blockquote p+p {
+	padding-left: 0.5em;
+}
+
+.cv .quote>p.opacity-75,
+.cv .quote>p.opacity-75+p {
+	font-family: Berkeley Mono, monospace;
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+.cv .quote>p.opacity-75 {
+	margin-top: 24px;
+	margin-bottom: 0;
 }
 
 .mono {
@@ -945,7 +1046,7 @@ footer>p.caption:last-of-type {
 
 	body {
 		font-size: 12px;
-		padding: 20px 20px;
+		padding: 20px 30px;
 	}
 
 	.untitled {
@@ -1046,6 +1147,19 @@ footer>p.caption:last-of-type {
 }
 
 @media only screen and (max-width: 1040px) {
+	body {
+		padding: 20px;
+	}
+
+	.cv .intro h3 {
+		font-size: 20px;
+		line-height: 1.4;
+	}
+
+	.cv .untitled {
+		font-size: 14px;
+	}
+
 	.row {
 		display: block;
 		width: 100%;
@@ -1331,6 +1445,28 @@ footer>p.caption:last-of-type {
 @media only screen and (max-width: 560px) {
 	td:first-of-type {
 		min-width: 120px;
+	}
+
+	.roles,
+	.roles tr,
+	.roles td {
+		display: block;
+		width: 100%;
+		min-width: 0;
+	}
+
+	.roles td.hide,
+	.roles tr:has(.untitled) td:first-of-type {
+		display: none;
+	}
+
+	.roles tr:not(:has(.untitled)) td:first-of-type {
+		width: 100%;
+		padding-bottom: 0;
+	}
+
+	.roles tr:not(:has(.untitled)) td:nth-child(2) {
+		padding-top: 0;
 	}
 
 	.hide {
