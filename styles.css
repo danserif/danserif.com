@@ -1241,6 +1241,11 @@ footer>p.caption:last-of-type {
 		line-height: 1.4;
 	}
 
+	.cv .intro h3 {
+		font-size: 24px;
+		line-height: 32px;
+	}
+
 	td:last-child {
 		min-width: 30px;
 	}
@@ -1301,8 +1306,14 @@ footer>p.caption:last-of-type {
 		padding: 10px 0 20px 0;
 	}
 
+	nav ul li,
+	.cv nav>ul,
+	.cv nav>ul li {
+		font-size: 12px;
+	}
+
 	footer .menu {
-		font-size: 10px;
+		font-size: 12px;
 	}
 
 	footer .menu ul:nth-of-type(2) li:nth-last-child(2) {
@@ -1406,7 +1417,7 @@ footer>p.caption:last-of-type {
 		line-height: 1.8em;
 	}
 
-	.mobile > a {
+	.mobile>a {
 		position: absolute;
 		top: 28px;
 		right: 10px;
@@ -1540,7 +1551,7 @@ footer>p.caption:last-of-type {
 		line-height: 1.8em;
 	}
 
-	.mobile > a {
+	.mobile>a {
 		position: absolute;
 		top: 28px;
 		right: 10px;
@@ -1695,7 +1706,7 @@ footer>p.caption:last-of-type {
 		max-width: 100%;
 	}
 
-	.mobile > a {
+	.mobile>a {
 		top: 26px;
 	}
 }
