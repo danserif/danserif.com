@@ -51,7 +51,7 @@
 <body id="top">
 	<!-- \m/ Thanks for looking at the code. Press M: to switch modes, and D: to see the letter D. \m/ -->
 	<header>
-		<h1><a class="hover" href="/" onclick="fathom.trackEvent('Home', 0);">danserif.com</a><span
+		<h1><a class="hover" href="/">danserif.com</a><span
 				class="opacity-25">/bookmarks</span></h1>
 		<p class="caption"><span class="opacity-25">&#8985;</span> @danserif <span class="opacity-25">(Handle)</span></p>
 	</header>
@@ -59,46 +59,43 @@
 	<nav>
 		<ul>
 			<li class="label">[Menu]</li>
-			<li><a href="/newsletter/" onclick="fathom.trackEvent('Newsletter', 0);"><span class="opacity-50">#</span>
+			<li><a href="/newsletter/"><span class="opacity-50">#</span>
 					Newsletter</a> <span class="opacity-25">(1)</span></li>
-			<li><a href="/bookmarks/" onclick="fathom.trackEvent('Bookmarks', 0);"><span class="opacity-50">+</span>
+			<li><a href="/bookmarks/"><span class="opacity-50">+</span>
 					<span class="highlight">Bookmarks</span></a></li>
-			<li><a href="/work/" onclick="fathom.trackEvent('Work', 0);"><span class="opacity-50">$</span>
+			<li><a href="/work/"><span class="opacity-50">$</span>
 					Work</a></li>
-			<li><a href="/about/" onclick="fathom.trackEvent('About', 0);"><span class="opacity-50">?</span> About</a></li>
+			<li><a href="/about/"><span class="opacity-50">?</span> About</a></li>
 		</ul>
 		<!-- MOBILE -->
 		<div class="mobile menu">
 			<ul id="menu">
 				<!-- MENU -->
 				<li class="title">[Menu]</li>
-				<li class="link"><a href="/" onclick="fathom.trackEvent('Home', 0);"><span class="opacity-25">~</span>
+				<li class="link"><a href="/"><span class="opacity-25">~</span>
 						Home</a></li>
-				<li class="link"><a href="/newsletter/" onclick="fathom.trackEvent('Newsletter', 0);"><span
+				<li class="link"><a href="/newsletter/"><span
 							class="opacity-25">#</span> Newsletter</a></li>
-				<li class="link"><a href="/bookmarks/" onclick="fathom.trackEvent('Bookmarks', 0);"><span
+				<li class="link"><a href="/bookmarks/"><span
 							class="opacity-25">+</span> Bookmarks</a></li>
-				<li class="link"><a href="/work/" onclick="fathom.trackEvent('Work', 0);"><span class="opacity-25">$</span>
+				<li class="link"><a href="/work/"><span class="opacity-25">$</span>
 						Work</a></li>
-				<li class="link"><a href="/about/" onclick="fathom.trackEvent('About', 0);"><span class="opacity-25">?</span>
+				<li class="link"><a href="/about/"><span class="opacity-25">?</span>
 						About</a></li>
 				<!-- URLS -->
 				<li class="title">[URLS]</li>
-				<li class="inline"><span class="opacity-50">Studio:</span> <a href="https://daas.graphics"
-						onclick="fathom.trackEvent('DaaS', 0);">daas.graphics &rarr;</a></li>
-				<li class="inline"><span class="opacity-50">Portfolio:</span> <a href="https://dan.newman.is"
-						onclick="fathom.trackEvent('Portfolio', 0);">dan.newman.is &rarr;</a></li>
+				<li class="inline"><span class="opacity-50">Studio:</span> <a href="https://daas.graphics">daas.graphics &rarr;</a></li>
+				<li class="inline"><span class="opacity-50">Portfolio:</span> <a href="https://dan.newman.is">dan.newman.is &rarr;</a></li>
 				<!-- CONTACT -->
 				<li class="title">[Contact]</li>
 				<li class="inline">
 					<span class="opacity-50">Email:</span>
-					<a href="mailto:dan@newman.is" onclick="fathom.trackEvent('Email', 0);">dan <span
+					<a href="mailto:dan@newman.is">dan <span
 							class="opacity-75">[at]</span> newman <span class="opacity-75">[dot]</span> is</a>
 				</li>
 				<li class="inline">
-					<span class="opacity-50">Follow:</span> <a href="https://linkedin.com/in/danserif"
-						onclick="fathom.trackEvent('LinkedIn', 0);">LinkedIn</a> <span class="opacity-25">/</span>
-					<a href="https://twitter.com/danserif" onclick="fathom.trackEvent('Twitter', 0);">Twitter</a>
+					<span class="opacity-50">Follow:</span> <a href="https://linkedin.com/in/danserif">LinkedIn</a> <span class="opacity-25">/</span>
+					<a href="https://twitter.com/danserif">Twitter</a>
 					<span class="opacity-25">(RIP)</span>
 				</li>
 				<!-- MODE -->
@@ -208,10 +205,10 @@
 				const archived = link.archive === true;
 				const titleCell = archived
 					? `<span class="archive opacity-25">${titleDisplay}</span>`
-					: `<a href="${link.url}" target="_blank" onclick="fathom.trackEvent('Link', 0);">${titleDisplay}</a>`;
+					: `<a href="${link.url}" target="_blank">${titleDisplay}</a>`;
 				const arrowCell = archived
 					? `<td class="arrow"></td>`
-					: `<td class="arrow"><a href="${link.url}" target="_blank" onclick="fathom.trackEvent('Link', 0);">&nearr;</a></td>`;
+					: `<td class="arrow"><a href="${link.url}" target="_blank">&nearr;</a></td>`;
 
 				const linkRow = `
 					<tr>
@@ -412,19 +409,19 @@
 		<div class="menu">
 			<ul>
 				<li><span class="opacity-50 uppercase">[Menu]</span></li>
-				<li><a href="/" onclick="fathom.trackEvent('Home', 0);"><span class="opacity-50">~</span> Home</a></li>
-				<li><a href="/newsletter/" onclick="fathom.trackEvent('Newsletter', 0);"><span class="opacity-50">#</span>
+				<li><a href="/"><span class="opacity-50">~</span> Home</a></li>
+				<li><a href="/newsletter/"><span class="opacity-50">#</span>
 						Newsletter</a></li>
-				<li><a href="/bookmarks/" onclick="fathom.trackEvent('Bookmarks', 0);"><span class="opacity-50">+</span>
+				<li><a href="/bookmarks/"><span class="opacity-50">+</span>
 						Bookmarks</a></li>
-				<li><a href="/work/" onclick="fathom.trackEvent('Work', 0);"><span class="opacity-50">$</span> Work</a></li>
-				<li><a href="/about/" onclick="fathom.trackEvent('About', 0);"><span class="opacity-50">?</span> About</a>
+				<li><a href="/work/"><span class="opacity-50">$</span> Work</a></li>
+				<li><a href="/about/"><span class="opacity-50">?</span> About</a>
 				</li>
 			</ul>
 			<hr class="desktop" />
 			<ul>
 				<li><span class="opacity-50 uppercase">[Contact]</span></li>
-				<li class="contact"><a href="mailto:dan@newman.is" onclick="fathom.trackEvent('Email', 0);"><span
+				<li class="contact"><a href="mailto:dan@newman.is"><span
 							class="opacity-50">@</span> Email</a></li>
 				<li><span class="opacity-50 uppercase">[Mode]</span></li>
 				<li class="mode"><a href="#" class="dark-mode-toggle"><span class="opacity-50">&#9654;</span> Dark</a> <span
