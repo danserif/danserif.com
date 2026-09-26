@@ -442,6 +442,39 @@ nav li.label {
 	color: var(--opacity-25);
 }
 
+/* CV desktop header uses the footer contact/mode menu */
+.cv nav>ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	margin: 0;
+	opacity: 0.5;
+	font-size: 14px;
+}
+
+.cv nav>ul li {
+	padding-left: 0;
+	padding-right: 20px;
+	font-size: 14px;
+	white-space: nowrap;
+}
+
+.cv nav>ul li:last-child {
+	padding-right: 0;
+}
+
+.cv nav>ul li:nth-last-child(2) {
+	padding-left: 80px;
+}
+
+.cv nav>ul a {
+	opacity: 1;
+}
+
+.cv nav>ul a:hover {
+	opacity: 0.4;
+}
+
 .menu {
 	display: none;
 }
@@ -1013,6 +1046,10 @@ footer>p.caption:last-of-type {
 	footer .menu ul:nth-of-type(2) li:nth-last-child(2) {
 		padding-left: 2rem;
 	}
+
+	.cv nav>ul li:nth-last-child(2) {
+		padding-left: 2rem;
+	}
 }
 
 @media only screen and (max-width: 1400px) {
@@ -1148,6 +1185,10 @@ footer>p.caption:last-of-type {
 	footer .menu ul:nth-of-type(2) li:nth-last-child(2) {
 		padding-left: 1rem;
 	}
+
+	.cv nav>ul li:nth-last-child(2) {
+		padding-left: 1rem;
+	}
 }
 
 @media only screen and (max-width: 1040px) {
@@ -1199,6 +1240,10 @@ footer>p.caption:last-of-type {
 	nav ul {
 		display: none;
 		padding-top: 0px;
+	}
+
+	.cv nav>ul {
+		display: none;
 	}
 
 	nav ul li {
@@ -1329,6 +1374,10 @@ footer>p.caption:last-of-type {
 	nav ul {
 		display: none;
 		padding-top: 0px;
+	}
+
+	.cv nav>ul {
+		display: none;
 	}
 
 	nav ul li {
