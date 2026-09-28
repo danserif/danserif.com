@@ -1676,17 +1676,35 @@ footer>p.caption:last-of-type {
 		min-width: 0;
 	}
 
-	.roles td.hide,
 	.roles tr:has(.untitled) td:first-of-type {
 		display: none;
 	}
 
-	.roles tr:not(:has(.untitled)) td:first-of-type {
-		width: 100%;
+	.roles tr:not(:has(.untitled)) {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+		justify-content: space-between;
+		column-gap: 16px;
+	}
+
+	.roles tr:not(:has(.untitled)) td:first-of-type,
+	.roles tr:not(:has(.untitled)) td.hide {
+		width: auto;
 		padding-bottom: 0;
 	}
 
+	.roles tr:not(:has(.untitled)) td:first-of-type {
+		order: 1;
+	}
+
+	.roles td.hide {
+		display: block;
+		order: 2;
+	}
+
 	.roles tr:not(:has(.untitled)) td:nth-child(2) {
+		order: 3;
 		padding-top: 0;
 	}
 
