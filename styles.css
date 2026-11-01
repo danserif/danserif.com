@@ -483,8 +483,13 @@ nav li.label {
 	display: none;
 }
 
+.home .intro {
+	max-width: 780px;
+	padding: 60px 0 0 0;
+}
+
 .intro {
-	max-width: 920px;
+	max-width: 900px;
 	padding: 60px 0 0 0;
 }
 
